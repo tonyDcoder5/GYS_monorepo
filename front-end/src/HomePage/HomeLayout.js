@@ -6,10 +6,10 @@ import Roadmap from "./Roadmap";
 export default function HomeLayout() {
 
     return(
-        <div>
-            <h2>HOME PAGE LAYOUT</h2>
-            <div className="container home-layout">
+        <div className="home">
             <Header />
+            <div className="container home-layout">
+            
             <Mission />
             <Roadmap />
             </div>
