@@ -7,6 +7,7 @@ import AboutUs from "./AboutSupport/AboutUs";
 import Resources from "./ResourcesContacts/Resources";
 
 import "./App.css";
+import Header from "./HomePage/Header";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <div className="body">
         <NavBar />
         <div>
+          <Header />
           <Routes>
             <Route exact path="/" element={ <Navigate to="/home" />} />
             <Route path="/home" element={<HomeLayout />} />

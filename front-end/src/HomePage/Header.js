@@ -1,13 +1,18 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Header() {
 
     return(
-        <div className="header">
-            <h3>HOME PAGE HEADER BANNER</h3>
+        <div className="header row">
+            <div className="col-7 banner-text">
             <span>Thank you message & special invite for veterans</span>
-            <button className="btn btn-primary">Subscribe</button>
-            <button className="btn btn-danger">Immediate Support</button>
+            </div>
+            <div className="col-4 banner-btns">
+        <button className="btn btn-subscribe">
+          <Link to="/about">Subscribe</Link></button>
+        <button className="btn btn-support"><Link to="/resources">Support</Link></button>
+      </div>
         </div>
         
     )

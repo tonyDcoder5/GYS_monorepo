@@ -64,9 +64,28 @@ DESKTOP: 1920px X 1080px
 .header{
   border: 2px solid #5d737e;
   background-color: #5d737edc;
-  margin-top: 1em;
+  padding: 3em;
 }
 
+.banner-text{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2em;
+  margin-top: .5em;
+}
+
+.banner-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-support{
+  background-color: #b3001b;
+}
+
+.btn-subscribe{
+  background-color: #0e103d;
+}
 
 .header-nav{
   display: flex; 
@@ -92,16 +111,44 @@ DESKTOP: 1920px X 1080px
 }
 
 .support-btn{
-  background-color: #0e103dc6;
+  background-color: #071013;
 }
 
 .events-btn{
-  background-color: #5d737eae;
+  background-color: #071013;
 }
 
+.home-layout{
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
 
 .mission-sect{
   border: 2px solid #0e103dcb;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.mission-vid{
+  border: 2px solid #0e103dcb;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.mission-stats{
+  border: 2px solid #0e103dcb;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.roadmap-block{
+  border: 2px solid #0e103dcb;
+  padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -110,6 +157,19 @@ DESKTOP: 1920px X 1080px
   border: 2px solid #0e103dcb;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding: 1em;
+}
+
+.about{
+  border: 2px solid #0e103dcb;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.resources{
+  border: 2px solid #0e103dcb;
+  margin-top: 1em;
+  padding: 1em;
 }
 
 .footer{
