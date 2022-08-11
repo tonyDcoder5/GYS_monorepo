@@ -14,13 +14,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/users", usersRouter);
-app.use("/posts", postsRouter);
-app.use("/events", eventsRouter);
-app.use("/resources", resourcesRouter);
-app.use("/downloads", downloadsRouter);
-app.use("/media", mediaRouter);
-app.use("/contacts", contactsRouter);
+// app.use("/users", usersRouter);
+// app.use("/posts", postsRouter);
+// app.use("/events", eventsRouter);
+// app.use("/resources", resourcesRouter);
+// app.use("/downloads", downloadsRouter);
+// app.use("/media", mediaRouter);
+// app.use("/contacts", contactsRouter);
 
 app.use(notFound);
 app.use(errorHandler);
