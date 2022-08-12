@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contacts from "./Contacts";
+import ResourceBlock from "./ResourceBlock";
 import Events from "./Events";
 
 export default function Resources() {
   return (
-    <div className="container resources">
-        <h4>Resources Section</h4>
-        <div className="roadmap-block">
-          <h6>Block 1- Resource Section</h6>
+    <div className="resources">
+        <h4>Downloadables Section</h4>
+        <div className="row">
+        <div className="col downloadable-block">
+          <h6>Block 1- Downloadable Section</h6>
         </div>
-        <div className="roadmap-block">
-          <h6>Block 2- Resource Section</h6>
+        <div className="col downloadable-block">
+          <h6>Block 2- Downloadable Section</h6>
         </div>
-        <div className="roadmap-block">
-          <h6>Block 3- Resource Section</h6>
-        </div>
-      <Contacts />
+      <ResourceBlock />
       <Events />
+      </div>
     </div>
   );
 }

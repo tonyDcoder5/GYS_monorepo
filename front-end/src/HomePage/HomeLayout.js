@@ -7,7 +7,7 @@ export default function HomeLayout() {
 
     return(
         <div className="home">
-            <div className="container home-layout">
+            <div className="home-layout">
             <Mission />
             <Roadmap />
             </div>
