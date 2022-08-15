@@ -7,8 +7,12 @@ exports.up = function (knex) {
 		table.increments("contact_id").primary();
 		table.string("first_name").notNullable();
 		table.string("last_name").notNullable();
+		table.string("contact_title");
+		table.string("contact_url");
+		table.string("contact_img_url");
+		table.string("contact_icon_url");
 		table.string("mobile_number");
-        table.string("email_address").notNullable();
+		table.string("email_address");
 		table.timestamps(true, true);
 	});
 };
