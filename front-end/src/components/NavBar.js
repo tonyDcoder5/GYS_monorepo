@@ -22,7 +22,7 @@ export default function NavBar() {
   },[])
   
   return (
-    <div className="row header-nav">
+    <div className="header-nav">
       <div className=" col-9 mt-2">
         <Navbar sticky="top">
           <img src={logo} alt="GYS logo" />

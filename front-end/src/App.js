@@ -8,14 +8,18 @@ import Resources from "./ResourcesContacts/Resources";
 
 import "./App.css";
 import Header from "./HomePage/Header";
+import Banner from "./components/Banner";
 
 export default function App() {
   return (
     <Router>
       <div className="body">
+        <Banner />
         <NavBar />
         <div>
+          <div>
           <Header />
+          </div>
           <Routes>
             <Route exact path="/" element={ <Navigate to="/home" />} />
             <Route path="/home" element={<HomeLayout />} />

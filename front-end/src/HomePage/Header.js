@@ -4,11 +4,11 @@ import {Link} from "react-router-dom";
 export default function Header() {
 
     return(
-        <div className="header row">
-            <div className="col-9 banner-text">
-            <span>Thank you message & special invite for veterans</span>
+        <div className="header">
+            <div className="col-9 header-text">
+            <span>SPONSORED Organization Highlight</span>
             </div>
-            <div className="col-3 banner-btns">
+            <div className="col-2 header-btns">
         <button className="btn btn-subscribe">
           <Link to="/about">Subscribe</Link></button>
         <button className="btn btn-support"><Link to="/resources">Support</Link></button>

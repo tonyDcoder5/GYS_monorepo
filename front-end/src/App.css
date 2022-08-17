@@ -60,18 +60,39 @@ DESKTOP: 1920px X 1080px
   flex-direction: column;
 }
 
-.header{
-  background-color: #5d737edc;
-  padding: 2.5em;
+.help-banner{
+  background-color: #0e103d;
+  color: #f1edee;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-.banner-text{
+.help-banner a{
+  color: #b3001b;
+  text-decoration: none;
+}
+
+.help-banner a:hover{
+  color: #b3001b41;
+  text-decoration: none;
+}
+
+.header{
+  background-color: #5d737edc;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text{
   display: flex;
   justify-content: flex-start;
   margin-top: .5em;
 }
 
-.banner-btns{
+.header-btns{
   display: flex;
   justify-content: space-evenly;
 }
@@ -86,8 +107,9 @@ DESKTOP: 1920px X 1080px
 
 .header-nav{
   display: flex; 
+  justify-content: space-between;
   background-color: #f1edee;
-  padding: 2em;
+  padding: 1em;
 }
 
 .header-nav img{
@@ -160,15 +182,41 @@ DESKTOP: 1920px X 1080px
 }
 
 .resource-block{
-  border: 2px solid #0e103dcb;
+  border: 2px solid #b3001b;
+  padding: 2em;
+  margin: 2em;
+  background-color: #5d737e;
+  color: #f1edee;
+}
+
+.downloadables{
+  display: flex;
+  justify-content: space-between;
+}
+
+.downloadables-block{
+  border: 2px solid #5d737edc;
+  background-color: #5d737e;
   padding: 2em;
   margin: 2em;
 }
 
-.downloadable-block{
-  border: 2px solid #0e103dcb;
-  padding: 2em;
-  margin: 2em;
+.downloadables-block div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadables-block .col{
+  border: 2px dotted #f1edee;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+}
+
+.downloadables-block img:hover{
+  transform: scale(2);
 }
 
 .resource-btn-group{
@@ -186,11 +234,28 @@ DESKTOP: 1920px X 1080px
   text-align: center;
 }
 
+.events{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.event-calendar{
+  border: 2px dotted #b3001b;
+  padding: 1em;
+  background-color: #0e103d;
+  color: #f1edee;
+
+}
+
+
 .events-block{
   border: 2px solid #0e103dcb;
-  padding: 2em;
-  margin: 2em;
+  padding: 3em;
+  margin: 1em;
 }
+
 
 .footer{
   padding: 3em;
