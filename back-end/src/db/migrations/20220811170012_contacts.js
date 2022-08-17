@@ -11,6 +11,7 @@ exports.up = function (knex) {
 		table.string("contact_url");
 		table.string("contact_img_url");
 		table.string("contact_icon_url");
+		table.string("contact_desc", 1000);
 		table.string("mobile_number");
 		table.string("email_address");
 		table.timestamps(true, true);
