@@ -49,3 +49,8 @@ export async function listPosts(signal) {
 	const url = new URL(`${API_BASE_URL}/posts`);
 	return await fetchJson(url, { headers, signal }, []);
 }
+
+export async function listPrompts(signal) {
+	const url = new URL(`${API_BASE_URL}/prompts`);
+	return await fetchJson(url, { headers, signal }, []);
+}
