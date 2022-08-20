@@ -31,12 +31,13 @@ export default function NavBar() {
             <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="resources">Resources</Nav.Link>
+            <Nav.Link href="support">Blog</Nav.Link>
           </Nav>
         </Navbar>
       </div>
       <div className="col-3 nav-buttons">
         <button className="btn support-btn">
-          <Link to="about">Support</Link></button>
+          <Link to="support">Support</Link></button>
         <button className="btn events-btn"><Link to="resources">Events</Link></button>
       </div>
     </div>

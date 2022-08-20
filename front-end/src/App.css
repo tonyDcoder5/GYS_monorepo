@@ -88,13 +88,13 @@ DESKTOP: 1920px X 1080px
 
 .header-text{
   display: flex;
-  justify-content: flex-start;
   margin-top: .5em;
 }
 
 .header-btns{
   display: flex;
   justify-content: space-evenly;
+  align-content: space-between;
 }
 
 .btn-support{
@@ -146,6 +146,7 @@ DESKTOP: 1920px X 1080px
   flex-direction: column;
   text-align: center;
   border-radius: .5rem;
+  padding: 3em;
 }
 
 .mission-stats{

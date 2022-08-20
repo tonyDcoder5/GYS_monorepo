@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
-import AboutUs from "./AboutSupport/AboutUs";
+import AboutUs from "./About/AboutUs";
 import Resources from "./ResourcesContacts/Resources";
+import Support from "./Support/Support";
 
 import "./App.css";
-import Header from "./HomePage/Header";
+import Header from "./components/Header";
 import Banner from "./components/Banner";
 
 import { listPrompts } from "./utils/api";
@@ -37,13 +38,14 @@ export default function App() {
         <div>
           <div>
           <Header />
-          </div>
           <Routes>
             <Route exact path="/" element={ <Navigate to="/home" />} />
             <Route path="/home" element={<HomeLayout />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/support" element={<Support />} />
           </Routes>
+          </div>
         </div>
         <Footer />
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Mission() {
-  const missionVid = "https://www.w3schools.com/html/mov_bbb.mp4";
+  const missionVid = require("../assets/video/flag-video.mp4");
 
   return (
     <div className="mission-sect">
