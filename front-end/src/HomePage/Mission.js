@@ -2,14 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Mission() {
-  const missionVid = require("../assets/video/flag-video.mp4");
+  const flag = require("../assets/img/flag-gif.gif");
 
   return (
     <div className="mission-sect">
       <div className="mission-vid">
-        <video width="100%" height="100%" controls autoplay muted>
-          <source src={missionVid} type="video/mp4" />
-        </video>
+        <img src={flag} height="100%" width="100%" alt="Waving flag gif" />
         <p className="mt-5">
           Mission Video Section w/ statement *find overlay w/ tailwind?*
         </p>
