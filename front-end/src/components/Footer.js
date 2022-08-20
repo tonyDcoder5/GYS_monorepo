@@ -5,17 +5,6 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="footer">
-      {/* 
-        Row
-        NavBar
-        Link Link Link LOGO Link Link Link
-        Row
-        Break Line
-        Row
-        Social Media Icons/Links 
-        Link Link Link Link
-        Company/Copyright tags
-        */}
       <div className="footer-nav">
         <span><Link to="/about">About</Link></span>
         <span><Link to="/support">Support</Link></span>        

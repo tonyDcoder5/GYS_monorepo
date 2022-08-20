@@ -8,10 +8,10 @@ export default function Banner() {
         <a href="resources">Tips & Resources</a>
       </div>
       <div className="banner-links">
-        In crisis? <a href="resources">Seek help.</a>
+        In crisis? <a href="urgent-resources">Seek help.</a>
       </div>
       <div className="banner-btns">
-        <span>National Crisis Hotline: <a href="https://988lifeline.org/">Dial 988</a></span>
+        <span>National Crisis Hotline: <a href="https://988lifeline.org/" target="_blank">Dial 988</a></span>
       </div>
     </div>
   );

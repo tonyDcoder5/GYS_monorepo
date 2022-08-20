@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
 import AboutUs from "./About/AboutUs";
-import Resources from "./ResourcesContacts/Resources";
+import Resources from "./Resources/Layout";
 import Support from "./Support/Support";
 
 import "./App.css";
@@ -12,6 +12,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 
 import { listPrompts } from "./utils/api";
+import UrgentSupport from "./Resources/UrgentSupport";
 
 export default function App() {
   const [prompts,setPrompts] = useState(null);
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/urgent-resources" element={<UrgentSupport/>} />
           </Routes>
           </div>
         </div>

@@ -10,8 +10,6 @@ DESKTOP: 1920px X 1080px
 
 */
 
-
-
 .App {
   text-align: center;
 }
@@ -51,16 +49,16 @@ DESKTOP: 1920px X 1080px
   }
 }
 
-.body{
+.body {
   background-color: #f1edee;
 }
 
-.home-layout{
+.home-layout {
   display: flex;
   flex-direction: column;
 }
 
-.help-banner{
+.help-banner {
   background-color: #0e103d;
   color: #f1edee;
   padding: 1em;
@@ -69,120 +67,122 @@ DESKTOP: 1920px X 1080px
   align-content: space-between;
 }
 
-.help-banner a{
+.help-banner a {
   color: #b3001b;
   text-decoration: none;
 }
 
-.help-banner a:hover{
+.help-banner a:hover {
   color: #b3001b41;
   text-decoration: none;
 }
 
-.header{
+.header {
   background-color: #5d737edc;
-  padding: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #0e103d solid 0.5em;
+}
+
+.header-block {
   display: flex;
   justify-content: space-between;
 }
 
-.header-text{
-  display: flex;
-  margin-top: .5em;
+.header-block div {
+  border: #071013 solid 2px;
+  padding: 1em;
 }
 
-.header-btns{
-  display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
-}
-
-.btn-support{
+.btn-support {
   background-color: #b3001b;
 }
 
-.btn-subscribe{
+.btn-subscribe {
   background-color: #0e103d;
 }
 
-.header-nav{
-  display: flex; 
+.header-nav {
+  display: flex;
   justify-content: space-between;
   background-color: #f1edee;
   padding: 1em;
 }
 
-.header-nav img{
+.header-nav img {
   width: 3em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-.nav-links{
+.nav-links {
   margin-left: 1em;
 }
 
-.nav-buttons{
+.nav-buttons {
   display: flex;
   justify-content: space-evenly;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-.support-btn{
-  background-color: #071013;
+.support-btn {
+  background-color: #0e103d;
 }
 
-.events-btn{
-  background-color: #071013;
+.events-btn {
+  background-color: #5d737e;
 }
 
-.mission-sect{
+.mission-sect {
   margin-bottom: 1em;
 }
 
-.mission-vid{
+.mission-vid {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 3em;
 }
 
-.mission-stats{
+.mission-stats {
   border: 2px solid #0e103dcb;
   background-color: #f1edee;
   padding: 2em;
   margin: 1rem;
 }
 
-.roadmap-block{
+.roadmap-block {
   border: 2px solid #0e103dcb;
   padding: 2em;
   margin: 2em;
 }
 
-.roadmap-sect{
+.roadmap-sect {
   border: 2px solid #0e103dcb;
   padding: 1em;
 }
 
-.roadmap-sect div{
+.roadmap-sect div {
   border: 2px solid #0e103dcb;
   text-align: center;
+  padding: 2em;
 }
 
-.about{
+.about {
   border: 2px solid #0e103dcb;
   padding: 1em;
 }
 
-.resources{
+.resources {
   border: 2px solid #0e103dcb;
   padding: 1em;
 }
 
-.resource-block{
+.resource-block {
   border: 2px solid #b3001b;
   padding: 2em;
   margin: 2em;
@@ -190,107 +190,122 @@ DESKTOP: 1920px X 1080px
   color: #f1edee;
 }
 
-.downloadables{
+
+.support-card-urgent{
+  padding: 1em;
+}
+
+.support-btns-urgent {
   display: flex;
   justify-content: space-between;
 }
 
-.downloadables-block{
+.downloadables {
+  display: flex;
+  justify-content: space-between;
+}
+
+.downloadables-block {
   border: 2px solid #5d737edc;
   background-color: #5d737e;
   padding: 2em;
   margin: 2em;
+  text-align: center;
 }
 
-.downloadables-block div{
+.downloadables-block div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.downloadables-block .col{
+.downloadables-block .col {
   border: 2px dotted #f1edee;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
 }
 
-.downloadables-block img:hover{
+.downloadables-block img:hover {
   transform: scale(2);
 }
 
-.resource-btn-group{
+.resource-btn-group {
   display: flex;
   flex-direction: column;
   margin: 1em;
 }
 
-.resource-btn-group button{
+.resource-btn-group button {
   margin: 1em;
 }
 
-.support div{
+.support-block {
+  border: 2px solid #0e103dcb;
+  padding: 2em;
+  margin: 2em;
+}
+
+.support-block div {
+  padding: 2em;
   border: 2px solid #0e103dcb;
   text-align: center;
 }
 
-.events{
+.events {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
 }
 
-.event-calendar{
+.event-calendar {
   border: 2px dotted #b3001b;
   padding: 1em;
   background-color: #0e103d;
   color: #f1edee;
-
 }
 
-
-.events-block{
+.events-block {
   border: 2px solid #0e103dcb;
   padding: 3em;
   margin: 1em;
 }
 
-
-.footer{
+.footer {
   padding: 3em;
   text-align: center;
+  border-top: #071013 solid .25em;
 }
 
-.footer-nav{
+.footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.footer-nav img{
+.footer-nav img {
   width: 3em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-.footer-nav span{
+.footer-nav span {
   margin-top: 1em;
 }
 
-.footer-socials{
+.footer-socials {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
-.footer-socials span{
+.footer-socials span {
   margin: 1em;
 }
 
-.footer-copy{
+.footer-copy {
   margin-top: 1em;
   font-size: 8px;
   color: rgba(82, 82, 82, 0.563);
