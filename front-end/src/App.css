@@ -107,33 +107,55 @@ DESKTOP: 1920px X 1080px
 .header-nav {
   display: flex;
   justify-content: space-between;
+  transition: 0.32 ease-in-out;
   background-color: #f1edee;
   padding: 1em;
+  text-align: center;
+  margin: 1em;
+}
+
+nav.navbar{
+  display: flex;
+  justify-content: space-between;
+  transition: 0.32 ease-in-out;
+  background-color: #f1edee;
+  text-align: center;
+}
+
+nav.navbar.scrolled{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.1 ease-in-out;
+  background-color: #5d737ec3;
+  padding: 1em;
+  text-align: center;
 }
 
 .header-nav img {
   width: 3em;
-  margin-left: 1em;
   margin-right: 1em;
 }
 
-.nav-links {
-  margin-left: 1em;
+.header-nav button{
+  margin: .25em;
 }
 
-.nav-buttons {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+.nav-links{
+  margin: .5em;
 }
 
 .support-btn {
-  background-color: #0e103d;
+  border: #0e103d solid .25em;
+  background-color: #b3001b;
 }
 
 .events-btn {
-  background-color: #5d737e;
+  border: #0e103d solid .25em;
+  background-color: #b3001b;
 }
 
 .mission-sect {
