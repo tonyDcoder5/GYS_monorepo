@@ -113,7 +113,7 @@ nav.navbar.scrolled {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  top: 0;
+  top: 1em;
   z-index: 9999;
   transition: 0.5 ease;
   padding: 1em;
@@ -133,6 +133,8 @@ nav.navbar.scrolled {
 .header-nav button {
   margin: 0.25em;
   border-radius: 2em;
+  box-shadow: 0 .25em 1em #0e103d;
+
 }
 
 .nav-links {
@@ -224,7 +226,7 @@ nav.navbar.scrolled {
 
 .flag-animation img{
   border-radius: 5em;
-  box-shadow: 0 .5em 1em #f1edee;
+  box-shadow: 0 .5em 1em #f1edee87;
 }
 
 .mission-stats {

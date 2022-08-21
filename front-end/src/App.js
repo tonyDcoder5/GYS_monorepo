@@ -14,7 +14,7 @@ import { listPrompts } from "./utils/api";
 import UrgentSupport from "./Resources/UrgentSupport";
 
 export default function App() {
-  const [prompts,setPrompts] = useState(null);
+  const [prompts,setPrompts] = useState({});
   const [promptsError,setPromptsError] = useState(null)
   useEffect( ()=>{
     const fetchResources = async ()=>{
@@ -37,7 +37,7 @@ export default function App() {
         <NavBar />
         <div>
           <div>
-          <Header />
+          <Header prompts={prompts} />
           <Routes>
             <Route exact path="/" element={ <Navigate to="/home" />} />
             <Route path="/home" element={<HomeLayout />} />

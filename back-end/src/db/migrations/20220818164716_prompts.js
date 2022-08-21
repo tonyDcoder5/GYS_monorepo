@@ -11,7 +11,11 @@
             .inTable("users")
             .onDelete("cascade");
 		table.string("section_name").notNullable();
+		table.string("section_title",1000).notNullable();
 		table.string("section_text",5000).notNullable();
+		table.string("sect_subtext", 5000).nullable();
+		table.string("sect_image", 500).nullable();
+		table.string("sect_video", 500).nullable();
 		table.timestamps(true, true);
 	});
 };

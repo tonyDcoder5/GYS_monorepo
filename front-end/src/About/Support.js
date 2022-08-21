@@ -41,7 +41,7 @@ export default function Support() {
           <div className="row support-block">
             <h4>{prompt.title}</h4>
             <div className="col">
-              <img src={prompt.icon} alt={prompt.title} width={"75%"} />
+              <img src={prompt.icon} alt={prompt.title} width={"25%"} />
             </div>
             <div className="col">              
               <h6>Block {idx + 1}</h6>

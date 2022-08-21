@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     <div className="banner help-banner">
       <div className="banner-text">
-        <a href="resources">Tips & Resources</a>
+        <a href="resources">Tips & Contacts</a>
       </div>
       <div className="banner-links">
         In crisis? <a href="urgent-resources">Seek help.</a>
