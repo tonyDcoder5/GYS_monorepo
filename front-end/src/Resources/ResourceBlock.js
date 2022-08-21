@@ -35,8 +35,7 @@ export default function ResourceBlock() {
   }, []);
 
   return (
-    <div className="ResourceBlock">
-      <h4>ResourceBlock Section</h4>
+    <div>
       <UrgentSupport />
       <LocalSupport /> 
       <Downloadables />

@@ -46,10 +46,10 @@ export default function Blog() {
     <div className="blog">
       <h4>BLOG SECTION</h4>
       <div className="blog-block">
-        <h6>Block - Blog Section</h6>
+        <h6>Block - Top Blog Section</h6>
         <div className="top-blogs">
           <div>              
-            <Row xs={1} md={2} className="icon-group g-4">
+            <Row xs={1} sm={1} md={2} className="icon-group g-4">
               {blogs.map((blog, idx) => (
                 <Col key={idx}>
                     <h3>{blog.title}</h3>
@@ -59,6 +59,12 @@ export default function Blog() {
                 </Col>
               ))}
             </Row>
+          </div>
+        </div>
+        <h6>Most recent blogs</h6>
+        <div className="recent-blogs">
+          <div>              
+            Recent Blogs
           </div>
         </div>
       </div>

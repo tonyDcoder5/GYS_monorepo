@@ -6,13 +6,13 @@ export default function Mission() {
 
   return (
     <div className="mission-sect">
-      <div className="mission-vid">
+      <div className="flag-animation">
         <img src={flag} height="100%" width="100%" alt="Waving flag gif" />
         <p className="mt-5">
           Mission Video Section w/ statement *find overlay w/ tailwind?*
         </p>
       </div>
-      <div className="mission-stats">
+      <div className="mission-stats mt-4">
         <div className="mb-4 row">
           <span>Statistics headline</span>
         </div>

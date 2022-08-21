@@ -69,10 +69,11 @@ export default function LocalSupport() {
 
   return (
     <>
-      <h3>Local Support Section</h3>
       <div className="local-support-block">
-          <div className="col">              
-            <Row xs={1} md={2} className="icon-group g-4">
+        
+          <div className="col">
+            <h3>Local Support Section</h3>              
+            <Row xs={1} md={2} className="icon-group g-4 mt-2">
               {contacts.map((contact, idx) => (
                 <Col key={idx}>
                   <img onClick={()=> clickHandle(contact)} key={contact.id} src={contact.icon} width={contact.width} />
