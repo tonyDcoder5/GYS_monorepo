@@ -26,7 +26,7 @@ DESKTOP: 1920px X 1080px
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c3444;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -79,8 +79,8 @@ DESKTOP: 1920px X 1080px
 }
 
 .header {
-  background-color: #0e103db3;
-  color: #071013;
+  background-color: #0e103d;
+  color: #f1edee;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@ DESKTOP: 1920px X 1080px
 }
 
 .header-block div {
-  border: #071013 solid 2px;
+  border: #f1edee solid 2px;
   padding: 1em;
 }
 
@@ -115,14 +115,14 @@ DESKTOP: 1920px X 1080px
   background-color: #f1edee;
 }
 
-nav.navbar{
+nav.navbar {
   display: flex;
   justify-content: space-between;
   transition: 0.32 ease-in-out;
   text-align: center;
 }
 
-nav.navbar.scrolled{
+nav.navbar.scrolled {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -139,26 +139,27 @@ nav.navbar.scrolled{
   margin-right: 1em;
 }
 
-.header-nav button{
-  margin: .25em;
+.header-nav button {
+  margin: 0.25em;
 }
 
-.nav-links{
-  margin: .5em;
+.nav-links {
+  margin: 0.5em;
 }
 
 .support-btn {
-  border: #0e103d solid .25em;
+  border: #0e103d solid 0.25em;
   background-color: #b3001b;
 }
 
 .events-btn {
-  border: #0e103d solid .25em;
+  border: #0e103d solid 0.25em;
   background-color: #b3001b;
 }
 
 .mission-sect {
   margin-bottom: 1em;
+  color: #071013;
 }
 
 .mission-vid {
@@ -172,6 +173,7 @@ nav.navbar.scrolled{
 .mission-stats {
   border: 2px solid #0e103dcb;
   background-color: #f1edee;
+  color: #071013;
   padding: 2em;
   margin: 1rem;
 }
@@ -180,11 +182,13 @@ nav.navbar.scrolled{
   border: 2px solid #0e103dcb;
   padding: 2em;
   margin: 2em;
+  background-color: #5d737e;
 }
 
 .roadmap-sect {
   border: 2px solid #0e103dcb;
   padding: 1em;
+  background-color: #b3001b;
 }
 
 .roadmap-sect div {
@@ -198,21 +202,40 @@ nav.navbar.scrolled{
   padding: 1em;
 }
 
+.why-block {
+  border: 2px solid #0e103dcb;
+  padding: 2em;
+  margin: 2em;
+  background-color: #b3001b;
+}
+
+.why-block div {
+  border: 2px solid #071013;
+  padding: 1em;
+  text-align: center;
+}
+
+.values-block {
+  border: 2px solid #0e103d;
+  padding: 2em;
+  margin: 2em;
+  background-color: #0e103d;
+}
+
 .resources {
   border: 2px solid #0e103dcb;
   padding: 1em;
 }
 
 .resource-block {
-  border: 2px solid #b3001b;
+  border: 2px solid #0e103d;
   padding: 2em;
   margin: 2em;
-  background-color: #5d737e;
+  background-color: #b3001b;
   color: #f1edee;
 }
 
-
-.support-card-urgent{
+.support-card-urgent {
   padding: 1em;
 }
 
@@ -221,20 +244,20 @@ nav.navbar.scrolled{
   justify-content: space-between;
 }
 
-.local-support-block{
+.local-support-block {
   border: 2px solid #b3001b;
   padding: 2em;
   margin: 2em;
-  background-color: #5d737e;
+  background-color: #0e103d;
   color: #f1edee;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon-group{
+.icon-group {
   display: flex;
-  align-items: center;  
+  align-items: center;
   margin-left: 2em;
 }
 
@@ -244,8 +267,8 @@ nav.navbar.scrolled{
 }
 
 .downloadables-block {
-  border: 2px solid #5d737edc;
-  background-color: #5d737e;
+  border: 2px solid #0e103d;
+  background-color: #b3001b;
   padding: 2em;
   margin: 2em;
   text-align: center;
@@ -311,24 +334,40 @@ nav.navbar.scrolled{
   margin: 1em;
 }
 
-.top-blogs{
+.blog {
+  color: #071013;
+}
+
+.top-blogs {
   border: 2px solid #0e103dcb;
   background-color: #f1edee;
+  color: #071013;
   padding: 2em;
   margin: 1rem;
 }
 
-.blog-block{
+.blog-block {
   border: 2px solid #0e103dcb;
   padding: 2em;
   margin: 2em;
+  background-color: #0e103d;
+  color: #f1edee;
+}
+
+.support-block {
+  background-color: #b3001b;
+}
+
+.support-block div {
+  background-color: #f1edee;
+  color: #071013;
 }
 
 .footer {
   padding: 3em;
   text-align: center;
-  background-color: #071013c7;
-  border-top: #071013 solid .25em;
+  background-color: #f1edee84;
+  border-top: #071013 solid 0.25em;
 }
 
 .footer-nav {
