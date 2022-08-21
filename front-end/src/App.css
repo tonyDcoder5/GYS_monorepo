@@ -54,6 +54,7 @@ DESKTOP: 1920px X 1080px
 .body {
   background-color: #5d737e;
   color: #f1edee;
+  zoom: 90%;
 }
 
 .home-layout {
@@ -173,6 +174,36 @@ nav.navbar.scrolled {
   border-radius: 2em;
 }
 
+.not-found {
+  background-color: #b3001b;
+  color: #f1edee;
+  padding: 2em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #0e103d solid 0.25em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 1em 1em 2em #071013;
+}
+
+.error-block {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.error-block div {
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.error-block img{
+  border-radius: 7em;
+}
+
 /* HOME PAGE STYLES */
 
 .mission-sect {
@@ -189,6 +220,11 @@ nav.navbar.scrolled {
   background-color: #b3001b;
   border-radius: 2em;
   box-shadow: 1em 1em 2em #071013;
+}
+
+.flag-animation img{
+  border-radius: 5em;
+  box-shadow: 0 .5em 1em #f1edee;
 }
 
 .mission-stats {

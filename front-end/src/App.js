@@ -6,11 +6,10 @@ import HomeLayout from "./HomePage/HomeLayout";
 import AboutUs from "./About/AboutUs";
 import Resources from "./Resources/Layout";
 import Support from "./Support/Support";
-
+import NotFound from "./components/NotFound";
 import "./App.css";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
-
 import { listPrompts } from "./utils/api";
 import UrgentSupport from "./Resources/UrgentSupport";
 
@@ -46,6 +45,7 @@ export default function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/support" element={<Support />} />
             <Route path="/urgent-resources" element={<UrgentSupport/>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           </div>
         </div>

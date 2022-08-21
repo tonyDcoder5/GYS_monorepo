@@ -53,10 +53,10 @@ export default function NavBar() {
               <Nav.Link href="support">Blog</Nav.Link>
             </Nav>
               <button className="btn support-btn">
-                <Link to="support">Support</Link>
+                <Link to="urgent-resources">Support</Link>
               </button>
               <button className="btn events-btn">
-                <Link to="resources">Events</Link>
+                <Link to="about">Contact Us</Link>
               </button>
           </Navbar.Collapse>
           </div>
