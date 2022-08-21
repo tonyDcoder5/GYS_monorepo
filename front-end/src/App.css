@@ -50,7 +50,8 @@ DESKTOP: 1920px X 1080px
 }
 
 .body {
-  background-color: #f1edee;
+  background-color: #5d737e;
+  color: #f1edee;
 }
 
 .home-layout {
@@ -78,12 +79,13 @@ DESKTOP: 1920px X 1080px
 }
 
 .header {
-  background-color: #5d737edc;
-  padding: 1em;
+  background-color: #0e103db3;
+  color: #071013;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: #0e103d solid 0.5em;
+  border: #0e103d solid 0.25em;
 }
 
 .header-block {
@@ -108,17 +110,15 @@ DESKTOP: 1920px X 1080px
   display: flex;
   justify-content: space-between;
   transition: 0.32 ease-in-out;
-  background-color: #f1edee;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
-  margin: 1em;
+  background-color: #f1edee;
 }
 
 nav.navbar{
   display: flex;
   justify-content: space-between;
   transition: 0.32 ease-in-out;
-  background-color: #f1edee;
   text-align: center;
 }
 
@@ -130,7 +130,6 @@ nav.navbar.scrolled{
   top: 0;
   z-index: 9999;
   transition: 0.1 ease-in-out;
-  background-color: #5d737ec3;
   padding: 1em;
   text-align: center;
 }
@@ -222,6 +221,23 @@ nav.navbar.scrolled{
   justify-content: space-between;
 }
 
+.local-support-block{
+  border: 2px solid #b3001b;
+  padding: 2em;
+  margin: 2em;
+  background-color: #5d737e;
+  color: #f1edee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-group{
+  display: flex;
+  align-items: center;  
+  margin-left: 2em;
+}
+
 .downloadables {
   display: flex;
   justify-content: space-between;
@@ -295,9 +311,23 @@ nav.navbar.scrolled{
   margin: 1em;
 }
 
+.top-blogs{
+  border: 2px solid #0e103dcb;
+  background-color: #f1edee;
+  padding: 2em;
+  margin: 1rem;
+}
+
+.blog-block{
+  border: 2px solid #0e103dcb;
+  padding: 2em;
+  margin: 2em;
+}
+
 .footer {
   padding: 3em;
   text-align: center;
+  background-color: #071013c7;
   border-top: #071013 solid .25em;
 }
 

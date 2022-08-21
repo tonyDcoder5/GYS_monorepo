@@ -13,6 +13,7 @@ export default function LocalSupport() {
       contact: "Org Contact",
       contact_email: "sameple@sample.com",
       icon: require("../assets/img/GYS_logo.jpg"),
+      width: "50%",
     },
     {
       id: 1,
@@ -23,6 +24,7 @@ export default function LocalSupport() {
       contact: "Org Contact",
       contact_email: "sameple@sample.com",
       icon: require("../assets/img/GYS_logo.jpg"),
+      width: "50%",
     },
     {
       id: 2,
@@ -33,6 +35,7 @@ export default function LocalSupport() {
       contact: "Org Contact",
       contact_email: "sameple@sample.com",
       icon: require("../assets/img/GYS_logo.jpg"),
+      width: "50%",
     },
     {
       id: 3,
@@ -44,6 +47,7 @@ export default function LocalSupport() {
       contact: "Org Contact",
       contact_email: "sameple@sample.com",
       icon: require("../assets/img/GYS_logo.jpg"),
+      width: "50%",
     },
   ];
 
@@ -66,17 +70,12 @@ export default function LocalSupport() {
   return (
     <>
       <h3>Local Support Section</h3>
-      <div className="resource-block">
-        <h6>Block 2- Contact Section</h6>
-        <div className="row">
-          <div className="col">
-            <div className="row">
-              <p>Section Title</p>
-            </div>
-            <Row xs={1} md={2} className="g-4">
+      <div className="local-support-block">
+          <div className="col">              
+            <Row xs={1} md={2} className="icon-group g-4">
               {contacts.map((contact, idx) => (
                 <Col key={idx}>
-                  <img onClick={()=> clickHandle(contact)} key={contact.id} src={contact.icon} width="25%" />
+                  <img onClick={()=> clickHandle(contact)} key={contact.id} src={contact.icon} width={contact.width} />
                 </Col>
               ))}
             </Row>
@@ -93,7 +92,6 @@ export default function LocalSupport() {
             </Card>
           </div>
         </div>
-      </div>
     </>
   );
 }

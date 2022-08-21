@@ -1,14 +1,67 @@
 import React from "react";
-
+import { Row, Col } from "react-bootstrap";
 
 export default function Blog() {
 
-    return(
-        <div className="blog">
-            <div className="blog-layout p-5">
-            BLOG SECTION
-            </div>
-        </div>
+    const blogs = [
+        {
+            id: 0,
+            title: "sample 0",
+            subtitle: "test subtitle 0",
+            text: "sample body text 0",
+            url: "#",
+            date_posted: "2022-08-20"
 
-    )
+        },
+        {
+            id: 1,
+            title: "sample 1",
+            subtitle: "test subtitle 1",
+            text: "sample body text 1",
+            url: "#",
+            date_posted: "2022-08-20"
+
+        },
+        {
+            id: 2,
+            title: "sample 2",
+            subtitle: "test subtitle 2",
+            text: "sample body text 2",
+            url: "#",
+            date_posted: "2022-08-20"
+
+        },
+        {
+            id: 3,
+            title: "sample 3",
+            subtitle: "test subtitle 3",
+            text: "sample body text 3",
+            url: "#",
+            date_posted: "2022-08-20"
+
+        },
+    ]
+
+  return (
+    <div className="blog">
+      <h4>BLOG SECTION</h4>
+      <div className="blog-block">
+        <h6>Block - Blog Section</h6>
+        <div className="top-blogs">
+          <div>              
+            <Row xs={1} md={2} className="icon-group g-4">
+              {blogs.map((blog, idx) => (
+                <Col key={idx}>
+                    <h3>{blog.title}</h3>
+                    <p>{blog.subtitle}</p>
+                    <button>Read More</button>
+                    <p>{blog.date_posted}</p>
+                </Col>
+              ))}
+            </Row>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

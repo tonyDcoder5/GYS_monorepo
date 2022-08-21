@@ -6,8 +6,8 @@ import Events from "./Events";
 export default function Resources() {
   return (
     <div className="resources">
-    <ResourceBlock />   
-    <Events />
-  </div>
+      <Events />
+      <ResourceBlock />
+    </div>
   );
 }
