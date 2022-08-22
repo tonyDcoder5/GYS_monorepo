@@ -16,13 +16,13 @@ export default function NavBar() {
       } else {
         setScrolled(false);
       }
-    }
+    };
 
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
-  
+  }, []);
+
   useEffect(() => {
     const fetchResources = async () => {
       try {
@@ -38,29 +38,27 @@ export default function NavBar() {
 
   return (
     <div className="header-nav row">
-        <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-          <div>
-            <img src={logo} alt="GYS logo" />
-            <Navbar.Brand href="home">Golf Yankee Six</Navbar.Brand>
-          </div>
-          <div>
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+        <div>
+          <img src={logo} alt="GYS logo" />
+          {/* <Navbar.Brand href="home">Golf Yankee Six</Navbar.Brand> */}
+        </div>
+        <div className="nav-bar">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav"> 
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav-links">
               <Nav.Link href="home">Home</Nav.Link>
               <Nav.Link href="about">About</Nav.Link>
               <Nav.Link href="resources">Resources</Nav.Link>
               <Nav.Link href="support">Blog</Nav.Link>
-            </Nav>
-              <button className="btn support-btn">
-                <Link to="urgent-resources">Support</Link>
-              </button>
-              <button className="btn events-btn">
+              {/* REROUTE TO CONTACT Route */}
+              <button className="btn contact-btn">
                 <Link to="about">Contact Us</Link>
               </button>
+            </Nav>
           </Navbar.Collapse>
-          </div>
-        </Navbar>
-      </div>
+        </div>
+      </Navbar>
+    </div>
   );
 }

@@ -16,8 +16,8 @@
         "section_name": "header-block",
         "section_title": "Quarterly Sponsored Organization",
         "section_text": "Here we will highlight GYS's quarterly sponsered Veterans Organization that our proceeds will be helping support. Checkout our About page for past orgs and how to become our next partner!",
-        "sect_subtext": "sponsor_banner_text",
-        "sect_image": "../assets/img/GYS_logo.jpg",
-        "sect_video": null
+        "section_subtext": "sponsor_banner_text",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
     }
 ]

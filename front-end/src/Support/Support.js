@@ -7,9 +7,9 @@ import Shop from "./Shop";
 export default function Layout() {
   return (
     <div className="support">
-    <Downloadables />
-    <Blog />
-    <Shop />
-  </div>
+      <Shop />
+      <Blog />
+      <Downloadables />
+    </div>
   );
 }

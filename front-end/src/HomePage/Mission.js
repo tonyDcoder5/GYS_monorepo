@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Mission() {
+export default function Mission({prompts}) {
+  
   const flag = require("../assets/img/flag-gif.gif");
+  
+  const missionSubhead = prompts.find((prompt)=> prompt.section_name === "header-block");
 
   return (
-    <div className="mission-sect">
+    <div className="mission-sect" name="mission-sect" >
       <div className="flag-animation">
-        <img src={flag} height="100%" width="100%" alt="Waving flag gif" />
+        <img src={flag} alt="Waving flag gif" />
         <p className="mt-5">
-          Mission Video Section w/ statement *find overlay w/ tailwind?*
+          {missionSubhead?.section_text || "Loading..."}
         </p>
       </div>
       <div className="mission-stats mt-4">

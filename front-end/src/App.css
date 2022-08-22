@@ -52,7 +52,7 @@ DESKTOP: 1920px X 1080px
 }
 
 .body {
-  background-color: #5d737e;
+  background-color: #f1edee;
   color: #f1edee;
   zoom: 90%;
 }
@@ -65,30 +65,24 @@ DESKTOP: 1920px X 1080px
 .help-banner {
   background-color: #0e103d;
   color: #f1edee;
-  padding: 1em;
+  padding: 3em;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
+  font-size: 1.5em;
+  text-decoration: ;
 }
 
 .help-banner a {
-  color: #b3001b;
+  color: #5d737e;
   text-decoration: none;
 }
 
 .help-banner a:hover {
-  color: #b3001b41;
+  color: #f1edee;
   text-decoration: none;
 }
 
-
-.btn-support {
-  background-color: #b3001b;
-}
-
-.btn-subscribe {
-  background-color: #0e103d;
-}
 
 .header-nav {
   display: flex;
@@ -124,9 +118,9 @@ nav.navbar.scrolled {
 }
 
 .header-nav img {
-  width: 4em;
+  width: 5em;
   margin-right: 1em;
-  border-radius: 2em;
+  border-radius: 4em;
   box-shadow: 0 .25em 1em #0e103d;
 }
 
@@ -134,21 +128,15 @@ nav.navbar.scrolled {
   margin: 0.25em;
   border-radius: 2em;
   box-shadow: 0 .25em 1em #0e103d;
-
 }
 
 .nav-links {
   margin: 0.5em;
 }
 
-.support-btn {
-  border: #0e103d solid 0.25em;
-  background-color: #b3001b;
-}
-
-.events-btn {
-  border: #0e103d solid 0.25em;
-  background-color: #b3001b;
+.contact-btn {
+  border: #0e103d solid .25em;
+  background-color: #5d737e;
 }
 
 .header {
@@ -177,7 +165,7 @@ nav.navbar.scrolled {
 }
 
 .not-found {
-  background-color: #b3001b;
+  background-color: #5d737e;
   color: #f1edee;
   padding: 2em;
   margin: 1em;
@@ -216,10 +204,11 @@ nav.navbar.scrolled {
 .flag-animation {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 3em;
   border: #0e103d solid 2px;
-  background-color: #b3001b;
+  background-color: #5d737e;
   border-radius: 2em;
   box-shadow: 1em 1em 2em #071013;
 }
@@ -227,6 +216,7 @@ nav.navbar.scrolled {
 .flag-animation img{
   border-radius: 5em;
   box-shadow: 0 .5em 1em #f1edee87;
+  width: 80%;
 }
 
 .mission-stats {
@@ -253,7 +243,7 @@ nav.navbar.scrolled {
 .roadmap-sect {
   border: 2px solid #0e103d;
   padding: 1em;
-  background-color: #b3001b;
+  background-color: #5d737e;
   border-radius: 2em;
   box-shadow: 1em 1em 2em #071013;
 
@@ -284,7 +274,7 @@ nav.navbar.scrolled {
   margin: 1em;
   display: flex;
   justify-content: space-between;
-  background-color: #b3001b;
+  background-color: #5d737e;
   border-radius: 2em;
   box-shadow: 1em 1em 2em #071013;
 }
@@ -309,7 +299,7 @@ nav.navbar.scrolled {
 
 .support-block {
   border: 2px solid #0e103dcb;
-  background-color: #b3001b;
+  background-color: #5d737e;
   padding: 2em;
   margin: 2em;
   border-radius: 2em;
@@ -321,6 +311,7 @@ nav.navbar.scrolled {
 .support-block div {
   padding: 2em;
   border: 2px solid #0e103dcb;
+  background-color: #071013;
   text-align: center;
   margin: 1em;
   border-radius: 2em;
@@ -364,7 +355,7 @@ nav.navbar.scrolled {
   border: 2px solid #0e103d;
   padding: 2em;
   margin: 2em;
-  background-color: #b3001b;
+  background-color: #5d737e;
   color: #f1edee;
   border-radius: 2em;
   box-shadow: .5em .5em 2em #071013;
@@ -382,7 +373,7 @@ nav.navbar.scrolled {
 }
 
 .local-support-block {
-  border: 2px solid #b3001b;
+  border: 2px solid #5d737e;
   padding: 2em;
   margin: 2em;
   background-color: #0e103d;
@@ -412,7 +403,7 @@ nav.navbar.scrolled {
 
 .downloadables-block {
   border: 2px solid #0e103d;
-  background-color: #b3001b;
+  background-color: #5d737e;
   padding: 2em;
   margin: 2em;
   text-align: center;
@@ -484,7 +475,7 @@ nav.navbar.scrolled {
 
 .shop-block {
   border: 2px solid #0e103dcb;
-  background-color: #b3001b;
+  background-color: #5d737e;
   padding: 2em;
   margin: 2em;
   border-radius: 2em;
