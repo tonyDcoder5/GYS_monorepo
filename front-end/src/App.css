@@ -62,76 +62,124 @@ DESKTOP: 1920px X 1080px
   flex-direction: column;
 }
 
-.help-banner {
+.header-banner {
   background-color: #0e103d;
   color: #f1edee;
-  padding: 3em;
+  padding: 2.5em;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
-  font-size: 1.5em;
-  text-decoration: ;
+  align-items: center;
+  text-align: center;
 }
 
-.help-banner a {
+.header-banner a {
   color: #5d737e;
   text-decoration: none;
 }
 
-.help-banner a:hover {
+.header-banner a:hover {
   color: #f1edee;
   text-decoration: none;
 }
 
+.banner-brand{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-brand a{
+  text-decoration: none;
+  display: flex;
+}
+
+.brand-logo img{
+  width: 5em;
+  border-radius: 5em;
+}
+
+.brand-text {
+  margin-left: 1em
+}
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition: 0.3 ease-in-out;
   padding: 2em;
-  text-align: center;
   background-color: #f1edee9d;
   box-shadow: 0 .5em 1em #071013;
-  margin: auto;
 }
 
 nav.navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition: 0.32 ease-in-out;
-  text-align: center;
 }
 
 nav.navbar.scrolled {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
   top: 1em;
   z-index: 9999;
   transition: 0.5 ease;
-  padding: 1em;
+  padding: .5em;
   text-align: center;
-  background-color: #f1edee9a;
+  background-color: #5d737ed4;
   border-radius: 2em;
+  font-size: 1em;
   box-shadow: .5em .5em 1em #0e103d;
+}
+
+.scroll-brand{
+  display: flex;
+  align-items: center;
+  color: #0e103d;
+}
+
+.scroll-brand a{
+  text-decoration: none;
+  color: #0e103d;
+}
+
+
+.scroll-brand a:hover{
+  text-decoration: none;
+  color: #5d737e;
 }
 
 .header-nav img {
   width: 5em;
-  margin-right: 1em;
   border-radius: 4em;
   box-shadow: 0 .25em 1em #0e103d;
+  margin-right: .5em;
 }
 
 .header-nav button {
-  margin: 0.25em;
   border-radius: 2em;
   box-shadow: 0 .25em 1em #0e103d;
 }
 
+.header-nav button:hover {
+  background-color: #f1edee;
+}
+
 .nav-links {
-  margin: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0e103d;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #5d737e;
 }
 
 .contact-btn {
@@ -496,7 +544,7 @@ nav.navbar.scrolled {
   padding: 3em;
   margin-top: 2em;
   text-align: center;
-  background-color: #f1edee84;
+  background-color: #0e103d;
   border-top: #071013 solid 0.25em;
 }
 
@@ -504,6 +552,16 @@ nav.navbar.scrolled {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.footer-nav a{
+  color: #5d737e;
+  text-decoration: none;
+}
+
+.footer-nav a:hover{
+  color: #f1edee;
+  text-decoration: none;
 }
 
 .footer-nav img {

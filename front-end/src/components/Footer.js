@@ -15,8 +15,8 @@ export default function Footer() {
           <h5>Golf Yankee Six</h5>
           </a>
         </section>
-        <span><Link to="/resources">Events</Link></span>
-        <span><Link to="/resources">Contacts</Link></span>
+        <span><Link to="/events">Events</Link></span>
+        <span><Link to="/contact">Contact Us</Link></span>
         {/* admin page link */}
         <span>USERS</span>
       </div>

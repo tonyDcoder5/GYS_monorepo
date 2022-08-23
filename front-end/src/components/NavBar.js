@@ -39,10 +39,12 @@ export default function NavBar() {
   return (
     <div className="header-nav row">
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <div>
-          <img src={logo} alt="GYS logo" />
-          {/* <Navbar.Brand href="home">Golf Yankee Six</Navbar.Brand> */}
-        </div>
+        {scrolled ? 
+        <div className="scroll-brand">
+          <a href="home"><img src={logo} alt="GYS logo" /></a>
+          <a href="home"><h3>Golf Yankee Six</h3></a>
+        </div> : null
+        }
         <div className="nav-bar">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -51,9 +53,9 @@ export default function NavBar() {
               <Nav.Link href="about">About</Nav.Link>
               <Nav.Link href="resources">Resources</Nav.Link>
               <Nav.Link href="support">Blog</Nav.Link>
-              {/* REROUTE TO CONTACT Route */}
+              <Nav.Link href="events">Events</Nav.Link>
               <button className="btn contact-btn">
-                <Link to="about">Contact Us</Link>
+                <Link to="contact">Contact Us</Link>
               </button>
             </Nav>
           </Navbar.Collapse>
