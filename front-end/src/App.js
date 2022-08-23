@@ -1,10 +1,11 @@
 import React, {useState,useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
 import AboutUs from "./About/AboutUs";
-import Resources from "./Resources/Layout";
+import Resources from "./Resources/Resources";
 import Support from "./Support/Support";
 import NotFound from "./components/NotFound";
 import Contact from "./Support/Contact";
@@ -38,7 +39,6 @@ export default function App() {
       <div className="body">
         <Banner />
         <NavBar />
-        <div>
           <div>
           {/* <Header /> */}
           <Routes>
@@ -52,7 +52,6 @@ export default function App() {
             <Route path="/urgent-resources" element={<UrgentSupport/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          </div>
         </div>
         <Footer />
       </div>

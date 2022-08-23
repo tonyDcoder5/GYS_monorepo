@@ -30,9 +30,9 @@ export default function Footer() {
         <span>YT?</span>
       </div>
       <div className="footer-copy">
-        <p>Built by Straw Hat Media Agency</p>
+        <p>Designed by Straw Hat Media Agency</p>
         <p>With collaborations from: TonyDCoder, NR-Papaya</p>
-        <p>Built using ReactJS, Bootstrap, & Tailwind CSS</p>
+        <p>Built using ReactJS, Bootstrap, & CSS</p>
       </div>
     </div>
   );

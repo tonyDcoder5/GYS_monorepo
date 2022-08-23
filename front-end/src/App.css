@@ -104,17 +104,18 @@ DESKTOP: 1920px X 1080px
 }
 
 .header-nav {
-  display: flex;
-  justify-content: space-evenly;
   transition: 0.3 ease-in-out;
-  padding: 2em;
+  padding: .5em;
   background-color: #f1edee9d;
   box-shadow: 0 .5em 1em #071013;
 }
 
 nav.navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center;
+  font-size: 1.25em;
   transition: 0.32 ease-in-out;
 }
 
@@ -122,8 +123,9 @@ nav.navbar.scrolled {
   position: fixed;
   display: flex;
   justify-content: space-around;
-  width: 90%;
-  top: 1em;
+  width: 95%;
+  top: .1em;
+  margin: 1em;
   z-index: 9999;
   transition: 0.5 ease;
   padding: .5em;
@@ -159,6 +161,7 @@ nav.navbar.scrolled {
 }
 
 .header-nav button {
+  font-size: 1em;
   border-radius: 2em;
   box-shadow: 0 .25em 1em #0e103d;
 }
@@ -167,9 +170,8 @@ nav.navbar.scrolled {
   background-color: #f1edee;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
+.nav-link{
+  margin-top: .25em;
 }
 
 .nav-links a {
@@ -364,6 +366,22 @@ nav.navbar.scrolled {
   margin: 1em;
   border-radius: 2em;
   box-shadow: 0 .1em 1em #f1edee;
+}
+
+.support-card{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: #5d737e solid .25em;
+  padding: 1em;
+  border-radius: 2em;
+  box-shadow: 0 .25em .75em #f1edee;
+}
+
+.support-btns-urgent {
+display: flex;
+justify-content: space-between;
 }
 
 /* RESOURCES PAGE STYLES */

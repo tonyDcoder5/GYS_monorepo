@@ -38,14 +38,14 @@ export default function NavBar() {
 
   return (
     <div className="header-nav row">
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="sm" className={scrolled ? "scrolled" : ""}>
         {scrolled ? 
         <div className="scroll-brand">
           <a href="home"><img src={logo} alt="GYS logo" /></a>
           <a href="home"><h3>Golf Yankee Six</h3></a>
         </div> : null
         }
-        <div className="nav-bar">
+        <span className="nav-bar">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav-links">
@@ -59,7 +59,7 @@ export default function NavBar() {
               </button>
             </Nav>
           </Navbar.Collapse>
-        </div>
+        </span>
       </Navbar>
     </div>
   );
