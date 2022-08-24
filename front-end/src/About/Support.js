@@ -41,14 +41,15 @@ export default function Support() {
       {prompts.map((prompt, idx) => (
           <Col key={prompt.id}>
             <Card className="bg-dark support-card">
-              <Card.Body>
-                <img src={prompt.icon} width={"25%"} alt={prompt.title + "icon"} />
+                <img src={prompt.icon} width={"50%"} alt={prompt.title + "icon"} />
+                <p>
+                  Brief description how to support GYS (Events, Social Media, Partnered Resources, Merch)
+                </p>
                   <button className="btn btn-secondary">
                     <a href={prompt.url} target="_blank">
-                      Website
+                      Link
                     </a>
                   </button>
-              </Card.Body>
             </Card>
           </Col>
         ))}   

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Mission from "./Mission";
 import Roadmap from "./Roadmap";
-import Events from "../Resources/Events"
+import Events from "../Support/Events"
 
 export default function HomeLayout({prompts = []}) {
 

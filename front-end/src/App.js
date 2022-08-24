@@ -14,7 +14,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import { listPrompts } from "./utils/api";
 import UrgentSupport from "./Resources/UrgentSupport";
-import Events from "./Resources/Events";
+import Events from "./Support/Events";
 
 export default function App() {
   const [prompts,setPrompts] = useState([]);
