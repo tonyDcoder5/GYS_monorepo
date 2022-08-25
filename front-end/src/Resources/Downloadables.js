@@ -23,25 +23,27 @@ export default function Downloadables() {
   ];
 
   const display = downloads.map((download, idx) => {
-    return (<div className="col" key={idx}>
-      <img
-        className="download-img m-3"
-        src={download.icon}
-        alt={download.title}
-        width={download.width}
-        onClick={() => {
-          window.open(download.url);
-        }}
-      />
-      <h3>{download.title}</h3>
-      <p>{download.desc}</p>
-    </div>);
-  })
+    return (
+      <div className="col download" key={idx}>
+        <img
+          className="download-img m-3"
+          src={download.icon}
+          alt={download.title}
+          width={download.width}
+          onClick={() => {
+            window.open(download.url);
+          }}
+        />
+        <h3>{download.title}</h3>
+        <p>{download.desc}</p>
+      </div>
+    );
+  });
 
   return (
     <div>
-      <h4>Downloadables Section</h4>
       <div className="row downloadables-block text-white">
+        <h4>Downloadables</h4>
         {display}
       </div>
     </div>
