@@ -12,6 +12,12 @@ const API_BASE_URL =
 const headers = new Headers();
 headers.append("Content-Type", "application/json");
 
+const dateFormat = /\d\d\d\d-\d\d-\d\d/;
+
+export function formatAsDate(dateString) {
+	return dateString.match(dateFormat)[0];
+  }
+
 async function fetchJson(url, options, onCancel) {
 	try {
 		const response = await fetch(url, options);
@@ -52,5 +58,10 @@ export async function listPosts(signal) {
 
 export async function listPrompts(signal) {
 	const url = new URL(`${API_BASE_URL}/prompts`);
+	return await fetchJson(url, { headers, signal }, []);
+}
+
+export async function listEvents(signal) {
+	const url = new URL(`${API_BASE_URL}/events`);
 	return await fetchJson(url, { headers, signal }, []);
 }

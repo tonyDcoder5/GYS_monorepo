@@ -11,6 +11,7 @@ exports.up = function(knex) {
             .inTable("users")
             .onDelete("cascade");
 		table.string("event_name").notNullable();
+		table.date("event_date").notNullable();
 		table.string("event_title",1000).notNullable();
 		table.string("event_text",5000).notNullable();
 		table.string("event_subtext", 5000).nullable();

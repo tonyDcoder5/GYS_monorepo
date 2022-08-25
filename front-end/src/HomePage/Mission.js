@@ -7,6 +7,8 @@ export default function Mission({prompts}) {
   
   const missionSubhead = prompts.find((prompt)=> prompt.section_name === "header-block");
 
+  console.log(missionSubhead)
+
   return (
     <div className="mission-sect" name="mission-sect" >
       <div className="flag-animation">
