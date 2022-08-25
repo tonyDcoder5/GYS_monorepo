@@ -15,6 +15,7 @@ import Banner from "./components/Banner";
 import { listPrompts } from "./utils/api";
 import UrgentSupport from "./Resources/UrgentSupport";
 import Events from "./Support/Events";
+import BlogPage from "./Support/BlogPage";
 
 export default function App() {
   const [prompts,setPrompts] = useState([]);
@@ -48,6 +49,7 @@ export default function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/events" element={<Events />} />
             <Route path="/support" element={<Support />} />
+            <Route exact path="/blog/:blog_id" element={<BlogPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/urgent-resources" element={<UrgentSupport/>} />
             <Route path="*" element={<NotFound />} />

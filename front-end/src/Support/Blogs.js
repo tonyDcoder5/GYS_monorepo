@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 
-export default function Blog() {
+export default function Blogs() {
 
     const blogs = [
         {
@@ -44,17 +44,17 @@ export default function Blog() {
 
   return (
     <div className="blog">
-      <h4>BLOG SECTION</h4>
+      <h4>BLOGS SECTION</h4>
       <div className="blog-block">
         <h6>Block - Top Blog Section</h6>
         <div className="top-blogs">
           <div>              
-            <Row xs={1} sm={1} md={2} className="icon-group g-4">
+            <Row xs={1} sm={2} md={2} className="icon-group g-4">
               {blogs.map((blog, idx) => (
                 <Col key={idx}>
                     <h3>{blog.title}</h3>
                     <p>{blog.subtitle}</p>
-                    <button>Read More</button>
+                    <button><a href={`blog/${blog.id}`}>Read More</a></button>
                     <p>{blog.date_posted}</p>
                 </Col>
               ))}

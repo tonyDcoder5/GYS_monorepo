@@ -405,28 +405,36 @@ justify-content: space-between;
 .events {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: #071013;
-  background-color: #f1edee;
+  background-color: #5d737e;
   border: 2px solid #0e103d;
-  padding: 2em;
-  margin: 1em;
-  border-radius: 2em;
+  padding: 3em;
+  margin: 3em;
+  border-radius: 1em;
   box-shadow: .1em .1em 1em #071013;
 }
 
-.event-calendar {
-  border: 2px dotted #b3001b;
-  padding: 1em;
-  background-color: #0e103d;
-  color: #f1edee;
-}
-
 .events-block {
-  border: 2px solid #0e103dcb;
+  border: .1em solid #f1edee;
   padding: 3em;
   margin: 1em;
+  color: #f1edee;
+  background-color: #0e103d;
+  border-radius: 2em;
+  box-shadow: .5em .5em 2em #071013;
+
+}
+
+.agenda-block {
+  border: .25em solid #5d737e;
+  padding: 2em;
+  margin: 1em;
+  color: #071013;
+  background-color: #f1edee;
+  border-radius: 1em;
 }
 
 .resource-block {
@@ -497,7 +505,7 @@ justify-content: space-between;
 }
 
 .downloadables-block .col {
-  border: 2px dotted #f1edee;
+  border: 2px dotted #5d737e;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;

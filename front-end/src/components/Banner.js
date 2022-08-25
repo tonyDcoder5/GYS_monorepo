@@ -17,7 +17,7 @@ export default function Banner() {
         </div>
       </div>
       <div className="banner-link">
-        <h4>Veterans Mental Health Advocacys</h4>
+        <h4>Veterans Mental Health Advocacy</h4>
         <h6>Emergency?</h6>
         <h4>
           Call the National Crisis Hotline: <a href="https://988lifeline.org/" target="_blank">Dial 988</a>

@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function Support() {
+export default function AboutSupport() {
   const prompts = [
     {
       id: 0,
@@ -35,7 +35,7 @@ export default function Support() {
   ];
 
   return (
-    <div className="support">
+    <div className="about-support">
       <h4>Support Section</h4>
       <Row xs={1} sm={2} className="g-4">
       {prompts.map((prompt, idx) => (

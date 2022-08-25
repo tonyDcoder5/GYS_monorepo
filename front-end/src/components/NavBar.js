@@ -41,21 +41,21 @@ export default function NavBar() {
       <Navbar expand="sm" className={scrolled ? "scrolled" : ""}>
         {scrolled ? 
         <div className="scroll-brand">
-          <a href="home"><img src={logo} alt="GYS logo" /></a>
-          <a href="home"><h3>Golf Yankee Six</h3></a>
+          <a href="/home"><img src={logo} alt="GYS logo" /></a>
+          <a href="/home"><h3>Golf Yankee Six</h3></a>
         </div> : null
         }
         <span className="nav-bar">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav-links">
-              <Nav.Link href="home">Home</Nav.Link>
-              <Nav.Link href="about">About</Nav.Link>
-              <Nav.Link href="resources">Resources</Nav.Link>
-              <Nav.Link href="support">Blog</Nav.Link>
-              <Nav.Link href="events">Events</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/resources">Resources</Nav.Link>
+              <Nav.Link href="/support">Blog</Nav.Link>
+              <Nav.Link href="/events">Events</Nav.Link>
               <button className="btn contact-btn">
-                <Link to="contact">Contact Us</Link>
+                <Link to="/contact">Contact Us</Link>
               </button>
             </Nav>
           </Navbar.Collapse>
