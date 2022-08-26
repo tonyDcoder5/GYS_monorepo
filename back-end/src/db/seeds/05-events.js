@@ -8,6 +8,6 @@
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
 	return knex
-		.raw("TRUNCATE TABLE prompts RESTART IDENTITY CASCADE")
+		.raw("TRUNCATE TABLE events RESTART IDENTITY CASCADE")
 		.then(() => knex("events").insert(data));
 };
