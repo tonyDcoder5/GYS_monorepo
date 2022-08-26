@@ -5,9 +5,8 @@ export default function Mission({prompts}) {
   
   const flag = require("../assets/img/flag-gif.gif");
   
+  //TODO: create api call for specific prompts at each component for easier rendering
   const missionSubhead = prompts.find((prompt)=> prompt.section_name === "header-block");
-
-  console.log(missionSubhead)
 
   return (
     <div className="mission-sect" name="mission-sect" >

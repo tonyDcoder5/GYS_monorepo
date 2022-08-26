@@ -55,6 +55,10 @@ DESKTOP: 1920px X 1080px
   background-color: #f1edee;
   color: #f1edee;
   zoom: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+  line-height: 1em;
+
 }
 
 .home-layout {
@@ -175,7 +179,7 @@ nav.navbar.scrolled {
 }
 
 .nav-link{
-  margin-top: .25em;
+  margin-top: .5em;
 }
 
 .nav-links a {
@@ -448,7 +452,6 @@ justify-content: space-between;
   border: .25em solid #5d737e;
   padding: 1em;
   border-radius: 2em;
-  box-shadow: 0 0 2em #071013;
 }
 
 .resource-block {

@@ -12,10 +12,12 @@ const API_BASE_URL =
 const headers = new Headers();
 headers.append("Content-Type", "application/json");
 
-const dateFormat = /\d\d\d\d-\d\d-\d\d/;
+const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
 
 export function formatAsDate(dateString) {
-	return dateString.match(dateFormat)[0];
+	let date = new Date(dateString).toLocaleDateString(options);
+	
+	return date;
   }
 
 async function fetchJson(url, options, onCancel) {
