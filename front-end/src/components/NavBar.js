@@ -42,7 +42,7 @@ export default function NavBar() {
         {scrolled ? 
         <div className="scroll-brand">
           <a href="/home"><img src={logo} alt="GYS logo" /></a>
-          <a href="/home"><h3>Golf Yankee Six</h3></a>
+          <a href="/home"><h3 className="m-2">Golf Yankee Six</h3></a>
         </div> : null
         }
         <span className="nav-bar">
@@ -55,7 +55,7 @@ export default function NavBar() {
               <Nav.Link href="/support">Blog</Nav.Link>
               <Nav.Link href="/events">Events</Nav.Link>
               <button className="btn contact-btn">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact"><b>Contact Us</b></Link>
               </button>
             </Nav>
           </Navbar.Collapse>

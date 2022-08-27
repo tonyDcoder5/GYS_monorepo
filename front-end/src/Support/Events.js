@@ -13,7 +13,6 @@ export default function Events() {
       try {
         const abortController = new AbortController();
         const response = await listEvents(abortController.signal);        
-        console.log(response);
         setEvents(response);
 
       } catch (error) {
@@ -31,7 +30,7 @@ export default function Events() {
         <h4>Upcoming Events:</h4>
         <span>Today: {date}</span>
         <div className="col events-block">
-          {events.map((event, idx) => (
+          {events.length > 0 ? events.map((event, idx) => (
             <div className="agenda-block" key={event.event_id}>
               <div className="col m-2">
               <img src={require("../assets/img/GYS_logo.jpg")} width="40%" />
@@ -42,7 +41,10 @@ export default function Events() {
               <p>{event.event_text}</p>
               </div>              
             </div>
-          ))}
+          )) : 
+          <div className="agenda-block">
+          <h3>Loading...</h3></div>
+          }
           <h4 className="mt-3">
             Follow us on <a href="https://www.facebook.com/">Facebook</a> for
             more updates!

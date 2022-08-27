@@ -6,7 +6,6 @@ import Values from "./Values";
 export default function AboutUs() {
   return (
     <div className="about">
-      <h3>About Us Section</h3>
       <Values />
       <SupportGYS />
     </div>

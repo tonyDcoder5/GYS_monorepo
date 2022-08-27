@@ -13,7 +13,7 @@ export default function Footer() {
         <section>
           <a href="/home">
           <img src={logo} alt="GYS logo" />
-          <h3>Golf Yankee Six</h3>
+          <h3><b>Golf Yankee Six</b></h3>
           <h6>Veterans Mental Health Advocacy</h6>
           <h4>We Got Your Back</h4>
           </a>
@@ -21,7 +21,7 @@ export default function Footer() {
         <span><Link to="/events">Events</Link></span>
         <span><Link to="/contact">Contact</Link></span>
         {/* admin page link */}
-        <span>USERS</span>
+        <span>Admin</span>
       </div>
       <div className="row mt-3">
         <hr />

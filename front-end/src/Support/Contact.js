@@ -32,12 +32,16 @@ export default function Contact() {
           setSentNotice({message: error.text});
         }
       );
+
+      setTimeout(() => {
+        setSentNotice(null)
+      }, 5000);
   };
 
   return (
     <div className="contact" id="contact">
       {sentNotice && 
-      <div>
+      <div className="send-notice">
         <h2>{sentNotice.message}</h2>
         </div>}
       <div className="contact-bx">
@@ -57,21 +61,22 @@ export default function Contact() {
         </Row>
         <Row>
           <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label htmlFor="emailInput">Email</Form.Label>
             <Form.Control
               type="email"
-              name="user_email"
+              id="emailInput"
               placeholder="Enter email"
+              name="user_email"
             />
           </Form.Group>
         </Row>
         <Row>
           <Form.Group as={Col} controlId="formGridMessage">
-            <Form.Label>Message</Form.Label>
-            <Form.Control type="text" name="message" />
+            <Form.Label htmlFor="messageInput" >Message</Form.Label>
+            <Form.Control id="messageInput" type="text" name="message" />
           </Form.Group>
         </Row>
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" name="contact-send-btn">
           Send
         </Button>
       </Form>
