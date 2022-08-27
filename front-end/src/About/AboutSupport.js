@@ -34,9 +34,10 @@ export default function AboutSupport() {
     },
   ];
 
+
+
   return (
     <div className="about-support">
-      <h4>Support Section</h4>
       <Row xs={1} sm={2} className="g-4">
       {prompts.map((prompt, idx) => (
           <Col key={prompt.id}>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Row, Col} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const logo = require("../assets/img/GYS_logo.jpg");
 
@@ -50,16 +50,35 @@ export default function Values() {
     },
   ];
 
+  const i = {
+    image: "../assets/img/GYS_logo.jpg",
+    name: "why-block",
+    title: "",
+    bio: "",
+    link: "",
+  };
+
   return (
-    <div>
+    <div className="about-us">
+      <div className="row why-block">
+        <h2>Why GYS?</h2>
+        <div className="why-row">
+          <img src={i.image} width={"25%"} alt="headshot image" />
+          <section className="why-text">
+            <h4>{i.name}</h4>
+            <h6>{i.title}</h6>
+            <p>{i.bio}</p>
+            <a href={i.link}>LinkedIn</a>
+          </section>
+        </div>
+      </div>
       <div className="row who-block">
         <h2>Who are we?</h2>
-
+        <div>
         {team ? (
           team.map((i) => {
             return (
-              <div className="who-row">
-                {" "}
+              <div className="who-col">
                 <img src={i.image} width={"25%"} alt="headshot image" />
                 <section className="who-text">
                   <h4>{i.name}</h4>
@@ -71,27 +90,27 @@ export default function Values() {
             );
           })
         ) : (
-          <div className="who-row">
+          <div className="who-col">
             <h3>Loading ...</h3>
           </div>
         )}
+        </div>
       </div>
       <div className="values-block">
         <h3>Our Values at GYS:</h3>
         <Row className="g-4">
-            {values ? (
-              values.map((value) => {
-                return (
-                  <Col key={value.id}>
-                    <h3>{value.title}</h3>
-                    <p>{value.subtitle}</p>
-                    <a href={value.link}>Link</a>
-                  </Col>
-                );
-              })
-            ) : (
-              <div className="value-block">Loading...</div>
-            )}
+          {values ? (
+            values.map((value) => {
+              return (
+                <Col key={value.id}>
+                  <h3>{value.title}</h3>
+                  <p>{value.subtitle}</p>
+                </Col>
+              );
+            })
+          ) : (
+            <div className="value-block">Loading...</div>
+          )}
         </Row>
       </div>
     </div>

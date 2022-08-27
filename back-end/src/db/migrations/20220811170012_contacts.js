@@ -14,7 +14,7 @@ exports.up = function (knex) {
 		table.string("contact_desc", 1000);
 		table.string("mobile_number").notNullable();
 		table.string("email_address").notNullable();
-		table.string
+		table.string("contact_level");
 		table.timestamps(true, true);
 	});
 };
