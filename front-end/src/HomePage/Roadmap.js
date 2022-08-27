@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function Roadmap() {
+export default function Roadmap({ prompts }) {
+
+  const roadmapPrompts = [...prompts];
+
   return (
     <div className="roadmap-sect m-3">
       <div className="row roadmap-block">

@@ -91,7 +91,7 @@ export default function Blogs() {
                 <Col className="top-blog" key={idx}>
                     <h3><a href={`blog/${blog.id}`}>{blog.title}</a></h3>
                     <h6>{blog.subtitle}</h6>
-                    <button><a href={`blog/${blog.id}`}>Read More</a></button>
+                    <a href={`blog/${blog.id}`}><button>Read More</button></a>
                     <p>{blog.date_posted}</p>
                 </Col>
               ))}

@@ -1,10 +1,17 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 const logo = require("../assets/img/GYS_logo.jpg")
 
 export default function BlogPage() {
 
+  const history = useNavigate();
+
   return (
-    <div className="blog">
+    <div className="blog">     
+    <button className="btn btn-secondary" onClick={()=>{
+      history('/blog')
+    }}>Back</button>
+      
       <div className="blog-header">
         <h3>Block - Blog Header & Media</h3>
             <img src={logo} width="25%" alt="GYS logo/Home Button" />

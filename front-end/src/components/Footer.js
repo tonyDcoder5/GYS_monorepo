@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-nav">
         <span><Link to="/about">About</Link></span>
-        <span><Link to="/support">Blog</Link></span>        
+        <span><Link to="/blog">Blog</Link></span>        
         <span><Link to="/resources">Resources</Link></span>
         <section>
           <a href="/home">

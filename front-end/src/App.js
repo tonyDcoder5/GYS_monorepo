@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
 import AboutUs from "./About/AboutUs";
 import Resources from "./Resources/Resources";
-import Support from "./BlogLayout/BlogLayout";
+import BlogLayout from "./BlogLayout/BlogLayout";
 import NotFound from "./components/NotFound";
 import Contact from "./BlogLayout/Contact";
 import "./App.css";
@@ -48,7 +48,7 @@ export default function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/support" element={<Support />} />
+            <Route exact path="/blog" element={<BlogLayout />} />
             <Route exact path="/blog/:blog_id" element={<BlogPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/urgent-resources" element={<UrgentSupport/>} />

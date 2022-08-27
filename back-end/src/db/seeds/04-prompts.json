@@ -13,10 +13,82 @@
     },
     {
         "user_id": 1,
-        "section_name": "header-block",
-        "section_title": "Quarterly Sponsored Organization",
-        "section_text": "Here we will highlight GYS's quarterly sponsered Veterans Organization that our proceeds will be helping support. Checkout our About page for past orgs and how to become our next partner!",
-        "section_subtext": "sponsor_banner_text",
+        "section_name": "mission-sect",
+        "section_title": "GYS has our Heroes Backs",
+        "section_text": "Our mission begins, when they get home from theirs",
+        "section_subtext": "mission-sect-header",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "mission-stats-1",
+        "section_title": "Back End Stats 1",
+        "section_text": "Back End Stats 1 Text",
+        "section_subtext": "mission-stats-1",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "mission-stats-2",
+        "section_title": "Back End Stats 2",
+        "section_text": "Back End Stats 2 Text",
+        "section_subtext": "mission-stats-2",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "mission-stats-3",
+        "section_title": "Back End Stats 3",
+        "section_text": "Back End Stats 3 Text",
+        "section_subtext": "mission-stats-3",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "mission-stats-4",
+        "section_title": "Back End Stats 4",
+        "section_text": "Back End Stats 4 Text",
+        "section_subtext": "mission-stats-4",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "roadmap-sect-header",
+        "section_title": "The GYS Roadmap",
+        "section_text": "GYS is here to serve our service members by supporting them, their familys, & friends",
+        "section_subtext": "mission-sect-header",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "roadmap-block-1",
+        "section_title": "Block 1 Title",
+        "section_text": "Block 1 test",
+        "section_subtext": "roadmap-block-1",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "roadmap-block-2",
+        "section_title": "Block 2 Title",
+        "section_text": "Block 2 test",
+        "section_subtext": "roadmap-block-2",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "roadmap-block-3",
+        "section_title": "Block 3 Title",
+        "section_text": "Block 3 test",
+        "section_subtext": "roadmap-block-3",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
     }

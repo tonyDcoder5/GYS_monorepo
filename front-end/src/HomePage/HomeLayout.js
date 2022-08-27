@@ -6,15 +6,15 @@ import Events from "../BlogLayout/Events"
 
 export default function HomeLayout({prompts = []}) {
 
-    const missionPrompts = prompts.filter((prompt)=> prompt.section_name.includes("header"));
+    const missionPrompts = prompts.filter((prompt)=> prompt.section_name.includes("mission"));
 
-    const roadmapPrompts = prompts.filter((prompt)=> prompt.section_name.includes("header"));
+    const roadmapPrompts = prompts.filter((prompt)=> prompt.section_name.includes("roadmap"));
 
     return(
         <div className="home">
             <div className="home-layout">
             <Mission prompts={missionPrompts} />
-            <Roadmap />
+            <Roadmap prompts={roadmapPrompts} />
             <Events />
             </div>
         </div>
