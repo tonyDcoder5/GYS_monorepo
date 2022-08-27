@@ -30,9 +30,9 @@ export default function Mission({ prompts }) {
           {missionContent?.section_text || null}
         </span>
       </div>
-      <div className="mission-stats mt-4">
+      <div className="mission-stats">
           <h3>Statistics headline</h3>
-          <Row className="g-4">
+          <Row className="mt-2 g-4">
         {statsContent ? (
           statsContent.map((stat) => {
             return (

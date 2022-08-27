@@ -52,11 +52,9 @@ export default function NavBar() {
               <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/resources">Resources</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
+              <Nav.Link href="/blog">FAQ</Nav.Link>
               <Nav.Link href="/events">Events</Nav.Link>
-              <button className="btn contact-btn">
-                <Link to="/contact"><b>Contact Us</b></Link>
-              </button>
+              <Nav.Link href="/contact"><b>Contact Us</b></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </span>

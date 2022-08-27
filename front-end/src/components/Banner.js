@@ -13,15 +13,15 @@ export default function Banner() {
         </div>
         <div className="brand-text">
           <a href="home"><h1><b>Golf Yankee Six</b></h1></a>
-          <h4>We Got Your Back</h4>
+          <h4><b>Veterans Mental Health Matters</b></h4>
         </div>
       </div>
       <div className="banner-link">
-        <h4><b>Veterans Mental Health Advocacy</b></h4>
         <h6><b>Emergency?</b></h6>
         <h4>
-          Call the National Crisis Hotline: <a href="https://988lifeline.org/" target="_blank"><b>Dial 988</b></a>
+          Call the National Crisis Hotline: 
         </h4>
+        <h5><a href="https://988lifeline.org/" target="_blank"><b>Dial 988</b></a></h5>
       </div>
     </div>
   );
