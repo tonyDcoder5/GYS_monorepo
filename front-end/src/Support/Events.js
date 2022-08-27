@@ -45,11 +45,12 @@ export default function Events() {
           <div className="agenda-block">
           <h3>Loading...</h3></div>
           }
-          <h4 className="mt-3">
+         
+        </div>
+        <h4 className="mt-3">
             Follow us on <a href="https://www.facebook.com/">Facebook</a> for
             more updates!
           </h4>
-        </div>
       </div>
     </div>
   );

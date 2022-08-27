@@ -514,12 +514,14 @@ nav.navbar.scrolled .nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
+  padding: 2em;
   margin: 1em;
   color: #f1edee;
   background-color: #0e103d;
   border-radius: 2em;
   box-shadow: 0.5em 0.5em 2em #071013;
+  overflow-y: scroll;
+  height: 25em;
 }
 
 .agenda-block {
