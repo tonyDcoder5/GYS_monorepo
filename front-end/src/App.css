@@ -691,7 +691,7 @@ nav.navbar.scrolled .nav-links {
 
 /* BLOG PAGE STYLES */
 
-.support {
+.blog-layout {
   display: flex;
   flex-direction: column;
 }

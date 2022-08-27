@@ -4,9 +4,9 @@ import Downloadables from "../Resources/Downloadables";
 import Blogs from "./Blogs";
 import Shop from "./Shop";
 
-export default function Layout() {
+export default function BlogLayout() {
   return (
-    <div className="support">
+    <div className="blog-layout">
       <Shop />
       <Blogs />
       <Downloadables />

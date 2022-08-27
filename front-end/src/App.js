@@ -6,16 +6,16 @@ import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
 import AboutUs from "./About/AboutUs";
 import Resources from "./Resources/Resources";
-import Support from "./Support/Support";
+import Support from "./BlogLayout/BlogLayout";
 import NotFound from "./components/NotFound";
-import Contact from "./Support/Contact";
+import Contact from "./BlogLayout/Contact";
 import "./App.css";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import { listPrompts } from "./utils/api";
 import UrgentSupport from "./Resources/UrgentSupport";
-import Events from "./Support/Events";
-import BlogPage from "./Support/BlogPage";
+import Events from "./BlogLayout/Events";
+import BlogPage from "./BlogLayout/BlogPage";
 
 export default function App() {
   const [prompts,setPrompts] = useState([]);
