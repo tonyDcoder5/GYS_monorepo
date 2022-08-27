@@ -16,6 +16,7 @@
 		table.string("section_subtext", 5000).nullable();
 		table.string("section_image", 500).nullable();
 		table.string("section_video", 500).nullable();
+		table.string("section_link", 500).nullable();
 		table.timestamps(true, true);
 	});
 };
