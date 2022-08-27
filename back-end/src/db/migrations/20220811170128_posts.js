@@ -19,6 +19,7 @@ exports.up = function (knex) {
 		table.string("post_url");
 		table.string("post_image_url");
         table.string("post_video_url");
+		table.boolean("top");
 		table.timestamps(true, true);
 		//**TODO password if implementation of verification is completed **//
 	});
