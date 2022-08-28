@@ -72,7 +72,7 @@ export default function Values() {
           </section>
         </div>
       </div>
-      <div className="row who-block">
+      <div className="who-block">
         <h2>Who are we?</h2>
         <div>
         {team ? (
