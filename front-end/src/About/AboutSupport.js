@@ -34,8 +34,6 @@ export default function AboutSupport() {
     },
   ];
 
-
-
   return (
     <div className="about-support">
       <Row xs={1} sm={2} className="g-4">
@@ -46,7 +44,7 @@ export default function AboutSupport() {
                 <p>
                   Brief description how to support GYS (Events, Social Media, Partnered Resources, Merch)
                 </p>
-                  <button className="btn btn-secondary">
+                  <button className="btn">
                     <a href={prompt.url} target="_blank">
                       Link
                     </a>

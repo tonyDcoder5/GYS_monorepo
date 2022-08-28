@@ -88,7 +88,7 @@ export default function Blogs() {
                   Read More
                 </button>
                 {topDetails ? <p>{faq.text}</p> : null}
-                <p>{faq.date_posted}</p>
+                <sub>{faq.date_posted}</sub>
               </Col>
             ))}
           </Row>

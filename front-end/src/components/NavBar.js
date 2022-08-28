@@ -37,7 +37,7 @@ export default function NavBar() {
 
   return (
     <div className="header-nav row">
-      <Navbar expand="sm" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         {scrolled ? 
         <div className="scroll-brand">
           <a href="/home"><img src={logo} alt="GYS logo" /></a>

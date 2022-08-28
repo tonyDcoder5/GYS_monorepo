@@ -96,7 +96,7 @@ export default function LocalSupport() {
             <Card.Body>
               <Card.Title>{hiCard.orgName}</Card.Title>
               <Card.Text>{hiCard.orgDesc}</Card.Text>
-              <Button variant="success">
+              <Button className="local-orgsite">
                 <a href={hiCard.orgUrl}>Website</a>
               </Button>
             </Card.Body>

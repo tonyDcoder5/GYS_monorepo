@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { Offcanvas } from "react-bootstrap";
 const logo = require("../assets/img/GYS_logo.jpg");
 
 export default function ShopBlock() {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleShow = () => setShowDetails(!showDetails);
+
   const shirts = [
     {
       id: 0,
@@ -46,21 +51,46 @@ export default function ShopBlock() {
       <div className="row shirt-block">
         <h2>DESIGNS COMING SOON</h2>
         <div className="shirt-content">
-        <section>
-          {shirts.map((shirt, idx) => {
-            return (
-              <div className="shirt-row">
-               <img src={logo} width={"25%"} alt={shirt.name} />
-                <span className="shirt-text"> 
+          <section>
+            {shirts.map((shirt, idx) => {
+              return (
+                <div className="shirt-row">
+                  <img src={logo} width={"25%"} alt={shirt.name} />
+                  <span className="shirt-text">
                     <h3>{shirt.title}</h3>
-                <p>{shirt.subtitle}</p>
-                <p>{shirt.date}</p>
-                </span>
-              </div>
-            );
-          })}
-        </section>
-      </div>
+                    <button
+                      className="btn shirt-detail-btn"
+                      onClick={handleShow}
+                    >
+                      More details
+                    </button>
+                    <Offcanvas
+                      show={showDetails}
+                      onHide={handleShow}
+                      placement="bottom"
+                      backdrop="true"
+                      keyboard="true"
+                      className="offcanvas-details"
+                    >
+                      <Offcanvas.Body>
+                      <Offcanvas.Header closeButton />
+
+                        <h3>{shirt.title}</h3>
+                        <h5>{shirt.subtitle}</h5>
+                        <img
+                          src={shirt.image}
+                          width={"25%"}
+                          alt={shirt.subtitle}
+                        />
+                      </Offcanvas.Body>
+                    </Offcanvas>
+                    <p>{shirt.date}</p>
+                  </span>
+                </div>
+              );
+            })}
+          </section>
+        </div>
       </div>
     </div>
   );
