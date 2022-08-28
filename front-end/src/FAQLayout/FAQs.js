@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Row, Col, Accordion } from "react-bootstrap";
 
 export default function Blogs() {
-
   const [topDetails, setTopDetails] = useState(false);
 
   const top_faqs = [
@@ -85,8 +84,10 @@ export default function Blogs() {
               <Col className="top-faq" key={idx}>
                 <h3>{faq.title}</h3>
                 <h6>{faq.subtitle}</h6>
-                <button onClick={()=> setTopDetails(!topDetails)}>Read More</button>
-                {topDetails ? <p>{faq.text}</p> : null }
+                <button onClick={() => setTopDetails(!topDetails)}>
+                  Read More
+                </button>
+                {topDetails ? <p>{faq.text}</p> : null}
                 <p>{faq.date_posted}</p>
               </Col>
             ))}
@@ -95,15 +96,15 @@ export default function Blogs() {
         <h4>Most recent faqs</h4>
         <div className="recent-faqs">
           {recent_faqs.map((faq, idx) => (
-            <Accordion className="recent-faq" flush >
-              <Accordion.Item eventKey={idx}>              
-                  <Accordion.Header>
-                    <h3>{faq.title}</h3>
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    <p>{faq.subtitle}</p>
-                    <p>{faq.date_posted}</p>
-                  </Accordion.Body>
+            <Accordion className="recent-faq" flush>
+              <Accordion.Item eventKey={idx}>
+                <Accordion.Header>
+                  <h3>{faq.title}</h3>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <p>{faq.subtitle}</p>
+                  <p>{faq.date_posted}</p>
+                </Accordion.Body>
               </Accordion.Item>
             </Accordion>
           ))}

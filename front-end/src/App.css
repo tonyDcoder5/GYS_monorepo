@@ -851,14 +851,12 @@ nav.navbar.scrolled .nav-links {
 
 .faqs {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  justify-self: center;
   text-align: center;
   align-items: center;
-  align-self: center;
-  padding: 2em;
-  margin: 1em;
+  padding: 1em;
+  margin: 2em;
+  width: auto;
   background-color: #036;
   color: #f1edee;
   border-radius: 0em;
@@ -868,13 +866,8 @@ nav.navbar.scrolled .nav-links {
 .faqs-bx {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  width: fit-content;
-  padding: 1em;
+
+  padding: 2em;
 }
 
 .faqs-bx h4{
@@ -884,6 +877,7 @@ nav.navbar.scrolled .nav-links {
 
 .top-faqs {
   display: flex;
+  flex-direction: column;
   background-color: #cecece;
   color: #071013;
   padding: 2em;
@@ -1544,7 +1538,7 @@ nav.navbar.scrolled .nav-links {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  margin-top: 1vmax;
+  margin: 2vmax 0 2vmax 3.5vmax;
 }
 
 .footer-text * {
