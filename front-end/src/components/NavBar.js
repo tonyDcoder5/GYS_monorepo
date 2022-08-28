@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import logo from "../assets/img/GYS_logo.jpg";
-import { listResources } from ".././utils/api";
 
 export default function NavBar() {
-  const [resources, setResources] = useState(null);
-  const [resourcesError, setResourcesError] = useState(null);
+
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,18 +20,6 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    const fetchResources = async () => {
-      try {
-        const abortController = new AbortController();
-        const response = await listResources(abortController.signal);
-        setResources(response);
-      } catch (error) {
-        setResourcesError(error);
-      }
-    };
-    fetchResources();
-  }, []);
 
   return (
     <div className="header-nav row">

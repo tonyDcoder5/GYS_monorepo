@@ -473,9 +473,8 @@ nav.navbar.scrolled .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
-  padding: 3em;
-  margin: 2em;
+  padding: 2em;
+  margin: auto;
   font-size: 1.2em;
   line-height: 2em;
   text-align: center;
@@ -503,8 +502,8 @@ nav.navbar.scrolled .nav-links {
 .who-block {
   display: flex;
   flex-direction: column;
-  margin: 2em;
-  padding: 2em;
+  margin: auto;
+  padding: 2em 0em 2em 0em;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -526,7 +525,7 @@ nav.navbar.scrolled .nav-links {
   flex-direction: column;
   padding: 1em;
   justify-content: space-evenly;
-  margin: 0.5em;
+  margin: 0 .5em 0 .5em;
   text-align: center;
   border-radius: 1em;
   background-color: #cecece;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/img/GYS_logo.jpg";
 
 export default function Banner() {

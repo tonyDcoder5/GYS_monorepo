@@ -11,10 +11,10 @@ export default function Footer() {
           <Link to="/about">About</Link>
         </span>
         <span>
-          <Link to="/faqs">FAQs</Link>
+          <Link to="/resources">Resources</Link>
         </span>
         <span>
-          <Link to="/resources">Resources</Link>
+          <Link to="/faqs">FAQs</Link>
         </span>
         <section>
           <a href="/home">
