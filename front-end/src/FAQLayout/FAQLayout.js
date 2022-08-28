@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Downloadables from "../Resources/Downloadables";
-import Blogs from "./Blogs";
-import Shop from "./Shop";
+import FAQs from "./FAQs";
+import ShopHeader from "../Shop/ShopHeader";
 
 export default function BlogLayout() {
   return (
-    <div className="blog-layout">
-      <Shop />
-      <Blogs />
+    <div className="faq-layout">
+      <ShopHeader />
+      <FAQs />
       <Downloadables />
     </div>
   );

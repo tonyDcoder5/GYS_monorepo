@@ -6,16 +6,17 @@ import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
 import AboutUs from "./About/AboutUs";
 import Resources from "./Resources/Resources";
-import BlogLayout from "./BlogLayout/BlogLayout";
+import FAQLayout from "./FAQLayout/FAQLayout";
 import NotFound from "./components/NotFound";
-import Contact from "./BlogLayout/Contact";
+import Contact from "./FAQLayout/Contact";
 import "./App.css";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Banner from "./components/Banner";
 import { listPrompts } from "./utils/api";
 import UrgentSupport from "./Resources/UrgentSupport";
-import Events from "./BlogLayout/Events";
-import BlogPage from "./BlogLayout/BlogPage";
+import Events from "./FAQLayout/Events";
+import FAQPage from "./FAQLayout/FAQPage";
+import ShopLayout from "./Shop/ShopLayout";
 
 export default function App() {
   const [prompts,setPrompts] = useState([]);
@@ -48,9 +49,11 @@ export default function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/events" element={<Events />} />
-            <Route exact path="/blog" element={<BlogLayout />} />
-            <Route exact path="/blog/:blog_id" element={<BlogPage />} />
+            <Route exact path="/faqs" element={<FAQLayout />} />
+            <Route exact path="/faqs/list" element={<FAQPage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/shop" element={<ShopLayout />} />
+
             <Route path="/urgent-resources" element={<UrgentSupport/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>

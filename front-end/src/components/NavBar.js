@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import logo from "../assets/img/GYS_logo.jpg";
 import { listResources } from ".././utils/api";
 
@@ -52,8 +51,10 @@ export default function NavBar() {
               <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/resources">Resources</Nav.Link>
-              <Nav.Link href="/blog">FAQ</Nav.Link>
+              <Nav.Link href="/faqs">FAQs</Nav.Link>
               <Nav.Link href="/events">Events</Nav.Link>
+              
+              <Nav.Link href="/shop">Shop</Nav.Link>
               <Nav.Link href="/contact"><b>Contact Us</b></Nav.Link>
             </Nav>
           </Navbar.Collapse>

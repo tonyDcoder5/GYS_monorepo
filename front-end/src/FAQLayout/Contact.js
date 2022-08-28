@@ -3,11 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Form, Row, Col, Button } from "react-bootstrap";
 
 export default function Contact() {
-  const initialForm = {
-    user_name: "",
-    user_email: "",
-    message: "",
-  };
+
   const form = useRef();
   const [sentNotice, setSentNotice] = useState(null);
 

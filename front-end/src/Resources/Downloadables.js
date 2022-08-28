@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-// import Calendar from 'react-calendar';
-import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Downloadables() {
   const downloads = [
@@ -43,7 +41,7 @@ export default function Downloadables() {
   });
 
   return (
-    <div>
+    <div className="downloads">
       <div className="row downloadables-block">
         <h4>Downloadables</h4>
         {display}

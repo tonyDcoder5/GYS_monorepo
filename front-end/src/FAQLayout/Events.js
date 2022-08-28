@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-import { Link } from "react-router-dom";
 import { formatAsDate, listEvents } from "../utils/api";
 
 export default function Events() {
@@ -33,7 +31,7 @@ export default function Events() {
           {events.length > 0 ? events.map((event, idx) => (
             <div className="agenda-block" key={event.event_id}>
               <div className="col m-2">
-              <img src={require("../assets/img/GYS_logo.jpg")} width="40%" />
+              <img src={require("../assets/img/GYS_logo.jpg")} width="40%" alt={event.event_title} />
               <h5>{formatAsDate(event.event_date)}</h5>
               </div>
               <div className="col">
