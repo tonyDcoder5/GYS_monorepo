@@ -47,16 +47,18 @@ export default function UrgentSupport() {
                 <h4>{contact.orgName}</h4>
                 <h6>{contact.orgDesc}</h6>
                 <span className="support-btns-urgent">
-                  <OverlayTrigger trigger="click" key='bottom' placement='bottom' 
+                  <OverlayTrigger trigger="click" key='bottom' 
+                  
+                  placement='bottom' 
                   overlay={
-                    <Popover id={`popover-positioned-bottom`}>
-                      <h4>Test header</h4>
+                    <Popover id={`popover-positioned-bottom`} className="overlay-card">
+                      <h4>Contact Info</h4>
                       <Popover.Body>
-                       <strong>Main Number: </strong>
+                       <strong>Main Number: </strong> {contact.orgPhone}
                       </Popover.Body>
                     </Popover>
                   }  >
-                    <button className="btn btn-success">{contact.orgPhone}</button>
+                    <button className="btn btn-success">Contact</button>
                   </OverlayTrigger >
                   <button className="btn btn-secondary">
                     <a href={contact.orgUrl} target="_blank">

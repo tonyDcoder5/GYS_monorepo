@@ -25,6 +25,7 @@ export default function Downloadables() {
   const display = downloads.map((download, idx) => {
     return (
       <div className="col download" key={idx}>
+        <span>
         <img
           className="download-img m-3"
           src={download.icon}
@@ -36,13 +37,14 @@ export default function Downloadables() {
         />
         <h3>{download.title}</h3>
         <p>{download.desc}</p>
+        </span>
       </div>
     );
   });
 
   return (
     <div>
-      <div className="row downloadables-block text-white">
+      <div className="row downloadables-block">
         <h4>Downloadables</h4>
         {display}
       </div>

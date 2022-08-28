@@ -79,13 +79,13 @@ export default function LocalSupport() {
                 key={idx}
                 className="contact-line"
               >
+                <section>
+                  <h4>{contact.orgName}</h4>
                   <img
                     key={contact.id}
                     src={contact.icon}
                     width={contact.width}
                   />
-                <section>
-                  <h4>{contact.orgName}</h4>
                   <h5>{contact.contact}</h5>
                 </section>
               </div>

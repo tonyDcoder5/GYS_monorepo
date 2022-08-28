@@ -651,8 +651,7 @@ nav.navbar.scrolled .nav-links {
   text-align: center;
   background-color: #036;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 3em;
   margin: .5em;
@@ -661,21 +660,25 @@ nav.navbar.scrolled .nav-links {
 }
 
 
-.support-card-urgent div{
+.urgent-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   background-color: #cecece;
   padding: 2em;
   box-shadow: 0 0 .5em #f1edee;
 }
 
-.support-btns-urgent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
+.support-btns-urgent button{
+  margin: 1em;
+}
+
+.overlay-card {
+  background-color: #cecece;
+  padding: 1em;
+  box-shadow: 0 0 .5em #071013;
 }
 
 .local-support-block {
@@ -704,33 +707,57 @@ nav.navbar.scrolled .nav-links {
 .contact-group {
   display: flex;
   flex-direction: column;
-  border: 0.2em #071013 solid;
   background-color: #cecece;
   border-radius: 2em;
   height: 20em;
   width: fit-content;
   overflow-y: scroll;
+  box-shadow: 0em 0em .25em #071013;
+
+}
+
+.contact-group::-webkit-scrollbar {
+  width: .75em;
+  border-radius: 2em;
+}
+
+/* Track */
+.contact-group::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 2em;
+
+}
+ 
+/* Handle */
+.contact-group::-webkit-scrollbar-thumb {
+  background: #071013; 
+  border-radius: 2em;
+}
+
+/* Handle on hover */
+.contact-group::-webkit-scrollbar-thumb:hover {
+  background: #0710139b; 
+  border-radius: 2em;
 }
 
 .contact-group img {
   width: 5vmax;
   border-radius: 7em;
-  box-shadow: 0.1em 0.1em 1em #f1edee;
+  box-shadow: 0em 0em .5em #071013;
 }
 
 .contact-card .card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-self: center;
+  justify-self: space-between;
   width: fit-content;
   align-self: center;
   margin: 1em;
   padding: 0.5em;
   border-radius: 2em;
-  box-shadow: 0 0 1em #f1edee;
+  box-shadow: 0 0 .5em #f1edee;
   background-color: #cecece;
-  border: 0.25em solid #071013;
 }
 
 .contact-line {
@@ -746,6 +773,7 @@ nav.navbar.scrolled .nav-links {
   margin: 0.5em;
 }
 
+/* DOWNLOADS COMPONENT STYLES */
 
 .downloadables {
   display: flex;
@@ -753,13 +781,18 @@ nav.navbar.scrolled .nav-links {
 }
 
 .downloadables-block {
-  border: 0.25em solid #036;
   background-color: #cecece;
   padding: 2em;
-  margin: 2em;
+  margin: 2em 0 2em 0;
   text-align: center;
   border-radius: 2em;
-  box-shadow: 0.5em 0.5em 2em #071013;
+  color: #071013;
+  box-shadow: 0em 0em 1em #071013;
+}
+
+.downloadables-block h4{
+  margin-bottom: 1em;
+  font-size: 5vmin;
 }
 
 .download {
@@ -767,11 +800,17 @@ nav.navbar.scrolled .nav-links {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.25em solid #071013;
-  background-color: #f1edee;
+  background-color: #036;
   color: #071013;
   border-radius: 2em;
-  box-shadow: 0 0 1em #f1edee;
+  padding: 2em;
+  box-shadow: 0 0 1em #071013;
+}
+
+.download span{
+  background-color: #cecece;
+  border-radius: 1em;
+  padding: 2em;
 }
 
 .downloadables-block .col {
@@ -781,7 +820,7 @@ nav.navbar.scrolled .nav-links {
 }
 
 .downloadables-block img:hover {
-  transform: scale(2);
+  transform: scale(3);
 }
 
 .resource-btn-group {
