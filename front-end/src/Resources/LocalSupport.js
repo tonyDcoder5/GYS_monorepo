@@ -79,25 +79,20 @@ export default function LocalSupport() {
                 key={idx}
                 className="contact-line"
               >
-                <div>
                   <img
                     key={contact.id}
                     src={contact.icon}
                     width={contact.width}
                   />
-                </div>
                 <section>
                   <h4>{contact.orgName}</h4>
                   <h5>{contact.contact}</h5>
                 </section>
-                <br />
               </div>
             ))}
           </div>
         <div className="contact-card">
-          <Card
-            style={{ width: "100%", height: "100%", color: "#fff" }}
-          >
+          <Card>
             <Card.Body>
               <Card.Title>{hiCard.orgName}</Card.Title>
               <Card.Text>{hiCard.orgDesc}</Card.Text>

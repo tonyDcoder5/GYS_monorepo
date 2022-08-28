@@ -41,7 +41,7 @@ export default function AboutSupport() {
       <Row xs={1} sm={2} className="g-4">
       {prompts.map((prompt, idx) => (
           <Col key={prompt.id}>
-            <Card className="bg-dark support-card">
+            <Card className=" support-card">
                 <img src={prompt.icon} width={"50%"} alt={prompt.title + "icon"} />
                 <p>
                   Brief description how to support GYS (Events, Social Media, Partnered Resources, Merch)
