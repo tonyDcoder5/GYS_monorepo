@@ -7,28 +7,22 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer-nav">
-        <span>
+        <div className="footer-links">
           <Link to="/about">About</Link>
-        </span>
-        <span>
           <Link to="/resources">Resources</Link>
-        </span>
-        <span>
           <Link to="/faqs">FAQs</Link>
-        </span>
-        <section>
+        </div>
+        <div className="footer-logo">
           <a href="/home">
             <img src={logo} alt="GYS logo" />
           </a>
-        </section>
-        <span>
+        </div>
+        <div className="footer-links">
           <Link to="/events">Events</Link>
-        </span>
-        <span>
+
           <Link to="/contact">Contact</Link>
-        </span>
-        {/* admin page link */}
-        <span>Admin</span>
+          <a>Admin</a>
+        </div>
       </div>
       <div className="row footer-text">
         <h3>

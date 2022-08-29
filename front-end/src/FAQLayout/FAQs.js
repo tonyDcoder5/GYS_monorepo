@@ -1,17 +1,34 @@
 import React, { useState } from "react";
 import { Row, Col, Accordion } from "react-bootstrap";
 
-export default function FAQs({data =[]}) {
+export default function FAQs({ data = [] }) {
   // data holds FAQs page content
   // console.log(data);
-  const [topDetails, setTopDetails] = useState(false);
-  //filter data by top or recent, then pass all data to FAQpage to list all 
+  const [show, setShow] = useState(false);
+  const [topDetails, setTopDetails] = useState(null);
+  //filter data by top or recent, then pass all data to FAQpage to list all
   const top_faqs = [
     {
       id: 0,
       title: "sample 0",
       subtitle: "test subtitle 0",
       text: "sample body text 0",
+      url: "#",
+      date_posted: "2022-08-20",
+    },
+    {
+      id: 1,
+      title: "sample 1",
+      subtitle: "test subtitle 1",
+      text: "sample body text 1",
+      url: "#",
+      date_posted: "2022-08-20",
+    },
+    {
+      id: 1,
+      title: "sample 1",
+      subtitle: "test subtitle 1",
+      text: "sample body text 1",
       url: "#",
       date_posted: "2022-08-20",
     },
@@ -83,13 +100,22 @@ export default function FAQs({data =[]}) {
         <div className="top-faqs">
           <Row>
             {top_faqs.map((faq, idx) => (
-              <Col className="top-faq" key={idx}>
+              <Col className="top-faq" id={idx} key={idx}>
                 <h3>{faq.title}</h3>
                 <h6>{faq.subtitle}</h6>
-                <button onClick={() => setTopDetails(!topDetails)}>
+                <button
+                  onClick={(evt) => {
+                    setTopDetails(idx);
+                    setShow(true);  
+                    if(topDetails === idx){
+                      setShow(!show);
+                    }
+                    }
+                  }
+                >
                   Read More
                 </button>
-                {topDetails ? <p>{faq.text}</p> : null}
+                {topDetails === idx && show ? <p>{faq.text}</p> : null}
                 <sub>{faq.date_posted}</sub>
               </Col>
             ))}
