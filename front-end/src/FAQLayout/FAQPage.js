@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { listPosts } from "../utils/api";
 
 export default function FAQPage() {
   const history = useNavigate();
 
-  const faqs = [
+  const [faqs,setFaqs] = useState([]);
+  const [FAQSerror,setFAQSerror] = useState(null)
+ 
+  useEffect( ()=>{
+    const fetchResources = async ()=>{
+      try{
+        const abortController = new AbortController();
+        const response = await listPosts(abortController.signal);
+        setFaqs(response)
+        
+      } catch (error){
+        setFAQSerror(error)
+      }
+    }
+    fetchResources()
+  },[])
+
+
+  const table = [
     {
       id: 0,
       title: "test title",
@@ -72,7 +91,7 @@ export default function FAQPage() {
       </div>
       <div className="faq-content">
         <section>
-          {faqs.map((faq, idx) => {
+          {table.map((faq, idx) => {
             return (
               <div className="faq-row">
                 <h3>{faq.title}</h3>

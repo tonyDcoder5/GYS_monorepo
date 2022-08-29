@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function LocalSupport() {
-  const contacts = [
+export default function LocalSupport({contacts =[]}) {
+  
+  // console.log(contacts);
+  
+  const contactsPage = [
     {
       id: 0,
       orgName: "TestOrg1",
@@ -73,7 +76,7 @@ export default function LocalSupport() {
         <h3>Local Support Section</h3>
         <div className="contact-select">
           <div className="contact-group">
-            {contacts.map((contact, idx) => (
+            {contactsPage.map((contact, idx) => (
               <div
                 onClick={() => clickHandle(contact)}
                 key={idx}

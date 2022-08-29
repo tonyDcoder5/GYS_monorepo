@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { listResources } from "../utils/api";
 
 export default function Downloadables() {
-  const downloads = [
+  const [downloads, setDownloads] = useState(null);
+  const [downloadsError, setDownloadsError] = useState(null);
+
+  useEffect(() => {
+
+    const fetchDownloads = async () => {
+      try {
+        const abortController = new AbortController();
+        const response = await listResources(abortController.signal);
+        setDownloads(response);
+      } catch (error) {
+        setDownloadsError(error);
+      }
+    };
+
+    fetchDownloads();
+  }, []);
+
+  // console.log(downloads);
+  
+  const downloadsPage = [
     {
       id: 0,
       title: "test download",
@@ -20,7 +41,7 @@ export default function Downloadables() {
     },
   ];
 
-  const display = downloads.map((download, idx) => {
+  const display = downloadsPage.map((download, idx) => {
     return (
       <div className="col download" key={idx}>
         <span>

@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { Offcanvas } from "react-bootstrap";
 const logo = require("../assets/img/GYS_logo.jpg");
 
-export default function ShopBlock() {
+export default function ShopBlock({prompts =[]}) {
+
+  // console.log(prompts);
+
+  const shopPrompts = prompts.filter((prompt)=> prompt.section_name.includes("shop"));
+
+  const shirtPrompts = prompts.filter((prompt)=> prompt.section_name.includes("shirt"));
+
   const [showDetails, setShowDetails] = useState(false);
 
   const handleShow = () => setShowDetails(!showDetails);

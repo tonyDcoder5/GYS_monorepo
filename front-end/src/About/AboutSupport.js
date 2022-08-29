@@ -2,8 +2,11 @@ import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function AboutSupport() {
-  const prompts = [
+export default function AboutSupport({prompts = []}) {
+  
+  // console.log(prompts);
+  // store in prompts from database here in desired format or default to database columns 
+  const promptsPage = [
     {
       id: 0,
       icon: require("../assets/img/GYS_logo.jpg"),
@@ -37,7 +40,7 @@ export default function AboutSupport() {
   return (
     <div className="about-support">
       <Row xs={1} sm={2} className="g-4">
-      {prompts.map((prompt, idx) => (
+      {promptsPage.map((prompt, idx) => (
           <Col key={prompt.id}>
             <Card className=" support-card">
                 <img src={prompt.icon} width={"50%"} alt={prompt.title + "icon"} />

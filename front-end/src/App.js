@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import HomeLayout from "./HomePage/HomeLayout";
-import AboutUs from "./About/AboutUs";
+import AboutLayout from "./About/AboutLayout";
 import Resources from "./Resources/Resources";
 import FAQLayout from "./FAQLayout/FAQLayout";
 import NotFound from "./components/NotFound";
@@ -46,13 +46,13 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={ <Navigate to="/home" />} />
             <Route path="/home" element={<HomeLayout prompts={prompts} />} />
-            <Route path="/about" element={<AboutUs />} />
+            <Route path="/about" element={<AboutLayout prompts={prompts} />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/events" element={<Events />} />
             <Route exact path="/faqs" element={<FAQLayout />} />
             <Route exact path="/faqs/list" element={<FAQPage />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/shop" element={<ShopLayout />} />
+            <Route path="/shop" element={<ShopLayout prompts={prompts} />} />
 
             <Route path="/urgent-resources" element={<UrgentSupport/>} />
             <Route path="*" element={<NotFound />} />

@@ -39,7 +39,6 @@ export default function Mission({ prompts }) {
                 <Col>
                   <h3>{stat.section_title}</h3>
                   <p>{stat.section_text}</p>
-                  <button className="btn">Link</button>
                 </Col>
             );
           })) : (

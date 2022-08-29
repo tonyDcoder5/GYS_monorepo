@@ -3,8 +3,11 @@ import { Row, Col, Card, OverlayTrigger, Popover } from "react-bootstrap";
 // import Calendar from 'react-calendar';
 import { Link } from "react-router-dom";
 
-export default function UrgentSupport() {
-  const contacts = [
+export default function UrgentSupport({contacts =[]}) {
+  
+  // console.log(contacts);
+  
+  const contactsPage = [
     {
       id: 0,
       orgName: "TestOrg1",
@@ -40,7 +43,7 @@ export default function UrgentSupport() {
     <div className="resource-block urgent-resources">
       <h3>Urgent/Emergency Support Section</h3>
       <Row xs={1} sm={2} className="g-4">
-        {contacts.map((contact, idx) => (
+        {contactsPage.map((contact, idx) => (
           <Col key={contact.id}>
             <Card className="support-card-urgent">
               <div className="urgent-contact">

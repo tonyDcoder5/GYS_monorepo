@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Row, Col, Accordion } from "react-bootstrap";
 
-export default function Blogs() {
+export default function FAQs({data =[]}) {
+  // data holds FAQs page content
+  // console.log(data);
   const [topDetails, setTopDetails] = useState(false);
-
+  //filter data by top or recent, then pass all data to FAQpage to list all 
   const top_faqs = [
     {
       id: 0,

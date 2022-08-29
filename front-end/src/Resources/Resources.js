@@ -6,21 +6,11 @@ import LocalSupport from "./LocalSupport";
 import UrgentSupport from "./UrgentSupport";
 
 export default function Resources() {
-  const [resources, setResources] = useState(null);
-  const [resourcesError, setResourcesError] = useState(null);
-  const [contacts, setContacts] = useState(null);
+  const [contacts, setContacts] = useState([]);
   const [contactsError, setContactsError] = useState(null);
 
   useEffect(() => {
-    const fetchResources = async () => {
-      try {
-        const abortController = new AbortController();
-        const response = await listResources(abortController.signal);
-        setResources(response);
-      } catch (error) {
-        setResourcesError(error);
-      }
-    };
+
     const fetchContacts = async () => {
       try {
         const abortController = new AbortController();
@@ -30,14 +20,17 @@ export default function Resources() {
         setContactsError(error);
       }
     };
-    fetchResources();
     fetchContacts();
   }, []);
 
+  const localContacts = contacts.filter((contact)=> contact.contact_level === "local");
+
+  const urgentContacts = contacts.filter((contact)=> contact.contact_level === "urgent");
+
   return (
     <div className="resources">
-      <UrgentSupport />
-      <LocalSupport /> 
+      <UrgentSupport contacts={urgentContacts}/>
+      <LocalSupport contacts={localContacts} /> 
       <Downloadables />
     </div>
   );
