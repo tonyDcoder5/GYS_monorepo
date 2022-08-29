@@ -106,12 +106,11 @@ export default function FAQs({ data = [] }) {
                 <button
                   onClick={(evt) => {
                     setTopDetails(idx);
-                    setShow(true);  
-                    if(topDetails === idx){
+                    setShow(true);
+                    if (topDetails === idx) {
                       setShow(!show);
                     }
-                    }
-                  }
+                  }}
                 >
                   Read More
                 </button>
@@ -123,9 +122,9 @@ export default function FAQs({ data = [] }) {
         </div>
         <h4>Most recent faqs</h4>
         <div className="recent-faqs">
-          {recent_faqs.map((faq, idx) => (
-            <Accordion className="recent-faq" flush>
-              <Accordion.Item eventKey={idx}>
+          <Accordion defaultActiveKey="0" flush>
+            {recent_faqs.map((faq, idx) => (
+              <Accordion.Item className="recent-faq" eventKey={idx}>
                 <Accordion.Header>
                   <h3>{faq.title}</h3>
                 </Accordion.Header>
@@ -134,8 +133,8 @@ export default function FAQs({ data = [] }) {
                   <p>{faq.date_posted}</p>
                 </Accordion.Body>
               </Accordion.Item>
-            </Accordion>
-          ))}
+            ))}
+          </Accordion>
           <a href={`faqs/list`}>
             <button className="btn-all">All</button>
           </a>

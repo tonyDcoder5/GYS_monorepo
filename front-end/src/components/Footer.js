@@ -24,11 +24,11 @@ export default function Footer() {
           <a>Admin</a>
         </div>
       </div>
-      <div className="row footer-text">
-        <h3>
+      <div className="footer-text">
+       <a href="/home"> <h3>
           <b>Golf Yankee Six</b>
         </h3>
-        <h4>We Got Your Back</h4>
+        <h4>We Got Your Back</h4></a>
       </div>
       <hr />
       <div className="footer-socials">

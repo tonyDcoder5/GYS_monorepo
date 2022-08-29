@@ -81,6 +81,11 @@ box-shadow: 0 0 1em #071013;
 
 /* GENERAL PAGE STYLES */
 
+html{
+  zoom: 85%;
+
+}
+
 .App {
   text-align: center;
 }
@@ -369,7 +374,7 @@ nav.navbar.scrolled .nav-links {
   border-radius: 0;
   box-shadow: 0 0 0.5em #071013;
   width: 100%;
-  height: 20vmax; 
+  height: 25vmax; 
   margin: 1em;
 }
 
@@ -1085,8 +1090,8 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   width: fit-content;
   border-radius: 1em;
-  margin-bottom: 1em;
-  padding: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
   width: auto;
   box-shadow: 0 0 .5em #071013;
 }
@@ -1758,8 +1763,19 @@ nav.navbar.scrolled .nav-links {
   margin: 2vmax 3.5vmax 2vmax 3.5vmax;
 }
 
+.footer-text a {
+  text-decoration: none;
+  color: #cecece;
+}
+
+.footer-text a:hover {
+  text-decoration: none;
+  color: #f1edee;
+}
+
 .footer-text * {
   font-size: 5vmin;
+
 }
 
 .footer-socials {
