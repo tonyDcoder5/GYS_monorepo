@@ -51,10 +51,10 @@ export default function UrgentSupport({contacts =[]}) {
                 <h6>{contact.orgDesc}</h6>
                 <span className="support-btns-urgent">
                   <OverlayTrigger
-                  trigger={['hover', 'click']} 
+                  trigger={['click']} 
                   key='bottom' 
-                  rootClose='true'
-                  placement='bottom' 
+                  placement='bottom'
+                  rootClose="true" 
                   overlay={
                     <Popover id={`popover-positioned-bottom`} 
                     placement="bottom"
