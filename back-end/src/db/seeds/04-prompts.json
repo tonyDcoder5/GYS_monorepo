@@ -6,7 +6,7 @@
         "section_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed. Dictumst quisque sagittis purus sit. Cum sociis natoque penatibus et magnis dis. Sem et tortor consequat id porta nibh venenatis. Diam in arcu cursus euismod quis viverra. Feugiat nibh sed pulvinar proin gravida hendrerit. A iaculis at erat pellentesque adipiscing commodo. Nunc faucibus a pellentesque sit amet porttitor eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Suspendisse in est ante in nibh mauris cursus mattis molestie."
     },
     {
-        "user_id": 2,
+        "user_id": 1,
         "section_title": "example title",
         "section_name": "about",
         "section_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed. Dictumst quisque sagittis purus sit. Cum sociis natoque penatibus et magnis dis. Sem et tortor consequat id porta nibh venenatis. Diam in arcu cursus euismod quis viverra. Feugiat nibh sed pulvinar proin gravida hendrerit. A iaculis at erat pellentesque adipiscing commodo. Nunc faucibus a pellentesque sit amet porttitor eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Suspendisse in est ante in nibh mauris cursus mattis molestie."
@@ -23,8 +23,8 @@
     {
         "user_id": 1,
         "section_name": "mission-stats-1",
-        "section_title": "Back End Stats 1",
-        "section_text": "Back End Stats 1 Text",
+        "section_title": "3rd largest population",
+        "section_text": "Florida is the third largest population in the nation after California and Texas with roughly 1.5 million veterans.",
         "section_subtext": "mission-stats-1",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -32,8 +32,8 @@
     {
         "user_id": 1,
         "section_name": "mission-stats-2",
-        "section_title": "Back End Stats 2",
-        "section_text": "Back End Stats 2 Text",
+        "section_title": "6th largest Active Duty military population",
+        "section_text": "69,000 active duty military personally reside in Florida, the 6th largest population in the nation",
         "section_subtext": "mission-stats-2",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -41,8 +41,8 @@
     {
         "user_id": 1,
         "section_name": "mission-stats-3",
-        "section_title": "Back End Stats 3",
-        "section_text": "Back End Stats 3 Text",
+        "section_title": "Veteran most common concerns",
+        "section_text": "The three most common mental health concerns for veterans are Post-Traumatic Stress Disorder (PTSD), depression and Traumatic Brain Injury (TBI).",
         "section_subtext": "mission-stats-3",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -50,8 +50,8 @@
     {
         "user_id": 1,
         "section_name": "mission-stats-4",
-        "section_title": "Back End Stats 4",
-        "section_text": "Back End Stats 4 Text",
+        "section_title": "Veterans more susceptible to mental health concerns",
+        "section_text": "The rate of major depression among Veterans is 5x as high as civilians, while the rate of PTSD is nearly 15x higher.",
         "section_subtext": "mission-stats-4",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -60,7 +60,7 @@
         "user_id": 1,
         "section_name": "roadmap-sect-header",
         "section_title": "The GYS Roadmap",
-        "section_text": "GYS is here to serve our service members by supporting them, their familys, & friends",
+        "section_text": "GYS is here to serve our service members by supporting them, their families, & friends with tools & resources to assist in transitioning our heroes home",
         "section_subtext": "mission-sect-header",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -68,8 +68,8 @@
     {
         "user_id": 1,
         "section_name": "roadmap-block-1",
-        "section_title": "Block 1 Title",
-        "section_text": "Block 1 test",
+        "section_title": "Veterans",
+        "section_text": "Monthly Events, educational resources, partnered perks, and much more to come for our heroes to get the help and support they need to effectively transition home from their service.",
         "section_subtext": "roadmap-block-1",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -77,8 +77,8 @@
     {
         "user_id": 1,
         "section_name": "roadmap-block-2",
-        "section_title": "Block 2 Title",
-        "section_text": "Block 2 test",
+        "section_title": "Families & Friends",
+        "section_text": "Our greatest allies in successfully helping truly make our heroes feel at home again, we will provide tools and resources in order to help navigate the process of supporting a veteran in need.",
         "section_subtext": "roadmap-block-2",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -86,10 +86,142 @@
     {
         "user_id": 1,
         "section_name": "roadmap-block-3",
-        "section_title": "Block 3 Title",
-        "section_text": "Block 3 test",
+        "section_title": "Community & Advocacy",
+        "section_text": "GYS wants to help veterans know our mission begins when theirs' ends. With every shirt or product purchase, you can help raise awareness of Veterans mental health while empowering our local community to be armed with the knowledge, compassion, and courage to complete our mission, to save veteran lives. By these purchases on our website or at our local pop-ups, you can help us invest directly into mental health services for our veterans.",
         "section_subtext": "roadmap-block-3",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "why-block",
+        "section_title": "Why GYS?",
+        "section_subtitle": "To SAY and SHOW, we Golf Yankee Six.",
+        "section_text": "At GYS, our vision is in our name, Got Your Six. We got your back. We got you. We got all of you. We are glad you are back home and want to show you how much we got you. We will not let you become a statistic. We will not let you feel alone. We will not let you remain vulnerable. We want you to have the mental health services you need and deserve. For as long as you need them.",
+        "section_subtext": "why-block-header",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "who-block",
+        "section_title": "Who are we?",
+        "section_subtitle": "Meet the Founders!",
+        "section_text": "Two women, 15 years of friendship, and one goal to change the mental health world. In practice, we see the need for mental health services and the lack of services available for these men and women. Just doing outpatient counseling is not enough to meet the needs of these veterans. We can do more. We came together to figure out a way to expand our team of clinicians to help more veterans. We needed a bigger army. We got a bigger army. You can see the size of our army when you look around the room and see GYS shirts. We wear these shirts to honor our veterans. We wear these shirts on our backs, because it is our turn to get your back. We Golf Yankee Six.",
+        "section_subtext": "who-block-text",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "values-block",
+        "section_title": "Our Values at GYS",
+        "section_subtitle": null,
+        "section_text": "We hold these near and dear to our hearts",
+        "section_subtext": "",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "values-block-1",
+        "section_title": "Teamwork",
+        "section_subtitle": null,
+        "section_text": "Teamwork Text",
+        "section_subtext": "teamwork-block",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "values-block-2",
+        "section_title": "Relentlessness",
+        "section_subtitle": null,
+        "section_text": "Relentlessness Text",
+        "section_subtext": "relentless-block",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "values-block-3",
+        "section_title": "Determination",
+        "section_subtitle": null,
+        "section_text": "Determination text",
+        "section_subtext": "determination-block",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "values-block-4",
+        "section_title": "Compassion",
+        "section_subtitle": null,
+        "section_text": "Compassion text",
+        "section_subtext": "compassion-block",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "about-support",
+        "section_title": "How can you support Golf Yankee Six?",
+        "section_subtitle": null,
+        "section_text": "Here are a few ways to get involved and help in our mission to truly make our heroes feel at home again:",
+        "section_subtext": "about-support-header",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "support-card-1",
+        "section_title": "support card title",
+        "section_subtitle": null,
+        "section_text": "support card text 1 -DB",
+        "section_subtext": "support-1-text",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "support-card-2",
+        "section_title": "support card title",
+        "section_subtitle": null,
+        "section_text": "support card text 2 -DB",
+        "section_subtext": "support-2-text",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "support-card-3",
+        "section_title": "support card title",
+        "section_subtitle": null,
+        "section_text": "support card text 3 -DB",
+        "section_subtext": "support-3-text",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "support-card-4",
+        "section_title": "support card title",
+        "section_subtitle": null,
+        "section_text": "support card text 4 -DB",
+        "section_subtext": "support-4-text",
+        "section_image": null,
+        "section_video": null,
+        "section_link": null
     }
 ]

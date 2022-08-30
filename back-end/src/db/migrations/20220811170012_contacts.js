@@ -9,7 +9,7 @@ exports.up = function (knex) {
 		table.string("last_name").notNullable();
 		table.string("contact_title");
 		table.string("contact_url");
-		table.string("contact_img_url");
+		table.string("contact_img");
 		table.string("contact_org_name");
 		table.string("contact_desc", 1000);
 		table.string("mobile_number").notNullable();

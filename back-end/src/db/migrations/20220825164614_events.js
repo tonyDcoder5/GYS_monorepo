@@ -17,6 +17,7 @@ exports.up = function(knex) {
 		table.string("event_subtext", 5000).nullable();
 		table.string("event_image", 500).nullable();
 		table.string("event_video", 500).nullable();
+		table.string("event_link", 500).nullable();
 		table.timestamps(true, true);
 	});
 };

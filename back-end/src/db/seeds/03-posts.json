@@ -7,7 +7,7 @@
         "post_author": "Test author",
         "post_subtext": "test subtext",
         "post_date": "2022-08-11",
-        "post_image_url": "https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
+        "post_image": "https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
     },
     {
         "user_id": 2,
@@ -17,6 +17,54 @@
         "post_author": "Test author",
         "post_subtext": "test subtext",
         "post_date": "2022-08-11",
-        "post_video_url": "https://youtu.be/WKHvreQf-D0"
+        "post_video": "https://youtu.be/WKHvreQf-D0"
+    },
+    {
+        "post_title": "FAQ Sample - 1",
+        "post_author": "FAQ sample author - 1",
+        "post_subtitle": "FAQ sample subtitle -1",
+        "post_text": "FAQ text sample - 1",
+        "post_subtext": "FAQ subtext sample - 1",
+        "post_date": "2022-08-28",
+        "post_url": "#",
+        "post_image": "../assets/img/GYS_logo.jpg",
+        "post_video": "",
+        "top": "true"
+    },
+    {
+        "post_title": "FAQ Sample - 2",
+        "post_author": "FAQ sample author - 2",
+        "post_subtitle": "FAQ sample subtitle -2",
+        "post_text": "FAQ text sample - 2",
+        "post_subtext": "FAQ subtext sample - 2",
+        "post_date": "2022-08-28",
+        "post_url": "#",
+        "post_image": "../assets/img/GYS_logo.jpg",
+        "post_video": "",
+        "top": "false"
+    },
+    {
+        "post_title": "FAQ Sample - 3",
+        "post_author": "FAQ sample author - 3",
+        "post_subtitle": "FAQ sample subtitle -3",
+        "post_text": "FAQ text sample - 3",
+        "post_subtext": "FAQ subtext sample - 3",
+        "post_date": "2022-08-28",
+        "post_url": "#",
+        "post_image": "../assets/img/GYS_logo.jpg",
+        "post_video": "",
+        "top": "false"
+    },
+    {
+        "post_title": "FAQ Sample - 4",
+        "post_author": "FAQ sample author - 4",
+        "post_subtitle": "FAQ sample subtitle -4",
+        "post_text": "FAQ text sample - 4",
+        "post_subtext": "FAQ subtext sample - 4",
+        "post_date": "2022-08-28",
+        "post_url": "#",
+        "post_image": "../assets/img/GYS_logo.jpg",
+        "post_video": "",
+        "top": "true"
     }
 ]

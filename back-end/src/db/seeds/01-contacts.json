@@ -1,14 +1,110 @@
 [
     {
-        "first_name": "Lorem",
-        "last_name":"Ipsum",
-        "mobile_number": "555-555-5555",
-        "email_address": "loremIp@gmail.com"
+        "first_name": "Andria",
+        "last_name": "Estrella-Roa",
+        "contact_title": "Licensed Marriage and Family Therapist",
+        "contact_url": "https://aermentalhealth.com/",
+        "contact_img": "../assets/img/andria-about-headshot.jpg",
+        "contact_org_name": "AER Mental Health Services",
+        "contact_desc": "Andria bio",
+        "mobile_number": "407-259-5856",
+        "email_address": "aermentalhealth@gmail.com",
+        "contact_level": "founder"
     },
     {
-        "first_name": "Ippy",
-        "last_name": "Lorem",
-        "mobile_number": "555-555-5555",
-        "email_address": "Ippy@gmail.com"
+        "first_name": "Jacqueline",
+        "last_name": "Williams",
+        "contact_title": "PhD, LMFT",
+        "contact_url": "https://jacquiwilliams.wordpress.com/",
+        "contact_img": "../assets/img/jacqui-about-headshot.webp",
+        "contact_org_name": "Hearthrow Counseling Center",
+        "contact_desc": "Jacqui's Bio",
+        "mobile_number": "407-956-5773",
+        "email_address": "DrJacquiWilliams@gmail.com",
+        "contact_level": "founder"
+    },
+    {
+        "first_name": "Disaster",
+        "last_name": "Distress",
+        "contact_title": "Helpline",
+        "contact_url": "https://www.samhsa.gov/find-help/disaster-distress-helpline",
+        "contact_img": "../assets/img/logos/urgent-contacts/samhsa-logo.png",
+        "contact_org_name": "The Disaster Distress Helpline",
+        "contact_desc": "SAMHSA’s Disaster Distress Helpline provides 24/7, 365-day-a-year crisis counseling and support to people experiencing emotional distress related to natural or human-caused disasters.",
+        "mobile_number": "1-800-985-5990",
+        "email_address": "ddh@vibrant.org",
+        "contact_level": "urgent"
+    },
+    {
+        "first_name": "National",
+        "last_name": "Hopeline",
+        "contact_title": "Network",
+        "contact_url": "https://www.thehopeline.com/",
+        "contact_img": "../assets/img/logos/urgent-contacts/hoepline-logo.png",
+        "contact_org_name": "National Hopeline Network",
+        "contact_desc": "A 24 hrs service that forwards your call to the nearest crisis hotline in your area determined from the your phones area code.",
+        "mobile_number": "1-800-784-2433",
+        "email_address": "frontdesk@thehopeline.org",
+        "contact_level": "urgent"
+    },
+    {
+        "first_name": "Veteran",
+        "last_name": "Crisis",
+        "contact_title": "Line",
+        "contact_url": "https://www.veteranscrisisline.net/",
+        "contact_img": "../assets/img/logos/urgent-contacts/veterans-crisis-logo.svg",
+        "contact_org_name": "Veterans Crisis Line",
+        "contact_desc": "If you're a Veteran in crisis or concerned about one, the Veterans Crisis Line is a free, confidential resource that connects you to a real person specially trained to support Veterans.",
+        "mobile_number": "1-800-273-8255",
+        "email_address": "NA",
+        "contact_level": "urgent"
+    },
+    {
+        "first_name": "Suicide",
+        "last_name": "Prevention",
+        "contact_title": "Lifeline",
+        "contact_url": "https://suicidepreventionlifeline.org/",
+        "contact_img": "../assets/img/logos/urgent-contacts/suicide-lifeline-logo.png",
+        "contact_org_name": "Suicide & Crisis Lifeline",
+        "contact_desc": "We can all help prevent suicide. The Lifeline provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals in the United States.",
+        "mobile_number": "1-800-273-8255",
+        "email_address": "NA",
+        "contact_level": "urgent"
+    },
+    {
+        "first_name": "HD",
+        "last_name": "Counseling",
+        "contact_title": "HD Counseling",
+        "contact_url": "https://hdcounseling.com",
+        "contact_img": "../assets/img/logos/local-contacts/HD-Counseling-Logo.png",
+        "contact_org_name": "HD Counseling",
+        "contact_desc": "HD Counseling, LLC makes every effort to accompany its clients in reaching their goals in both their personal and professional lives. We strive to counsel individuals and groups in such a way that creates a safe place for developing the tools needed to address the circumstances presenting hindrances to the individual's ideal position. HD Counseling, LLC brings a different outlook to the benefits that counseling offers.",
+        "mobile_number": "407-504-1869",
+        "email_address": "info@hdcounseling.com",
+        "contact_level": "local"
+    },
+    {
+        "first_name": "Camaraderie ",
+        "last_name": "Foundation",
+        "contact_title": "Camaraderie Foundation - Orlando",
+        "contact_url": "https://camaraderiefoundation.org/",
+        "contact_img": "../assets/img/logos/local-contacts/camraderiefoundation-logo.png",
+        "contact_org_name": "Camaraderie Foundation",
+        "contact_desc": "Camaraderie Foundation's mission is to provide healing for the 'Invisible wounds of war' through counseling, emotional, and spriitual support for all military service members, veterans, and their families",
+        "mobile_number": "407-841-0071",
+        "email_address": "admin@camaraderiefoundation.org",
+        "contact_level": "local"
+    },
+    {
+        "first_name": "Sample First",
+        "last_name": "Sample Last",
+        "contact_title": "Sample Title",
+        "contact_url": "#",
+        "contact_img": "../assets/img/GYS_logo.png",
+        "contact_org_name": "Sample org name",
+        "contact_desc": "Sample description",
+        "mobile_number": "123-456-7890",
+        "email_address": "sameple@test.com",
+        "contact_level": "test"
     }
 ]
