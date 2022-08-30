@@ -1927,6 +1927,14 @@ nav.navbar.scrolled .nav-links {
 
 }
 
+.footer .star-banner{
+  padding: 1.5em;
+}
+
+.footer .star-banner span{
+  transform: scale(1.5);
+}
+
 .footer-socials {
   display: flex;
   flex-direction: row;

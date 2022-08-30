@@ -2,6 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import logo from "../assets/img/GYS_logo.jpg";
 import { Link } from "react-router-dom";
+import StarBanner from "./StarBanner";
 
 export default function Footer() {
   return (
@@ -30,7 +31,7 @@ export default function Footer() {
         </h3>
         <h4>We Got Your Back</h4></a>
       </div>
-      <hr />
+      <StarBanner />
       <div className="footer-socials">
         {/* TODO: CREATE CUSTOM FACEBOOK URL */}
         <span>
