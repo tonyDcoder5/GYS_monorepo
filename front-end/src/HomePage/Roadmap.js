@@ -3,20 +3,19 @@ import React from "react";
 export default function Roadmap({ prompts }) {
   const roadmapPrompts = [...prompts];
 
-  console.log(roadmapPrompts);
-
   return (
     <div className="roadmap-sect m-3">
       {roadmapPrompts ? (
         roadmapPrompts.map((prompt) => {
+        
           return (
             <div className="roadmap-block">
               <h3>{prompt.section_title}</h3>
               <div>
                 <img
-                  src={prompt.section_image}
+                  src={require("../assets/img/GYS_logo.jpg")}
                   alt={prompt.subtext}
-                  width={"25%"}
+                  width={"15%"}
                 />
                 <p>{prompt.section_text}</p>
               </div>

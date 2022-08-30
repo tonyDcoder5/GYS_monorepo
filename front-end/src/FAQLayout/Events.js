@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import StarBanner from "../components/StarBanner";
 import { formatAsDate, listEvents } from "../utils/api";
 
 export default function Events() {
@@ -27,6 +28,7 @@ export default function Events() {
       <div className="row">
         <h4>Upcoming Events:</h4>
         <span>Today: {date}</span>
+        <StarBanner />
         <div className="col events-block">
           {events.length > 0 ? events.map((event, idx) => (
             <div className="agenda-block" key={event.event_id}>

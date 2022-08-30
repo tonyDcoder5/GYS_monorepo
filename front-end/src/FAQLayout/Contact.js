@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import StarBanner from "../components/StarBanner";
 
 export default function Contact() {
 
@@ -53,6 +54,7 @@ export default function Contact() {
           <Row>
             <h2>Contact Form</h2>
           </Row>
+          <StarBanner />
           <Row>
             <Form.Group as={Col} controlId="user_name">
               <Form.Label>Name</Form.Label>

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/img/GYS_logo.jpg";
+import StarBanner from "./StarBanner";
 
 export default function Banner() {
   return (
@@ -12,6 +13,7 @@ export default function Banner() {
         </div>
         <div className="brand-text">
           <a href="home"><h1><b>Golf Yankee Six</b></h1></a>
+          <StarBanner />
           <h4><b>Veterans Mental Health Matters</b></h4>
         </div>
       </div>

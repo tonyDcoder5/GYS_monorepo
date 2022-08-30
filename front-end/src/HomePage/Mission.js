@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import StarBanner from "../components/StarBanner";
 
 export default function Mission({ prompts }) {
   const flag = require("../assets/img/flag-gif.gif");
@@ -25,13 +26,13 @@ export default function Mission({ prompts }) {
           name="flag animation"
           id="intro-animation"
         />
-        <span className="intro-subhead">
+        <section className="intro-subhead">
           <h3>{missionContent?.section_title}</h3>
-          {missionContent?.section_text || null}
-        </span>
+          <p>{missionContent?.section_text || null}</p>
+        </section>
       </div>
       <div className="mission-stats">
-          <h3>Statistics headline</h3>
+          <StarBanner />
           <Row className="mt-2 g-4">
         {statsContent ? (
           statsContent.map((stat) => {

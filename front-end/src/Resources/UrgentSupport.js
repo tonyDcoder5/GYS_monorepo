@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Card, OverlayTrigger, Popover } from "react-bootstrap";
 // import Calendar from 'react-calendar';
 import { Link } from "react-router-dom";
+import StarBanner from "../components/StarBanner";
 
 export default function UrgentSupport({contacts =[]}) {
   
@@ -42,6 +43,7 @@ export default function UrgentSupport({contacts =[]}) {
   return (
     <div className="resource-block urgent-resources">
       <h3>Urgent/Emergency Support Section</h3>
+      <StarBanner />
       <Row xs={1} sm={2} className="g-4">
         {contactsPage.map((contact, idx) => (
           <Col key={contact.id}>

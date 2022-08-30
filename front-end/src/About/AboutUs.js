@@ -1,12 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
+import StarBanner from "../components/StarBanner";
+import { listContacts } from "../utils/api";
 const logo = require("../assets/img/GYS_logo.jpg");
 
 export default function AboutUs({prompts = [] }) {
 
-  // console.log(prompts);
+  console.log(prompts);
 
+  const i = {
+    section_title: "Loading section content..."
+  }
+  
   // ADD API CALL for andria and Jacqui's contact/bio for about page 
+  const [contacts,setContacts] = useState([]);
+  const [contactsError,setContactsError] = useState(null)
+ 
+  useEffect( ()=>{
+    const fetchResources = async ()=>{
+      try{
+        const abortController = new AbortController();
+        const response = await listContacts(abortController.signal);
+        
+        const founders = response.filter((data)=> data.level === "founder");
+        console.log(founders);
+        setContacts(founders);        
+      } catch (error){
+        setContactsError(error)
+      }
+    }
+    fetchResources()
+  },[])
+
   const team = [
     {
       id: 0,
@@ -55,25 +80,17 @@ export default function AboutUs({prompts = [] }) {
     },
   ];
 
-  const i = {
-    image: "../assets/img/GYS_logo.jpg",
-    name: "why-block",
-    title: "",
-    bio: "",
-    link: "",
-  };
 
   return (
     <div className="about-us">
       <div className="row why-block">
-        <h2>Why GYS?</h2>
+        <h2>{prompts[0]?.section_title || i.section_title}</h2>
+        <StarBanner />
         <div className="why-row">
-          <img src={i.image} width={"25%"} alt="headshot image" />
+          <img src={require("../assets/img/GYS_logo.jpg")} width='15%' alt="media/logo" />
           <section className="why-text">
-            <h4>{i.name}</h4>
-            <h6>{i.title}</h6>
-            <p>{i.bio}</p>
-            <a href={i.link}>LinkedIn</a>
+            <h4>{prompts[0]?.section_subtitle}</h4>
+            <p>{prompts[0]?.section_text}</p>
           </section>
         </div>
       </div>
@@ -84,7 +101,7 @@ export default function AboutUs({prompts = [] }) {
           team.map((i) => {
             return (
               <div className="who-col">
-                <img src={i.image} width={"25%"} alt="headshot image" />
+                <img src={i.image} width={"25%"} alt="media/logo" />
                 <section className="who-text">
                   <h4>{i.name}</h4>
                   <h6>{i.title}</h6>
@@ -109,6 +126,7 @@ export default function AboutUs({prompts = [] }) {
               return (
                 <Col key={value.id}>
                   <h3>{value.title}</h3>
+                  <StarBanner />
                   <p>{value.subtitle}</p>
                 </Col>
               );

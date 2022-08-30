@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import StarBanner from "../components/StarBanner";
 import { listResources } from "../utils/api";
 
 export default function Downloadables() {
@@ -65,6 +66,7 @@ export default function Downloadables() {
     <div className="downloads">
       <div className="row downloadables-block">
         <h4>Downloadables</h4>
+        <StarBanner />
         {display}
       </div>
     </div>

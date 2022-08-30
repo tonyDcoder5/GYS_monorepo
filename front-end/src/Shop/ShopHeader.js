@@ -1,4 +1,5 @@
 import React from "react";
+import StarBanner from "../components/StarBanner";
 
 export default function ShopHeader({prompts = []}) {
   
@@ -6,7 +7,7 @@ export default function ShopHeader({prompts = []}) {
   
   return (
       <div className="row shop-header">
-        <h3>Shop Section</h3>
+        <StarBanner />
         <div className="col-4">Shirt Preview</div>
         <div className="col-7">Coming Soon, Supplier details</div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import StarBanner from "../components/StarBanner";
 import { listPosts } from "../utils/api";
 
 export default function FAQPage() {
@@ -89,6 +90,7 @@ export default function FAQPage() {
           {/* <img src={logo} width="25%" alt="GYS logo/Home Button" /> */}
         </section>
       </div>
+      <StarBanner />
       <div className="faq-content">
         <section>
           {table.map((faq, idx) => {
@@ -104,6 +106,7 @@ export default function FAQPage() {
           })}
         </section>
       </div>
+      <StarBanner />
       <div className="faq-block">
         <section>
           <h5>Comments/Resources Section?</h5>

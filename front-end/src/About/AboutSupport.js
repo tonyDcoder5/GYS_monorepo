@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import StarBanner from "../components/StarBanner";
 
 export default function AboutSupport({prompts = []}) {
   
@@ -44,6 +45,7 @@ export default function AboutSupport({prompts = []}) {
           <Col key={prompt.id}>
             <Card className=" support-card">
                 <img src={prompt.icon} width={"50%"} alt={prompt.title + "icon"} />
+                <StarBanner />
                 <p>
                   Brief description how to support GYS (Events, Social Media, Partnered Resources, Merch)
                 </p>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Row, Col, Accordion } from "react-bootstrap";
+import StarBanner from "../components/StarBanner";
 
 export default function FAQs({ data = [] }) {
   // data holds FAQs page content
@@ -97,6 +98,7 @@ export default function FAQs({ data = [] }) {
     <div className="faqs">
       <div className="faqs-bx">
         <h4>Top FAQs</h4>
+        <StarBanner />
         <div className="top-faqs">
           <Row>
             {top_faqs.map((faq, idx) => (
@@ -121,6 +123,7 @@ export default function FAQs({ data = [] }) {
           </Row>
         </div>
         <h4>Most recent faqs</h4>
+        <StarBanner />
         <div className="recent-faqs">
           <Accordion defaultActiveKey="0" flush>
             {recent_faqs.map((faq, idx) => (

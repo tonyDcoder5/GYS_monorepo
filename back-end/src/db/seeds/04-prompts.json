@@ -15,7 +15,7 @@
         "user_id": 1,
         "section_name": "mission-sect",
         "section_title": "GYS has our Heroes Backs",
-        "section_text": "Our mission begins, when they get home from theirs",
+        "section_text": "At GYS, our vision is in our name, Got Your Six. We got your back. We got you. We got all of you. We are glad you are back home and want to show you how much we got you. We will not let you become a statistic. We will not let you feel alone. We will not let you remain vulnerable. We want you to have the mental health services you need and deserve. For as long as you need them.",
         "section_subtext": "mission-sect-header",
         "section_image": "../assets/img/GYS_logo.jpg",
         "section_video": null
@@ -116,7 +116,7 @@
     },
     {
         "user_id": 1,
-        "section_name": "values-block",
+        "section_name": "values-block-header",
         "section_title": "Our Values at GYS",
         "section_subtitle": null,
         "section_text": "We hold these near and dear to our hearts",
@@ -171,7 +171,7 @@
     },
     {
         "user_id": 1,
-        "section_name": "about-support",
+        "section_name": "about-support-header",
         "section_title": "How can you support Golf Yankee Six?",
         "section_subtitle": null,
         "section_text": "Here are a few ways to get involved and help in our mission to truly make our heroes feel at home again:",
@@ -183,7 +183,7 @@
     {
         "user_id": 1,
         "section_name": "support-card-1",
-        "section_title": "support card title",
+        "section_title": "Follow us on IG and FB for updates",
         "section_subtitle": null,
         "section_text": "support card text 1 -DB",
         "section_subtext": "support-1-text",
@@ -194,7 +194,7 @@
     {
         "user_id": 1,
         "section_name": "support-card-2",
-        "section_title": "support card title",
+        "section_title": "Educate and prepare your toolkit to help the heroes in your life",
         "section_subtitle": null,
         "section_text": "support card text 2 -DB",
         "section_subtext": "support-2-text",
@@ -205,7 +205,7 @@
     {
         "user_id": 1,
         "section_name": "support-card-3",
-        "section_title": "support card title",
+        "section_title": "Wear your support through our upcoming merchandise",
         "section_subtitle": null,
         "section_text": "support card text 3 -DB",
         "section_subtext": "support-3-text",
@@ -216,7 +216,7 @@
     {
         "user_id": 1,
         "section_name": "support-card-4",
-        "section_title": "support card title",
+        "section_title": "Come to our events and meet the community!",
         "section_subtitle": null,
         "section_text": "support card text 4 -DB",
         "section_subtext": "support-4-text",

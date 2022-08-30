@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { Offcanvas } from "react-bootstrap";
+import StarBanner from "../components/StarBanner";
 const logo = require("../assets/img/GYS_logo.jpg");
 
-export default function ShopBlock({prompts =[]}) {
-
+export default function ShopBlock({ prompts = [] }) {
   // console.log(prompts);
 
-  const shopPrompts = prompts.filter((prompt)=> prompt.section_name.includes("shop"));
+  const shopPrompts = prompts.filter((prompt) =>
+    prompt.section_name.includes("shop")
+  );
 
-  const shirtPrompts = prompts.filter((prompt)=> prompt.section_name.includes("shirt"));
+  const shirtPrompts = prompts.filter((prompt) =>
+    prompt.section_name.includes("shirt")
+  );
 
   const [showDetails, setShowDetails] = useState(false);
 
@@ -43,18 +47,6 @@ export default function ShopBlock({prompts =[]}) {
 
   return (
     <div className="shop-block">
-      <div className="shop-bx">
-        <h2>DESIGNS BY COMPANY NAME HERE</h2>
-        <div className="shop-row">
-          <img src={prompt.image} width={"25%"} alt="headshot" />
-          <section className="shop-text">
-            <h4>{prompt.name}</h4>
-            <h6>{prompt.title}</h6>
-            <p>{prompt.bio}</p>
-            <a href={prompt.link}>LinkedIn</a>
-          </section>
-        </div>
-      </div>
       <div className="row shirt-block">
         <h2>DESIGNS COMING SOON</h2>
         <div className="shirt-content">
@@ -80,7 +72,7 @@ export default function ShopBlock({prompts =[]}) {
                       className="offcanvas-details"
                     >
                       <Offcanvas.Body>
-                      <Offcanvas.Header closeButton />
+                        <Offcanvas.Header closeButton />
 
                         <h3>{shirt.title}</h3>
                         <h5>{shirt.subtitle}</h5>
@@ -96,6 +88,19 @@ export default function ShopBlock({prompts =[]}) {
                 </div>
               );
             })}
+          </section>
+        </div>
+      </div>
+      <StarBanner />
+      <div className="shop-bx">
+        <h2>DESIGNS BY COMPANY NAME HERE</h2>
+        <div className="shop-row">
+          <img src={prompt.image} width={"25%"} alt="headshot" />
+          <section className="shop-text">
+            <h4>{prompt.name}</h4>
+            <h6>{prompt.title}</h6>
+            <p>{prompt.bio}</p>
+            <a href={prompt.link}>LinkedIn</a>
           </section>
         </div>
       </div>
