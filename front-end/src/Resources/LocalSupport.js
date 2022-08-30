@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import StarBanner from "../components/StarBanner";
 
 export default function LocalSupport({contacts =[]}) {
   
@@ -74,6 +75,7 @@ export default function LocalSupport({contacts =[]}) {
   return (
       <div className="local-support-block">
         <h3>Local Support Section</h3>
+        <StarBanner />
         <div className="contact-select">
           <div className="contact-group">
             {contactsPage.map((contact, idx) => (

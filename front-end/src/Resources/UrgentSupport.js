@@ -44,31 +44,18 @@ export default function UrgentSupport({contacts =[]}) {
     <div className="resource-block urgent-resources">
       <h3>Urgent/Emergency Support Section</h3>
       <StarBanner />
+
+      {/* highlight just 988 lifeline and other websites to find out more about what they can offer  */ }
       <Row xs={1} sm={2} className="g-4">
         {contactsPage.map((contact, idx) => (
           <Col key={contact.id}>
             <Card className="support-card-urgent">
               <div className="urgent-contact">
                 <h4>{contact.orgName}</h4>
-                <h6>{contact.orgDesc}</h6>
+                <p>{contact.orgDesc}</p>
+                <h6>Main Phone: {contact.orgPhone}</h6>
                 <span className="support-btns-urgent">
-                  <OverlayTrigger
-                  trigger={['click']} 
-                  key='bottom' 
-                  placement='bottom'
-                  rootClose="true" 
-                  overlay={
-                    <Popover id={`popover-positioned-bottom`} 
-                    placement="bottom"
-                    className="overlay-card">
-                      <h4>Contact Info</h4>
-                      <Popover.Body>
-                       <strong>Main Number: </strong> {contact.orgPhone}
-                      </Popover.Body>
-                    </Popover>
-                  }  >
-                    <button className="btn btn-contact">Contact</button>
-                  </OverlayTrigger >
+                 
                   <button className="btn btn-orgsite">
                     <a href={contact.orgUrl} target="_blank">
                       Website

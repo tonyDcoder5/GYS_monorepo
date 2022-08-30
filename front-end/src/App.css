@@ -426,13 +426,13 @@ nav.navbar.scrolled .nav-links {
   padding: 2em;
   font-size: 1.25em;
   line-height: 2em;
-  margin: 1em;
+  margin: 1em 0 .5em 0;
   background-color: #f1edee;
 }
 
 .intro-subhead h3{
-  border-bottom: .25em dashed #C42021;
-  padding-bottom: 1em;
+  border-bottom: .25em dotted #C42021;
+  padding-bottom: .5em;
   width: fit-content;
 }
 
@@ -484,6 +484,15 @@ nav.navbar.scrolled .nav-links {
 
 .mission-stats .col * {
   margin: 0.5em;
+}
+
+.mission-stats .col h3 {
+  padding-bottom: .5em;
+  border-bottom: .25em dotted #C42021;
+}
+
+.mission-stats .col p {
+  font-size: 2vmax;
 }
 
 .mission-stats .btn {
@@ -615,13 +624,12 @@ nav.navbar.scrolled .nav-links {
 .why-text h4{
   font-size: 3vmax;
   padding-bottom: .5em;
-  border-bottom: .2em dotted #C42021;
-
+  border-bottom: .3em dotted #C42021;
 }
 
 
 .why-text p{
-  font-size: 1.5vmax;
+  font-size: 2vmax;
 }
 
 .who-block {
@@ -839,6 +847,11 @@ nav.navbar.scrolled .nav-links {
   box-shadow: 0 0 0.5em #f1edee;
 }
 
+.urgent-contact h4{
+  padding-bottom: .5em;
+  border-bottom: .3em dotted #C42021;
+}
+
 .support-btns-urgent button {
   margin: 0.5em;
   padding: 0.5em;
@@ -901,6 +914,10 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   border-radius: 2em;
   box-shadow: 0.5em 0.5em 2em #071013;
+}
+
+.local-support-block .star-banner {
+  margin: .5em 0 1em 0;
 }
 
 .contact-select {
@@ -1009,6 +1026,19 @@ nav.navbar.scrolled .nav-links {
   margin: 0.5em;
 }
 
+.contact-card .card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title{
+  border-bottom: .25em dotted #C42021;
+  width: fit-content;
+  
+}
+
 /* DOWNLOADS COMPONENT STYLES */
 .downloads {
   margin: 2em;
@@ -1060,6 +1090,11 @@ nav.navbar.scrolled .nav-links {
   background-color: #cecece;
   border-radius: 1em;
   padding: 2em;
+}
+
+.download h3{
+  border-bottom: .25em dotted #C42021;
+  padding-bottom: .5em;
 }
 
 .downloadables-block .col {
@@ -1485,6 +1520,7 @@ nav.navbar.scrolled .nav-links {
 
 .events-block {
   border: 0.1em solid #071013;
+  box-shadow: 0 0 .25em #071013;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1496,6 +1532,17 @@ nav.navbar.scrolled .nav-links {
   overflow-y: scroll;
   height: 25em;
 }
+
+.events .row a{
+  font-weight: bold;
+  color: #5d737d;
+}
+
+.events .row a:hover{
+  color: #f1edee;
+  text-shadow: 0 0 .5em #f1edee;
+}
+
 
 .events .star-banner{
   margin: 1em 0 1em 0;
@@ -1548,11 +1595,11 @@ nav.navbar.scrolled .nav-links {
 }
 
 .agenda-block h4 {
-  border-bottom: 0.25em dotted #036;
+  border-bottom: 0.4em dotted #C42021;
 }
 
 .agenda-block h5 {
-  border-top: 0.25em dotted #036;
+  border-top: 0.4em dotted #C42021;
 }
 
 .agenda-block img:hover {
@@ -1731,7 +1778,7 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   text-align: center;
   margin: 1em;
-  border-bottom: 0.25em dotted #036;
+  border-bottom: 0.25em dotted #C42021;
 }
 
 .shirt-row h3 {
@@ -1743,7 +1790,7 @@ nav.navbar.scrolled .nav-links {
   justify-content: space-evenly;
   align-items: center;
   font-size: 2vmin;
-  border-left: 0.25em dotted #036;
+  border-left: 0.25em dotted #C42021;
 }
 
 .shirt-row img {
