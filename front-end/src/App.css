@@ -918,8 +918,8 @@ nav.navbar.scrolled .nav-links {
   font-size: 3vmax;
 }
 
-.urgent-contact h4{
-  font-size: 2vmax;
+.urgent-contact h3{
+  font-size: 4vmax;
   padding-bottom: .5em;
   border-bottom: .3em dotted #C42021;
 }

@@ -24,42 +24,6 @@
         "contact_level": "founder"
     },
     {
-        "first_name": "Disaster",
-        "last_name": "Distress",
-        "contact_title": "Helpline",
-        "contact_url": "https://www.samhsa.gov/find-help/disaster-distress-helpline",
-        "contact_img": "../assets/img/logos/urgent-contacts/samhsa-logo.png",
-        "contact_org_name": "The Disaster Distress Helpline",
-        "contact_desc": "SAMHSA’s Disaster Distress Helpline provides 24/7, 365-day-a-year crisis counseling and support to people experiencing emotional distress related to natural or human-caused disasters.",
-        "mobile_number": "1-800-985-5990",
-        "email_address": "ddh@vibrant.org",
-        "contact_level": "urgent"
-    },
-    {
-        "first_name": "National",
-        "last_name": "Hopeline",
-        "contact_title": "Network",
-        "contact_url": "https://www.thehopeline.com/",
-        "contact_img": "../assets/img/logos/urgent-contacts/hoepline-logo.png",
-        "contact_org_name": "National Hopeline Network",
-        "contact_desc": "A 24 hrs service that forwards your call to the nearest crisis hotline in your area determined from the your phones area code.",
-        "mobile_number": "1-800-784-2433",
-        "email_address": "frontdesk@thehopeline.org",
-        "contact_level": "urgent"
-    },
-    {
-        "first_name": "Veteran",
-        "last_name": "Crisis",
-        "contact_title": "Line",
-        "contact_url": "https://www.veteranscrisisline.net/",
-        "contact_img": "../assets/img/logos/urgent-contacts/veterans-crisis-logo.svg",
-        "contact_org_name": "Veterans Crisis Line",
-        "contact_desc": "If you're a Veteran in crisis or concerned about one, the Veterans Crisis Line is a free, confidential resource that connects you to a real person specially trained to support Veterans.",
-        "mobile_number": "1-800-273-8255",
-        "email_address": "NA",
-        "contact_level": "urgent"
-    },
-    {
         "first_name": "Suicide",
         "last_name": "Prevention",
         "contact_title": "Lifeline",

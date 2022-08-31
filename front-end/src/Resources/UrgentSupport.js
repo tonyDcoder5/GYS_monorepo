@@ -5,52 +5,20 @@ import { Link } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
 
 export default function UrgentSupport({ contacts = [] }) {
-  // console.log(contacts);
-
-  const contactsPage = [
-    {
-      id: 0,
-      orgName: "TestOrg1",
-      orgDesc: "Example description",
-      orgPhone: "123-456-7890",
-      orgUrl: "#",
-    },
-    {
-      id: 1,
-      orgName: "TestOrg1",
-      orgDesc: "Example description",
-      orgPhone: "123-456-7890",
-      orgUrl: "#",
-    },
-    {
-      id: 2,
-      orgName: "TestOrg1",
-      orgDesc: "Example description",
-      orgPhone: "123-456-7890",
-      orgUrl: "#",
-    },
-    {
-      id: 3,
-      orgName: "Suicide & Crisis Lifeline",
-      orgDesc:
-        "988 has been designated as the new three-digit dialing code that will route callers to the National Suicide Prevention Lifeline.",
-      orgPhone: "988",
-      orgUrl: "https://988lifeline.org/",
-    },
-  ];
+  console.log(contacts);
 
   return (
     <div className="resource-block urgent-resources">
-      <h3>{contactsPage[0].orgName}</h3>
       <StarBanner />
       <div className="support-card-urgent">
-        <div className="urgent-contact">
+        <div className="urgent-contact">      
+        <h3>{contacts[0]?.contact_org_name}</h3>
           <section>
-            <p>{contactsPage[0].orgDesc}</p>
+            <p>{contacts[0]?.contact_desc}</p>
             <span className="support-btns-urgent">
-              <strong>Main Phone: {contactsPage[0].orgPhone}</strong>
+              <strong>Main Phone: {contacts[0]?.mobile_number}</strong>
               <button className="btn btn-orgsite">
-                <a href={contactsPage[0].orgUrl} target="_blank">
+                <a href={contacts[0]?.contact_url} target="_blank">
                   Website
                 </a>
               </button>
