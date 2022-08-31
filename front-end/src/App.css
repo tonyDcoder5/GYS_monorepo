@@ -648,6 +648,10 @@ nav.navbar.scrolled .nav-links {
   box-shadow: 0 0 1em #071013;
 }
 
+.who-block h2{
+  font-size: 4vmax;
+}
+
 
 .who-block div {
   display: flex;
@@ -721,10 +725,14 @@ nav.navbar.scrolled .nav-links {
 }
 
 .values-block h3{
-  font-size: 3.5vmax;
+  font-size: 4vmax;
 }
 
-.values-block p{
+.values-block h4{
+  font-size: 3vmax;
+}
+
+.values-block .col p{
   font-size: 2.5vmax;
 }
 
@@ -763,7 +771,26 @@ nav.navbar.scrolled .nav-links {
   border-radius: 1em;
   padding: 2em;
   margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+
+
+.about-support h3{
+  margin: .5em;
+  font-size: 4vmax;
+}
+
+.about-support h4{
+  margin: 0 0 .5em 0;
+  font-size: 3vmax;
+}
+
+
+
 
 .support-card {
   text-align: center;
