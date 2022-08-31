@@ -3,10 +3,9 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
 
-export default function LocalSupport({contacts =[]}) {
-  
+export default function LocalSupport({ contacts = [] }) {
   // console.log(contacts);
-  
+
   const contactsPage = [
     {
       id: 0,
@@ -73,8 +72,9 @@ export default function LocalSupport({contacts =[]}) {
   };
 
   return (
-      <div className="local-support-block">
-        <h3>Local Support Section</h3>
+    <div className="local-support-block">
+      <section className="local-hotlines">
+        <h3>Local Support Hotlines</h3>
         <StarBanner />
         <div className="contact-select">
           <div className="contact-group">
@@ -96,18 +96,56 @@ export default function LocalSupport({contacts =[]}) {
               </div>
             ))}
           </div>
-        <div className="contact-card">
-          <Card>
-            <Card.Body>
-              <Card.Title>{hiCard.orgName}</Card.Title>
-              <Card.Text>{hiCard.orgDesc}</Card.Text>
-              <Button className="local-orgsite">
-                <a href={hiCard.orgUrl}>Website</a>
-              </Button>
-            </Card.Body>
-          </Card>
+          <div className="contact-card">
+            <Card>
+              <Card.Body>
+                <Card.Title>{hiCard.orgName}</Card.Title>
+                <Card.Text>{hiCard.orgDesc}</Card.Text>
+                <Button className="local-orgsite">
+                  <a href={hiCard.orgUrl}>Website</a>
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
         </div>
-      </div>
-      </div>
+      </section>
+      <section className="local-counseling">
+        <h3>Local Counseling Support</h3>
+        <StarBanner />
+        <span>         <div className="contact-card">
+            <Card>
+              <Card.Body>
+                <Card.Title>{hiCard.orgName}</Card.Title>
+                <Card.Text>{hiCard.orgDesc}</Card.Text>
+                <Button className="local-orgsite">
+                  <a href={hiCard.orgUrl}>Website</a>
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="contact-select">
+          <div className="contact-group">
+            {contactsPage.map((contact, idx) => (
+              <div
+                onClick={() => clickHandle(contact)}
+                key={idx}
+                className="contact-line"
+              >
+                <section>
+                  <h4>{contact.orgName}</h4>
+                  <img
+                    key={contact.id}
+                    src={contact.icon}
+                    width={contact.width}
+                  />
+                  <h5>{contact.contact}</h5>
+                </section>
+              </div>
+            ))}
+          </div>
+        </div> </span>
+ 
+      </section>
+    </div>
   );
 }

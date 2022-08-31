@@ -8,6 +8,8 @@ export default function StarBanner(){
             <span>&#9733;</span>
             <span>&#9733;</span>
             <span>&#9733;</span>
-            <span>&#9733;</span>            </div> 
+            <span>&#9733;</span>            
+            <span>&#9733;</span>            
+            </div> 
     )
 }

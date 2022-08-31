@@ -82,7 +82,7 @@ box-shadow: 0 0 1em #071013;
 /* GENERAL PAGE STYLES */
 
 html{
-  zoom: 85%;
+  zoom: 90%;
 }
 
 p{
@@ -211,18 +211,22 @@ p{
 }
 
 .brand-logo img {
-  width: 6em;
+  width: 10vmax;
+  margin-right: 2vmax;
   box-shadow: 0 0 0.5em #071013;
-  border-radius: 5em;
+  border-radius: 10em;
 }
 
 .brand-text {
-  margin-left: 1em;
-  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .banner-link {
   margin-top: 1em;
+  font-size: 1.5vmax;
 }
 
 .banner-link * {
@@ -230,14 +234,7 @@ p{
 }
 
 .brand-text h1 {
-  font-size: 2em;
-  /* border-bottom: .1em dashed #C42021;
-  padding-bottom: .25em; */
-
-}
-
-.brand-text .star-banner{
-
+  font-size: 3vmax;
 }
 
 .header-nav {
@@ -323,6 +320,8 @@ nav.navbar.scrolled .nav-links {
 .nav-links a {
   text-decoration: none;
   color: #036;
+  font-size: 2vmax;
+  padding: 1em;
 }
 
 .nav-links a:hover {
@@ -432,12 +431,13 @@ nav.navbar.scrolled .nav-links {
 
 .intro-subhead h3{
   border-bottom: .25em dotted #C42021;
+  font-size: 3.5vmax;
   padding-bottom: .5em;
   width: fit-content;
 }
 
 .intro-subhead p{
-  font-size: 1.75vmax;
+  font-size: 2vmax;
   line-height: 2em;
 }
 
@@ -487,6 +487,7 @@ nav.navbar.scrolled .nav-links {
 }
 
 .mission-stats .col h3 {
+  font-size: 3vmax;
   padding-bottom: .5em;
   border-bottom: .25em dotted #C42021;
 }
@@ -531,6 +532,7 @@ nav.navbar.scrolled .nav-links {
 }
 
 .roadmap-block h3 {
+  font-size: 3vmax;
   margin: .5em 0 1em 0;
   padding-bottom: .25em;
   border-bottom: 0.25em dotted #C42021;
@@ -556,7 +558,8 @@ nav.navbar.scrolled .nav-links {
 }
 
 .roadmap-block p{
-  padding: 3em;
+  font-size: 2.5vmax;
+  padding: 2em;
 }
 
 /* ABOUT PAGE STYLES */
@@ -826,11 +829,8 @@ nav.navbar.scrolled .nav-links {
 .support-card-urgent {
   text-align: center;
   background-color: #036;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em;
-  margin: 0.5em;
+  width: 100%;
+  padding: 3vmax;
   border-radius: 0em;
   box-shadow: 0 0 0.5em #071013;
 }
@@ -840,17 +840,31 @@ nav.navbar.scrolled .nav-links {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  background-color: #cecece;
+  background-color: #f1edee;
   padding: 2em;
-  border-radius: 1em;
+  border-radius: .5em;
   box-shadow: 0 0 0.5em #f1edee;
 }
 
+.urgent-contact p{
+  font-size: 3vmax;
+}
+
 .urgent-contact h4{
+  font-size: 2vmax;
   padding-bottom: .5em;
   border-bottom: .3em dotted #C42021;
 }
+
+.support-btns-urgent strong {
+  font-size: 2vmax;  
+}
+
+.support-btns-urgent strong:hover {
+  color: #036;
+  text-shadow: 0 0 1em #5d737d;
+}
+
 
 .support-btns-urgent button {
   margin: 0.5em;
@@ -879,18 +893,18 @@ nav.navbar.scrolled .nav-links {
 }
 
 .btn-orgsite {
-  background-color: #f1edee;
+  background-color: #5d737d;
   border: 0.25em solid #036;
   font-size: 1.25em;
 }
 
 .btn-orgsite a {
   text-decoration: none;
-  color: #036;
+  color: #f1edee;
 }
 
 .btn-orgsite:hover {
-  background-color: #5d737d;
+  background-color: #cecece;
   border: 0.25em solid #036;
   box-shadow: 0 0 0.25em #f1edee;
   color: #f1edee;
@@ -898,7 +912,7 @@ nav.navbar.scrolled .nav-links {
 
 .btn-orgsite a:hover {
   text-decoration: dotted;
-  color: #f1edee;
+  color: #036;
 }
 
 .local-support-block {
@@ -913,11 +927,37 @@ nav.navbar.scrolled .nav-links {
   align-content: center;
   align-items: center;
   border-radius: 2em;
+  text-align: center;
   box-shadow: 0.5em 0.5em 2em #071013;
 }
 
 .local-support-block .star-banner {
   margin: .5em 0 1em 0;
+  padding: 1em;
+}
+
+.local-support-block section{
+  margin: 1em 0 1em 0;
+}
+
+
+.local-support-block .star-banner span{
+  transform: scale(1.5);
+}
+
+.local-support-block h3{
+  font-size: 3.5vmax;
+}
+
+.local-support-block .local-counseling{
+  display: flex;
+  flex-direction: column;
+}
+
+.local-support-block .local-counseling span{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .contact-select {
@@ -981,9 +1021,19 @@ nav.navbar.scrolled .nav-links {
   align-self: center;
   margin: 1em;
   padding: 0.5em;
-  border-radius: 2em;
+  border-radius: .5em;
   box-shadow: 0 0 0.25em #071013;
   background-color: #cecece;
+  color: #071013;
+}
+
+.contact-card .card .card-title{
+  font-size: 3vmax;  
+}
+
+
+.contact-card .card .card-text{
+  font-size: 2vmax;
 }
 
 .local-orgsite {
@@ -1036,7 +1086,7 @@ nav.navbar.scrolled .nav-links {
 .card-title{
   border-bottom: .25em dotted #C42021;
   width: fit-content;
-  
+  padding-bottom: .25em;
 }
 
 /* DOWNLOADS COMPONENT STYLES */
@@ -1081,20 +1131,26 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   background-color: #036;
   color: #071013;
-  border-radius: 2em;
+  border-radius: 1em;
   padding: 2em;
   box-shadow: 0 0 1em #071013;
 }
 
 .download span {
   background-color: #cecece;
-  border-radius: 1em;
+  border-radius: .25em;
   padding: 2em;
 }
 
 .download h3{
   border-bottom: .25em dotted #C42021;
   padding-bottom: .5em;
+  font-size: 3vmax;
+
+}
+
+.download p{
+  font-size: 2vmax;
 }
 
 .downloadables-block .col {
@@ -1167,24 +1223,24 @@ nav.navbar.scrolled .nav-links {
   color: #071013;
 }
 
+.faqs-bx .star-banner {
+  padding: 1em;
+}
+
+.faqs-bx .star-banner span{
+  transform: scale(1.5);
+}
+
 .top-faq * {
   text-align: center;
+  font-size: 2vmax;
   margin: 0.25em;
   line-height: 1.5em;
 }
 
 .top-faq h3 {
+  font-size: 3vmax;
   border-bottom: 0.2em solid #036;
-}
-
-.top-faq a {
-  text-decoration: none;
-  color: #036;
-}
-
-.top-faq a:hover {
-  text-decoration: underline;
-  color: #071013;
 }
 
 .top-faq button {
@@ -1291,6 +1347,10 @@ nav.navbar.scrolled .nav-links {
   margin: 0.25em;
 }
 
+.recent-faq .accordion-body p{
+  font-size: 2vmax;
+}
+
 .recent-faq a {
   text-decoration: none;
   color: #036;
@@ -1306,6 +1366,8 @@ nav.navbar.scrolled .nav-links {
   padding: 1em;
   background-color: #036;
   color: #f1edee;
+  transform: scale(1.5);
+  margin: 1em 0 2em 0;
 }
 
 .btn-all:hover {
@@ -1351,7 +1413,6 @@ nav.navbar.scrolled .nav-links {
 .faq-header {
   display: flex;
   flex-direction: column;
-
   padding: 2em;
   margin: 1em;
   width: fit-content;
@@ -1376,20 +1437,14 @@ nav.navbar.scrolled .nav-links {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   align-self: center;
-  margin: 1em;
-  padding: 2em;
+  margin: 1em 0 1em 0;
+  padding: 2em 3em 2em 1em;
   background-color: #cecece;
   box-shadow: 0 0 1em #071013;
   border-radius: 1em;
-}
-
-.faq-content section {
-  overflow-y: scroll;
-  height: 50vmin;
-  width: fit-content;
-  background-color: #f1edee;
-  border-radius: 2em;
+  width: 100%;
 }
 
 
@@ -1423,7 +1478,7 @@ nav.navbar.scrolled .nav-links {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  border-bottom: 0.25em dotted #036;
+  border-bottom: 0.5em dotted #C42021;
 }
 
 .faq-row h3 {
@@ -1433,8 +1488,12 @@ nav.navbar.scrolled .nav-links {
 .faq-row span {
   display: flex;
   justify-content: space-evenly;
-  font-size: 3vmin;
-  border-left: 0.25em dotted #036;
+  align-items: center;
+  border-left: 0.5em dotted #C42021;
+}
+
+.faq-row span p{
+  font-size: 2;
 }
 
 .faq-block {
@@ -1518,6 +1577,14 @@ nav.navbar.scrolled .nav-links {
   box-shadow: 0 0 1em #071013;
 }
 
+.events .row h4{
+  font-size: 3vmax;
+}
+
+.events .row p{
+  font-size: 2vmax;
+}
+
 .events-block {
   border: 0.1em solid #071013;
   box-shadow: 0 0 .25em #071013;
@@ -1530,7 +1597,7 @@ nav.navbar.scrolled .nav-links {
   background-color: #cecece;
   border-radius: 1em;
   overflow-y: scroll;
-  height: 25em;
+  height: 30vmax;
 }
 
 .events .row a{
@@ -1543,9 +1610,13 @@ nav.navbar.scrolled .nav-links {
   text-shadow: 0 0 .5em #f1edee;
 }
 
-
 .events .star-banner{
+  padding: 1em;
   margin: 1em 0 1em 0;
+}
+
+.events .star-banner span{
+  transform: scale(2);
 }
 
 .events-block::-webkit-scrollbar {
@@ -1860,6 +1931,15 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   font-size: large;
   color: #071013;
+}
+
+.contact .star-banner {
+  padding: 1em;
+
+}
+
+.contact .star-banner span{
+  transform: scale(1.5);
 }
 
 .send-notice {

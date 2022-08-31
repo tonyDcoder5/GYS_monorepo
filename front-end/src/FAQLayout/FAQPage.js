@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Accordion } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
 import { listPosts } from "../utils/api";
@@ -73,6 +74,8 @@ export default function FAQPage() {
     },
   ];
 
+  console.log(faqs);
+
   return (
     <div className="faq">
       <button
@@ -92,19 +95,19 @@ export default function FAQPage() {
       </div>
       <StarBanner />
       <div className="faq-content">
-        <section>
-          {table.map((faq, idx) => {
-            return (
-              <div className="faq-row">
-                <h3>{faq.title}</h3>
-                <span>
-                  <p>{faq.subtitle}</p>
-                  <p>{faq.date}</p>
-                </span>
-              </div>
-            );
-          })}
-        </section>
+          <Accordion defaultActiveKey="0" flush>
+            {faqs?.map((faq, idx) => (
+              <Accordion.Item className="recent-faq" eventKey={idx}>
+                <Accordion.Header>
+                  <h3>{faq.post_title}</h3>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <p>{faq.post_subtitle}</p>
+                  <p>{faq.post_date}</p>
+                </Accordion.Body>
+              </Accordion.Item>
+            ))}
+          </Accordion>
       </div>
       <StarBanner />
       <div className="faq-block">

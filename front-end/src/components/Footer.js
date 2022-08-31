@@ -9,9 +9,9 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-nav">
         <div className="footer-links">
-          <Link to="/about">About</Link>
-          <Link to="/resources">Resources</Link>
-          <Link to="/faqs">FAQs</Link>
+          <a href="/about">About</a>
+          <a href="/resources">Resources</a>
+          <a href="/faqs">FAQs</a>
         </div>
         <div className="footer-logo">
           <a href="/home">
@@ -19,10 +19,10 @@ export default function Footer() {
           </a>
         </div>
         <div className="footer-links">
-          <Link to="/events">Events</Link>
+          <a href="/events">Events</a>
 
-          <Link to="/contact">Contact</Link>
-          <a>Admin</a>
+          <a href="/contact">Contact</a>
+          <a href="/users">Admin</a>
         </div>
       </div>
       <div className="footer-text">

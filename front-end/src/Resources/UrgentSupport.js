@@ -4,10 +4,9 @@ import { Row, Col, Card, OverlayTrigger, Popover } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
 
-export default function UrgentSupport({contacts =[]}) {
-  
+export default function UrgentSupport({ contacts = [] }) {
   // console.log(contacts);
-  
+
   const contactsPage = [
     {
       id: 0,
@@ -42,31 +41,32 @@ export default function UrgentSupport({contacts =[]}) {
 
   return (
     <div className="resource-block urgent-resources">
-      <h3>Urgent/Emergency Support Section</h3>
+      <h3>{contactsPage[0].orgName}</h3>
       <StarBanner />
+      <div className="support-card-urgent">
+        <div className="urgent-contact">
+          <section>
+            <p>{contactsPage[0].orgDesc}</p>
+            <span className="support-btns-urgent">
+              <strong>Main Phone: {contactsPage[0].orgPhone}</strong>
+              <button className="btn btn-orgsite">
+                <a href={contactsPage[0].orgUrl} target="_blank">
+                  Website
+                </a>
+              </button>
+            </span>
+          </section>
+        </div>
+      </div>
 
-      {/* highlight just 988 lifeline and other websites to find out more about what they can offer  */ }
-      <Row xs={1} sm={2} className="g-4">
+      {/* highlight just 988 lifeline and other websites to find out more about what they can offer  */}
+      {/* <Row xs={1} sm={2} className="g-4">
         {contactsPage.map((contact, idx) => (
           <Col key={contact.id}>
-            <Card className="support-card-urgent">
-              <div className="urgent-contact">
-                <h4>{contact.orgName}</h4>
-                <p>{contact.orgDesc}</p>
-                <h6>Main Phone: {contact.orgPhone}</h6>
-                <span className="support-btns-urgent">
-                 
-                  <button className="btn btn-orgsite">
-                    <a href={contact.orgUrl} target="_blank">
-                      Website
-                    </a>
-                  </button>
-                </span>
-              </div>
-            </Card>
+
           </Col>
         ))}
-      </Row>
+      </Row> */}
     </div>
   );
 }
