@@ -651,26 +651,29 @@ nav.navbar.scrolled .nav-links {
 
 .who-block div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   margin: auto;
   padding: 1em;
 }
 
-.who-block div .who-col {
+.who-block div .who-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1em;
   justify-content: space-evenly;
-  margin: 0 0.5em 0 0.5em;
+  margin: 1em;
+  width: 100%;
   text-align: center;
   border-radius: 1em;
   background-color: #cecece;
   color: #071013;
 }
 
-.who-col img {
-  border-radius: 5em;
+.who-row img {
+  border-radius: .5em;
+  width: 30vmax;
 }
 
 .who-row * {
@@ -682,8 +685,25 @@ nav.navbar.scrolled .nav-links {
   padding: 1em;
   box-shadow: 0 0 0.5em #f1edee;
   background-color: #f1edee;
-  font-size: 1.25em;
   line-height: 2em;
+}
+
+.who-text p{
+  font-size: 2vmax;
+}
+
+.who-text h6{
+  font-size: 2vmax;
+  padding-bottom: .5em;
+  border-bottom: .5em dotted #C42021;
+}
+
+.who-text h5{
+  font-size: 2.5vmax;
+}
+
+.who-text h4{
+  font-size: 3vmax;
 }
 
 .values-block {
@@ -698,6 +718,14 @@ nav.navbar.scrolled .nav-links {
   border-radius: 2em;
   box-shadow: 0 0 1em #071013;
   color: #071013;
+}
+
+.values-block h3{
+  font-size: 3.5vmax;
+}
+
+.values-block p{
+  font-size: 2.5vmax;
 }
 
 .values-block .star-banner{
@@ -731,12 +759,15 @@ nav.navbar.scrolled .nav-links {
 }
 
 .about-support {
-  margin: 1em;
+  background-color: #036;
+  border-radius: 1em;
+  padding: 2em;
+  margin: 2em;
 }
 
 .support-card {
   text-align: center;
-  background-color: #036;
+  background-color: #cecece;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -748,28 +779,38 @@ nav.navbar.scrolled .nav-links {
 }
 
 .support-card .star-banner{
-  margin: .5em 1em 0em 1em;
+  margin: 1em 1em 0em 1em;
 }
 
-.support-card * {
-  margin: 1em;
+.support-card section{
+  background-color: #f1edee;
+  color: #071013;
+  border-radius: .5em;
+  margin: 2em 1em 1em 1em;
+  padding: 1em;
 }
 
-.support-card button {
+.support-card section p{
+  font-size: 2.5vmax;
+}
+
+.support-card section button {
+  padding: 1.5em;
   background-color: #cecece;
 }
 
-.support-card a {
+.support-card section a {
   text-decoration: none;
-  color: #071013;
+  color: #036;
+  font-size: 3vmax;
 }
 
-.support-card button:hover {
-  background-color: #f1edee;
+.support-card section button:hover {
+  background-color: #5d737d;
   box-shadow: 0 0 0.25em #f1edee;
 }
 
-.support-card a:hover {
+.support-card section a:hover {
   text-decoration: dotted;
   color: #036;
 }

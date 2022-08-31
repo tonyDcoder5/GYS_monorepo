@@ -6,8 +6,6 @@ const logo = require("../assets/img/GYS_logo.jpg");
 
 export default function AboutUs({prompts = [] }) {
 
-  console.log(prompts);
-
   const i = {
     section_title: "Loading section content..."
   }
@@ -21,10 +19,11 @@ export default function AboutUs({prompts = [] }) {
       try{
         const abortController = new AbortController();
         const response = await listContacts(abortController.signal);
+        const founders = response.filter((data)=> data.contact_level === "founder");
+
         
-        const founders = response.filter((data)=> data.level === "founder");
-        console.log(founders);
         setContacts(founders);        
+
       } catch (error){
         setContactsError(error)
       }
@@ -32,25 +31,9 @@ export default function AboutUs({prompts = [] }) {
     fetchResources()
   },[])
 
-  const team = [
-    {
-      id: 0,
-      name: "Test Name",
-      image: logo,
-      title: "Test Title",
-      bio: "Test bio",
-      link: "https://www.linkedin.com/in/tonydcoder/",
-    },
-    {
-      id: 1,
-      name: "Test Name 1",
-      image: logo,
-      title: "Test Title 1",
-      bio: "Test bio 1",
-      link: "https://www.linkedin.com/in/tonydcoder/",
-    },
-  ];
 
+  const team = [...contacts] || [];
+  let headshots = [require("../assets/img/andria-about-headshot.jpg"), require("../assets/img/jacqui-about-headshot.jpg")]
 
   // store prompts for header & values sections
   const values = [
@@ -87,7 +70,7 @@ export default function AboutUs({prompts = [] }) {
         <h2>{prompts[0]?.section_title || i.section_title}</h2>
         <StarBanner />
         <div className="why-row">
-          <img src={require("../assets/img/GYS_logo.jpg")} width='15%' alt="media/logo" />
+          <img src={require("../assets/img/GYS_logo.jpg")} width='40%' alt="media/logo" />
           <section className="why-text">
             <h4>{prompts[0]?.section_subtitle}</h4>
             <p>{prompts[0]?.section_text}</p>
@@ -98,43 +81,25 @@ export default function AboutUs({prompts = [] }) {
         <h2>Who are we?</h2>
         <div>
         {team ? (
-          team.map((i) => {
+          team.map((i, idx) => {
             return (
-              <div className="who-col">
-                <img src={i.image} width={"25%"} alt="media/logo" />
+              <div className="who-row" key={i.contact_id}>
+                <img src={headshots[idx]} className="who-headshot" alt="media/logo" />
                 <section className="who-text">
-                  <h4>{i.name}</h4>
-                  <h6>{i.title}</h6>
-                  <p>{i.bio}</p>
-                  <a href={i.link}>LinkedIn</a>
+                  <h4>{i.first_name + " " + i.last_name}</h4>
+                  <h5>{i.contact_title}</h5>
+                  <h6>{i.contact_org_name}</h6>
+                  <p>{i.contact_desc}</p>
                 </section>
               </div>
             );
           })
         ) : (
-          <div className="who-col">
+          <div className="who-row">
             <h3>Loading ...</h3>
           </div>
         )}
         </div>
-      </div>
-      <div className="values-block">
-        <h3>Our Values at GYS:</h3>
-        <Row className="g-4">
-          {values ? (
-            values.map((value) => {
-              return (
-                <Col key={value.id}>
-                  <h3>{value.title}</h3>
-                  <StarBanner />
-                  <p>{value.subtitle}</p>
-                </Col>
-              );
-            })
-          ) : (
-            <div className="value-block">Loading...</div>
-          )}
-        </Row>
       </div>
     </div>
   );
