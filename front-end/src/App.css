@@ -525,6 +525,7 @@ nav.navbar.scrolled .nav-links {
   margin: 2em;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   background-color: #036;
   box-shadow: 0 0 0.25em #071013;
   border-radius: .25em;
@@ -533,7 +534,7 @@ nav.navbar.scrolled .nav-links {
 
 .roadmap-block h3 {
   font-size: 3vmax;
-  margin: .5em 0 1em 0;
+  margin: auto;
   padding-bottom: .25em;
   border-bottom: 0.25em dotted #C42021;
   width: fit-content;
@@ -551,6 +552,20 @@ nav.navbar.scrolled .nav-links {
   border-radius: .5em;
   color: #071013;
   background-color: #f1edee;
+}
+
+@media screen and (max-width: 600px) {
+
+  .roadmap-block div {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  
+  }
+  .roadmap-block div img {
+    width: 15vmax;
+  
+  }
 }
 
 .roadmap-block div img {
@@ -916,6 +931,7 @@ nav.navbar.scrolled .nav-links {
 
 .urgent-contact p{
   font-size: 3vmax;
+  padding-bottom: .5em;
 }
 
 .urgent-contact h3{
@@ -924,8 +940,15 @@ nav.navbar.scrolled .nav-links {
   border-bottom: .3em dotted #C42021;
 }
 
+.support-btns-urgent{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
 .support-btns-urgent strong {
-  font-size: 2vmax;  
+  font-size: 3vmax;  
+  line-height: 1em;
 }
 
 .support-btns-urgent strong:hover {
@@ -935,7 +958,7 @@ nav.navbar.scrolled .nav-links {
 
 
 .support-btns-urgent button {
-  margin: 0.5em;
+  margin-top: 2em;
   padding: 0.5em;
   align-self: center;
 }
@@ -1026,6 +1049,13 @@ nav.navbar.scrolled .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  .local-support-block .local-counseling span{ 
+    flex-direction: column-reverse;
+  }
+
 }
 
 .contact-select {
@@ -2133,13 +2163,18 @@ nav.navbar.scrolled .nav-links {
 .footer-socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 2em;
+  margin: 2em 0 2em 0;
 }
 
+.footer-socials span{
+  transform: scale(1.5);
+}
+
+
 .footer-socials span:hover {
-  transform: scale(2);
+  transform: scale(3);
 }
 
 .footer-copy {

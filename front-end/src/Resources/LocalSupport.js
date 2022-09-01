@@ -4,54 +4,18 @@ import { Link } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
 
 export default function LocalSupport({ contacts = [] }) {
-  // console.log(contacts);
+  console.log(contacts);
 
-  const contactsPage = [
-    {
-      id: 0,
-      orgName: "TestOrg1",
-      orgDesc: "Example description",
-      orgPhone: "123-456-7890",
-      orgUrl: "#",
-      contact: "Org Contact",
-      contact_email: "sameple@sample.com",
-      icon: require("../assets/img/GYS_logo.jpg"),
-      width: "55%",
-    },
-    {
-      id: 1,
-      orgName: "TestOrg2",
-      orgDesc: "Example description",
-      orgPhone: "123-456-7890",
-      orgUrl: "#",
-      contact: "Org Contact",
-      contact_email: "sameple@sample.com",
-      icon: require("../assets/img/GYS_logo.jpg"),
-      width: "55%",
-    },
-    {
-      id: 2,
-      orgName: "Test Long Org Name",
-      orgDesc: "Example description",
-      orgPhone: "123-456-7890",
-      orgUrl: "#",
-      contact: "Org Contact",
-      contact_email: "sameple@sample.com",
-      icon: require("../assets/img/GYS_logo.jpg"),
-      width: "55%",
-    },
-    {
-      id: 3,
-      orgName: "National Crisis Lifeline",
-      orgDesc:
-        "988 has been designated as the new three-digit dialing code that will route callers to the National Suicide Prevention Lifeline.",
-      orgPhone: "988",
-      orgUrl: "https://988lifeline.org/",
-      contact: "Org Contact",
-      contact_email: "sameple@sample.com",
-      icon: require("../assets/img/GYS_logo.jpg"),
-      width: "55%",
-    },
+  const contactsPage = [...contacts];
+
+  const localCounseling = contacts?.filter(
+    (contact) => contact.contact_level === "local"
+  );
+
+  let logos = [
+    require("../assets/img/logos/local-contacts/HD_Counseling_Logo.png"),
+    require("../assets/img/logos/local-contacts/camaraderiefoundation-logo.png"),
+    require("../assets/img/GYS_logo.jpg"),
   ];
 
   const initialCard = {
@@ -67,7 +31,6 @@ export default function LocalSupport({ contacts = [] }) {
   const [hiCard, setHiCard] = useState(initialCard);
 
   const clickHandle = (contact) => {
-    console.log(contact);
     setHiCard(contact);
   };
 
@@ -85,13 +48,12 @@ export default function LocalSupport({ contacts = [] }) {
                 className="contact-line"
               >
                 <section>
-                  <h4>{contact.orgName}</h4>
+                  <h4>{contact.contact_org_name}</h4>
                   <img
-                    key={contact.id}
-                    src={contact.icon}
-                    width={contact.width}
+                    key={contact.contact_id}
+                    src={logos[idx]}
+                    width={"25%"}
                   />
-                  <h5>{contact.contact}</h5>
                 </section>
               </div>
             ))}
@@ -99,7 +61,7 @@ export default function LocalSupport({ contacts = [] }) {
           <div className="contact-card">
             <Card>
               <Card.Body>
-                <Card.Title>{hiCard.orgName}</Card.Title>
+                <Card.Title>{hiCard.contact_org_name}</Card.Title>
                 <Card.Text>{hiCard.orgDesc}</Card.Text>
                 <Button className="local-orgsite">
                   <a href={hiCard.orgUrl}>Website</a>
@@ -112,10 +74,12 @@ export default function LocalSupport({ contacts = [] }) {
       <section className="local-counseling">
         <h3>Local Counseling Support</h3>
         <StarBanner />
-        <span>         <div className="contact-card">
+        <span>
+          {" "}
+          <div className="contact-card">
             <Card>
               <Card.Body>
-                <Card.Title>{hiCard.orgName}</Card.Title>
+                <Card.Title>{hiCard.contact_org_name}</Card.Title>
                 <Card.Text>{hiCard.orgDesc}</Card.Text>
                 <Button className="local-orgsite">
                   <a href={hiCard.orgUrl}>Website</a>
@@ -124,27 +88,26 @@ export default function LocalSupport({ contacts = [] }) {
             </Card>
           </div>
           <div className="contact-select">
-          <div className="contact-group">
-            {contactsPage.map((contact, idx) => (
-              <div
-                onClick={() => clickHandle(contact)}
-                key={idx}
-                className="contact-line"
-              >
-                <section>
-                  <h4>{contact.orgName}</h4>
-                  <img
-                    key={contact.id}
-                    src={contact.icon}
-                    width={contact.width}
-                  />
-                  <h5>{contact.contact}</h5>
-                </section>
-              </div>
-            ))}
-          </div>
-        </div> </span>
- 
+            <div className="contact-group">
+              {localCounseling.map((contact, idx) => (
+                <div
+                  onClick={() => clickHandle(contact)}
+                  key={idx}
+                  className="contact-line"
+                >
+                  <section>
+                    <h4>{contact.contact_org_name}</h4>
+                    <img
+                      key={contact.contact_id}
+                      src={logos[idx]}
+                      width={"25%"}
+                    />
+                  </section>
+                </div>
+              ))}
+            </div>
+          </div>{" "}
+        </span>
       </section>
     </div>
   );

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
 
 export default function UrgentSupport({ contacts = [] }) {
-  console.log(contacts);
+  // console.log(contacts);
 
   return (
     <div className="resource-block urgent-resources">
