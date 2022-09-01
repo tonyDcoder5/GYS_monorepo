@@ -135,9 +135,13 @@ p{
 .body {
   background-color: #f1edee;
   color: #f1edee;
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: -1px;
   line-height: 1em;
+  font-family: 'Oxygen', 'Roboto', 'Source Sans Pro', sans-serif;
+}
+
+.body *{
+  line-height: 1.5em;
 }
 
 .home-layout {
@@ -164,7 +168,7 @@ p{
 .header-banner {
   background-color: rgb(0, 61, 121);
   color: #f1edee;
-  padding: 2.5em;
+  padding: 2em;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -226,15 +230,15 @@ p{
 
 .banner-link {
   margin-top: 1em;
-  font-size: 1.5vmax;
+  
 }
 
 .banner-link * {
-  font-size: 1.2em;
+  font-size: 2.5vmax;
 }
 
 .brand-text h1 {
-  font-size: 3vmax;
+  font-size: 4vmax;
 }
 
 .header-nav {
@@ -320,7 +324,7 @@ nav.navbar.scrolled .nav-links {
 .nav-links a {
   text-decoration: none;
   color: #036;
-  font-size: 2vmax;
+  font-size: 2.5vmax;
   padding: 1em;
 }
 

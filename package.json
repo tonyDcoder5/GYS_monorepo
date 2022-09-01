@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/tonyDcoder5/GYS_monorepo/issues"
   },
-  "homepage": "https://github.com/tonyDcoder5/GYS_monorepo#readme"
+  "homepage": "https://github.com/tonyDcoder5/GYS_monorepo#readme",
+  "dependencies": {
+    "firebase": "^9.9.3",
+    "firebase-tools": "^11.8.0"
+  }
 }
