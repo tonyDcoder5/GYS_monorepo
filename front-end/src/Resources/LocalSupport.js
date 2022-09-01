@@ -52,7 +52,7 @@ export default function LocalSupport({ contacts = [] }) {
                   <img
                     key={contact.contact_id}
                     src={logos[idx]}
-                    width={"25%"}
+                    width={"50%"}
                   />
                 </section>
               </div>
@@ -100,13 +100,13 @@ export default function LocalSupport({ contacts = [] }) {
                     <img
                       key={contact.contact_id}
                       src={logos[idx]}
-                      width={"25%"}
+                      width={"50%"}
                     />
                   </section>
                 </div>
               ))}
             </div>
-          </div>{" "}
+          </div>
         </span>
       </section>
     </div>

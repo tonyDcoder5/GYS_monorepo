@@ -6,44 +6,39 @@ const logo = require("../assets/img/GYS_logo.jpg");
 export default function ShopBlock({ prompts = [] }) {
   // console.log(prompts);
 
-  const shopPrompts = prompts.filter((prompt) =>
-    prompt.section_name.includes("shop")
-  );
-
   const shirtPrompts = prompts.filter((prompt) =>
     prompt.section_name.includes("shirt")
   );
+
+  const purchasePrompt = prompts.filter((prompt)=> prompt.section_name.includes("purchase"));
+
+  const supplierPrompts = prompts.filter((prompt)=> prompt.section_name.includes("supplier"));
+
+  console.log(shirtPrompts, purchasePrompt, supplierPrompts);
 
   const [showDetails, setShowDetails] = useState(false);
 
   const handleShow = () => setShowDetails(!showDetails);
 
-  const shirts = [
+  const shirts = [...shirtPrompts] || [
     {
-      id: 0,
-      name: "Test Name",
-      image: logo,
-      title: "Test Title",
-      subtitle: "Test subtitle",
-      date: "2022-09-01",
-    },
-    {
-      id: 1,
-      name: "Test Name 1",
-      image: logo,
-      title: "Test Title 1",
-      subtitle: "Test subtitle 1",
-      date: "2022-09-01",
-    },
+      prompt_id: 0,
+      section_title: "Shirt content loading...",
+      section_image: logo,
+      section_text: "",
+      subtitle: "",
+      date: new Date(),
+    }
   ];
 
-  const prompt = {
-    image: "../assets/img/GYS_logo.jpg",
-    name: "why-block",
-    title: "",
-    bio: "",
-    link: "",
-  };
+  const supplyPrompt = [...supplierPrompts] || [{
+    prompt_id: 0,
+    section_title: "Shirt content loading...",
+    section_image: logo,
+    section_text: "",
+    subtitle: "",
+    date: new Date(),
+  }];
 
   return (
     <div className="shop-block">
@@ -54,9 +49,9 @@ export default function ShopBlock({ prompts = [] }) {
             {shirts.map((shirt, idx) => {
               return (
                 <div className="shirt-row">
-                  <img src={logo} width={"25%"} alt={shirt.name} />
+                  <img src={require("../assets/img/shirts/gys-shirt-model-gray-1.jpeg")} width={"25%"} alt={shirt?.section_subtext} />
                   <span className="shirt-text">
-                    <h3>{shirt.title}</h3>
+                    <h3>{shirt?.section_title}</h3>
                     <button
                       className="btn shirt-detail-btn"
                       onClick={handleShow}
@@ -66,7 +61,7 @@ export default function ShopBlock({ prompts = [] }) {
                     <Offcanvas
                       show={showDetails}
                       onHide={handleShow}
-                      placement="bottom"
+                      placement="end"
                       backdrop="true"
                       keyboard="true"
                       className="offcanvas-details"
@@ -74,16 +69,15 @@ export default function ShopBlock({ prompts = [] }) {
                       <Offcanvas.Body>
                         <Offcanvas.Header closeButton />
 
-                        <h3>{shirt.title}</h3>
-                        <h5>{shirt.subtitle}</h5>
+                        <h3>{shirt?.section_title}</h3>
+                        <h5>{shirt?.section_subtitle}</h5>
                         <img
-                          src={shirt.image}
+                          src={"../assets/img/shirts/gys-shirt-model-gray-1.jpeg"}
                           width={"25%"}
-                          alt={shirt.subtitle}
+                          alt={shirt?.section_subtext}
                         />
                       </Offcanvas.Body>
                     </Offcanvas>
-                    <p>{shirt.date}</p>
                   </span>
                 </div>
               );
@@ -95,12 +89,12 @@ export default function ShopBlock({ prompts = [] }) {
       <div className="shop-bx">
         <h2>DESIGNS BY COMPANY NAME HERE</h2>
         <div className="shop-row">
-          <img src={prompt.image} width={"25%"} alt="headshot" />
+          <img src={supplyPrompt?.section_image} width={"25%"} alt="headshot" />
           <section className="shop-text">
-            <h4>{prompt.name}</h4>
-            <h6>{prompt.title}</h6>
-            <p>{prompt.bio}</p>
-            <a href={prompt.link}>LinkedIn</a>
+            <h4>{supplyPrompt?.section_title}</h4>
+            <h6>{supplyPrompt?.section_subtitle}</h6>
+            <p>{supplyPrompt?.section_text}</p>
+            <a href={"#"}>Website</a>
           </section>
         </div>
       </div>

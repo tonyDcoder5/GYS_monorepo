@@ -7,8 +7,8 @@ import { listPosts } from "../utils/api";
 export default function FAQLayout() {
 
   //make API call to fetch list from Posts table to display on both FAQ component and Page
-  const [faqs,setFaqs] = useState([]);
-  const [FAQSerror,setFAQSerror] = useState(null)
+  const [faqs, setFaqs] = useState([]);
+  const [FAQSerror, setFAQSerror] = useState(null)
  
   useEffect( ()=>{
     const fetchResources = async ()=>{
@@ -24,12 +24,10 @@ export default function FAQLayout() {
     fetchResources()
   },[])
 
-  // console.log(faqs);
-
   return (
     <div className="faq-layout">
       <ShopHeader />
-      <FAQs content={faqs} />
+      <FAQs data={faqs} />
       <Downloadables />
     </div>
   );

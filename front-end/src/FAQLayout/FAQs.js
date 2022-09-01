@@ -1,97 +1,34 @@
 import React, { useState } from "react";
 import { Row, Col, Accordion } from "react-bootstrap";
 import StarBanner from "../components/StarBanner";
+import { formatAsDate } from "../utils/api";
 
 export default function FAQs({ data = [] }) {
   // data holds FAQs page content
-  // console.log(data);
+  console.log(data);
   const [show, setShow] = useState(false);
   const [topDetails, setTopDetails] = useState(null);
   //filter data by top or recent, then pass all data to FAQpage to list all
-  const top_faqs = [
+  const top_faqs = data.filter((faq)=> faq.top) || [
     {
-      id: 0,
-      title: "sample 0",
-      subtitle: "test subtitle 0",
-      text: "sample body text 0",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 1,
-      title: "sample 1",
-      subtitle: "test subtitle 1",
-      text: "sample body text 1",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 1,
-      title: "sample 1",
-      subtitle: "test subtitle 1",
-      text: "sample body text 1",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 1,
-      title: "sample 1",
-      subtitle: "test subtitle 1",
-      text: "sample body text 1",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
+      post_id: 0,
+      post_title: "Content loading...",
+      post_subtitle: "",
+      post_text: "",
+      post_url: "#",
+      post_date: new Date(),
+    }
   ];
 
-  const recent_faqs = [
+  const recent_faqs = [...data] || [
     {
-      id: 0,
-      title: "Recent sample 0",
-      subtitle: "test Recent subtitle 0",
-      text: "sample Recent body text 0",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 1,
-      title: "Recent sample 1",
-      subtitle: "test Recent subtitle 1",
-      text: "sample Recent body text 1",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 2,
-      title: "Recent sample 0",
-      subtitle: "test Recent subtitle 0",
-      text: "sample Recent body text 0",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 3,
-      title: "Recent sample 1",
-      subtitle: "test Recent subtitle 1",
-      text: "sample Recent body text 1",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 4,
-      title: "Recent sample 0",
-      subtitle: "test Recent subtitle 0",
-      text: "sample Recent body text 0",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
-    {
-      id: 5,
-      title: "Recent sample 1",
-      subtitle: "test Recent subtitle 1",
-      text: "sample Recent body text 1",
-      url: "#",
-      date_posted: "2022-08-20",
-    },
+      post_id: 0,
+      post_title: "Content loading",
+      post_subtitle: "",
+      post_text: "",
+      post_url: "#",
+      post_date: new Date(),
+    }
   ];
 
   return (
@@ -102,9 +39,9 @@ export default function FAQs({ data = [] }) {
         <div className="top-faqs">
           <Row>
             {top_faqs.map((faq, idx) => (
-              <Col className="top-faq" id={idx} key={idx}>
-                <h3>{faq.title}</h3>
-                <h6>{faq.subtitle}</h6>
+              <Col className="top-faq" id={faq.post_id} key={faq.post_id}>
+                <h3>{faq.post_title}</h3>
+                <h6>{faq.post_subtitle}</h6>
                 <button
                   onClick={(evt) => {
                     setTopDetails(idx);
@@ -116,8 +53,8 @@ export default function FAQs({ data = [] }) {
                 >
                   Read More
                 </button>
-                {topDetails === idx && show ? <p>{faq.text}</p> : null}
-                <sub>{faq.date_posted}</sub>
+                {topDetails === idx && show ? <p>{faq.post_text}</p> : null}
+                <sub>{formatAsDate(faq.post_date)}</sub>
               </Col>
             ))}
           </Row>
@@ -129,11 +66,11 @@ export default function FAQs({ data = [] }) {
             {recent_faqs.map((faq, idx) => (
               <Accordion.Item className="recent-faq" eventKey={idx}>
                 <Accordion.Header>
-                  <h3>{faq.title}</h3>
+                  <h3>{faq.post_title}</h3>
                 </Accordion.Header>
                 <Accordion.Body>
-                  <p>{faq.subtitle}</p>
-                  <p>{faq.date_posted}</p>
+                  <p>{faq.post_subtitle}</p>
+                  <p>{formatAsDate(faq.post_date)}</p>
                 </Accordion.Body>
               </Accordion.Item>
             ))}

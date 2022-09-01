@@ -223,5 +223,60 @@
         "section_image": null,
         "section_video": null,
         "section_link": null
+    },
+    {
+        "user_id": 1,
+        "section_name": "shop-header",
+        "section_title": "GYS Merch Coming Soon!",
+        "section_subtitle": "Follow us on FB and IG for updates",
+        "section_text": "Premium American-Made shirts and caps by Bayside America for sale soon, all proceeds will help us in our mission to provide our veterans the mental health services and support they need, for as long as they need to feel at home again.",
+        "section_subtext": "shop-header-text",
+        "section_image": ["../assets/img/shirts/gys-shirt-model-blue-1.jpeg", "../assets/img/shirts/gys-shirt-model-gray-logo.jpeg"],
+        "section_video": null,
+        "section_link": "https://www.astsportswear.com/homepage"
+    },
+    {
+        "user_id": 1,
+        "section_name": "shop-shirt-info-1",
+        "section_title": "Standard Gray GYS",
+        "section_subtitle": null,
+        "section_text": "Size info chart, materials, and care information",
+        "section_subtext": "standard-gray-1",
+        "section_image": ["../assets/img/shirts/gys-shirt-model-gray-1.jpeg", "../assets/img/shirts/gys-shirt-model-gray-logo.jpeg"],
+        "section_video": null,
+        "section_link": "#"
+    },
+    {
+        "user_id": 1,
+        "section_name": "shop-shirt-info-1",
+        "section_title": "Standard Blue GYS",
+        "section_subtitle": null,
+        "section_text": "Size info chart, materials, and care information",
+        "section_subtext": "standard-blue-1",
+        "section_image": ["../assets/img/shirts/gys-shirt-model-blue-1.jpeg", "../assets/img/shirts/gys-shirt-model-blue-logo.jpeg"],
+        "section_video": null,
+        "section_link": "#"
+    },
+    {
+        "user_id": 1,
+        "section_name": "shop-shirt-purchase-prompt",
+        "section_title": "Available for preorder/purchase soon",
+        "section_subtitle": null,
+        "section_text": "Follow us on FB and IG for more info, shirts will be available for purchase online and at our in-person events soon.",
+        "section_subtext": "shirt-purchase-prompt",
+        "section_image": "../assets/img/GYS_logo.jpg",
+        "section_video": null,
+        "section_link": "#"
+    },
+    {
+        "user_id": 1,
+        "section_name": "shop-shirt-supplier-prompt",
+        "section_title": "Bayside America Tees",
+        "section_subtitle": "An American company helping support the American people",
+        "section_text": "We only use 100% American made/manufactured/designed products with US cotton. Some other companies use US cotton, but are made elsewhere. We are committed to only using fully American made products. We use Bayside - The American Made Tee - at https://usabayside.com/. Our shirts are printed by Breaking Free Industries https://breakingfreeindustries.com/ in California. About 3% of garments in the US are American made. This makes our American made products more expensive, but we stand behind our product choices by keeping everything we do locally.",
+        "section_subtext": "shirt-purchase-prompt",
+        "section_image": ["../assets/img/logos/Breaking_Free_Apparel_logo.png", "../assets/img/logos/Breaking_Free_Apparel_logo.png"],
+        "section_video": null,
+        "section_link": ["https://usabayside.com/", "https://breakingfreeindustries.com/"]
     }
 ]

@@ -6,13 +6,14 @@ import ShopBlock from "./ShopBlock";
 
 export default function ShopLayout({prompts =[]}) {
 
-  // console.log(prompts);
   const headerPrompts = prompts.filter((prompt)=> prompt.section_name.includes("shop-header"));
+
+  const shirtPrompts = prompts.filter((prompt)=> prompt.section_name.includes("shop-shirt"));
 
   return (
     <div className="shop-layout">
       <ShopHeader prompts={headerPrompts} />
-      <ShopBlock prompts={prompts} />
+      <ShopBlock prompts={shirtPrompts} />
     </div>
   );
 }
