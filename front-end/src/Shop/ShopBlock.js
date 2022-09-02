@@ -7,12 +7,16 @@ export default function ShopBlock({ prompts = [] }) {
   // console.log(prompts);
 
   const shirtPrompts = prompts.filter((prompt) =>
-    prompt.section_name.includes("shirt")
+    prompt.section_name.includes("shirt-info")
   );
 
-  const purchasePrompt = prompts.filter((prompt)=> prompt.section_name.includes("purchase"));
+  const purchasePrompt = prompts.filter((prompt) =>
+    prompt.section_name.includes("purchase")
+  );
 
-  const supplierPrompts = prompts.filter((prompt)=> prompt.section_name.includes("supplier"));
+  const supplierPrompts = prompts.filter((prompt) =>
+    prompt.section_name.includes("supplier")
+  );
 
   console.log(shirtPrompts, purchasePrompt, supplierPrompts);
 
@@ -28,28 +32,34 @@ export default function ShopBlock({ prompts = [] }) {
       section_text: "",
       subtitle: "",
       date: new Date(),
-    }
+    },
   ];
 
-  const supplyPrompt = [...supplierPrompts] || [{
-    prompt_id: 0,
-    section_title: "Shirt content loading...",
-    section_image: logo,
-    section_text: "",
-    subtitle: "",
-    date: new Date(),
-  }];
+  const supplyPrompt = [...supplierPrompts] || [
+    {
+      prompt_id: 0,
+      section_title: "Shirt content loading...",
+      section_image: logo,
+      section_text: "",
+      subtitle: "",
+      date: new Date(),
+    },
+  ];
 
   return (
     <div className="shop-block">
-      <div className="row shirt-block">
+      <div className="shirt-block">
         <h2>DESIGNS COMING SOON</h2>
         <div className="shirt-content">
           <section>
             {shirts.map((shirt, idx) => {
               return (
                 <div className="shirt-row">
-                  <img src={require("../assets/img/shirts/gys-shirt-model-gray-1.jpeg")} width={"25%"} alt={shirt?.section_subtext} />
+                  <img
+                    src={require("../assets/img/shirts/gys-shirt-model-gray-1.jpeg")}
+                    width={"25%"}
+                    alt={shirt?.section_subtext}
+                  />
                   <span className="shirt-text">
                     <h3>{shirt?.section_title}</h3>
                     <button
@@ -68,14 +78,9 @@ export default function ShopBlock({ prompts = [] }) {
                     >
                       <Offcanvas.Body>
                         <Offcanvas.Header closeButton />
-
                         <h3>{shirt?.section_title}</h3>
                         <h5>{shirt?.section_subtitle}</h5>
-                        <img
-                          src={"../assets/img/shirts/gys-shirt-model-gray-1.jpeg"}
-                          width={"25%"}
-                          alt={shirt?.section_subtext}
-                        />
+                        {}
                       </Offcanvas.Body>
                     </Offcanvas>
                   </span>
@@ -87,14 +92,22 @@ export default function ShopBlock({ prompts = [] }) {
       </div>
       <StarBanner />
       <div className="shop-bx">
-        <h2>DESIGNS BY COMPANY NAME HERE</h2>
+        <h2>DESIGNS BY {supplierPrompts[0]?.section_title} & Breaking Free Apparel Co.</h2>
         <div className="shop-row">
-          <img src={supplyPrompt?.section_image} width={"25%"} alt="headshot" />
+          <section>
+            <img
+              src={require("../assets/img/logos/bayside-logo.png")}
+              alt="headshot"
+            />
+            <img
+              src={require("../assets/img/logos/Breaking_Free_Apparel_logo.png")}
+              alt="headshot"
+            />
+          </section>
           <section className="shop-text">
-            <h4>{supplyPrompt?.section_title}</h4>
-            <h6>{supplyPrompt?.section_subtitle}</h6>
-            <p>{supplyPrompt?.section_text}</p>
-            <a href={"#"}>Website</a>
+            <h4>{supplierPrompts[0]?.section_subtitle}</h4>
+            <p>{supplierPrompts[0]?.section_text}</p>
+            <button><a href={"#"}>Website</a></button>
           </section>
         </div>
       </div>

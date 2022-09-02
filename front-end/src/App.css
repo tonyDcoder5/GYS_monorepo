@@ -81,9 +81,6 @@ box-shadow: 0 0 1em #071013;
 
 /* GENERAL PAGE STYLES */
 
-html{
-  zoom: 90%;
-}
 
 h1, h2, h3{
   font-weight: 800;
@@ -96,11 +93,12 @@ h4, h5{
 
 p{
   font-size: 1.5vmax;
-  line-height: 1.25em;
+  line-height: 1em;
   margin: auto;
   padding: 1em;
   font-weight: 500;
 }
+
 
 .App {
   text-align: center;
@@ -1688,7 +1686,7 @@ nav.navbar.scrolled .nav-links {
   color: #f1edee;
   background-color: #036;
   padding: 2em;
-  margin: 1em;
+  margin: 1em 1em 2em 2em;
   box-shadow: 0 0 1em #071013;
 }
 
@@ -1706,13 +1704,13 @@ nav.navbar.scrolled .nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   padding: 2em;
-  margin: 1em;
   color: #f1edee;
   background-color: #cecece;
   border-radius: 1em;
   overflow-y: scroll;
-  height: 30vmax;
+  height: 40vmax;
 }
 
 .events .row a{
@@ -1731,7 +1729,7 @@ nav.navbar.scrolled .nav-links {
 }
 
 .events .star-banner span{
-  transform: scale(2);
+  transform: scale(1.75);
 }
 
 .events-block::-webkit-scrollbar {
@@ -1764,7 +1762,7 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   border: 0.25em solid #071013;
   padding: 2em;
-  width: fit-content;
+  width: 80%;
   margin: 1em;
   color: #071013;
   background-color: #f1edee;
@@ -1835,22 +1833,20 @@ nav.navbar.scrolled .nav-links {
   width: 25vmax;
 }
 
-
 .shop-layout {
   margin: 1em;
 }
 
 .shop-block {
-  margin: 2em;
-  padding: 2em;
-  color: #071013;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  margin: auto;
+  width: auto;
+  padding: 2em;
+  color: #071013;
   background-color: #036;
-  border-radius: 0em;
   box-shadow: 0 0 1em #071013;
 }
 
@@ -1864,11 +1860,35 @@ nav.navbar.scrolled .nav-links {
 }
 
 .shop-bx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   box-shadow: 0 0 1em #071013;
-  margin: 2em;
-  padding: 1em;
+  margin: auto;
   border-radius: 1em;
-  background-color: #cecece;
+  text-align: center;
+  background-color: #cecece; 
+}
+
+
+
+.shop-bx h2{
+  margin-top: 1em;
+  font-size: 4vmax;
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .shop-row {
+    flex-direction: column;
+  }
+  .shop-header-content{
+    flex-direction: column;
+  }
+  .shop-header-content *{
+    margin: .5em;
+  }
 }
 
 .shop-row {
@@ -1877,8 +1897,7 @@ nav.navbar.scrolled .nav-links {
   align-items: center;
   width: auto;
   padding: 3em;
-  margin: 2em;
-  font-size: 1.2em;
+  margin: 2em 1em 2em 1em;
   line-height: 2em;
   text-align: center;
   border-radius: 2em;
@@ -1891,22 +1910,49 @@ nav.navbar.scrolled .nav-links {
   box-shadow: 0 0 0.2em #071013;
   width: fit-content;
   margin: 1em;
+  width: 40vmax;
 }
 
-.shop-row * {
-  margin: 0.5em;
+.shop-text h4{
+  font-size: 3vmax;
 }
 
-.shop-text {
+.shop-text p{
   font-size: 1.25em;
   line-height: 1.5em;
 }
 
+.shop-text button{
+  background-color: #5d737d;
+  border: 0.25em solid #036;
+  padding: .25em;
+  font-size: 1.25em;
+  border-radius: .25em;
+}
+
+.shop-text a {
+  text-decoration: none;
+  color: #f1edee;
+}
+
+.shop-text button:hover {
+  background-color: #cecece;
+  border: 0.25em solid #036;
+  box-shadow: 0 0 0.25em #f1edee;
+  color: #f1edee;
+}
+
+.shop-text a:hover {
+  text-decoration: dotted;
+  color: #036;
+}
+
+
 .shirt-block {
   display: flex;
+  flex-direction: column;
   margin: 1em;
   padding: 2em;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1914,6 +1960,10 @@ nav.navbar.scrolled .nav-links {
   border-radius: 1em;
   color: #071013;
   box-shadow: 0 0 1em #071013;
+}
+
+.shirt-block h2{
+  font-size: 4vmax;
 }
 
 .shirt-block div {

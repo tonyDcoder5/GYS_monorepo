@@ -29,9 +29,9 @@ export default function Events() {
         <h4>Upcoming Events:</h4>
         <p>Today: {date}</p>
         <StarBanner />
-        <div className="col events-block">
+        <div className="events-block">
           <div className="agenda-block">
-          <div className="col m-2">
+          <div className="col">
               <img src={require("../assets/img/GYS_logo.jpg")} width="40%" alt="logo-placeholder" />
               <h5>DATE: TBD</h5>
               </div>
