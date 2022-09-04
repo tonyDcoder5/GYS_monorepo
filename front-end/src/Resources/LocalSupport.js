@@ -64,7 +64,7 @@ export default function LocalSupport({ contacts = [] }) {
                 <Card.Title>{hiCard.contact_org_name}</Card.Title>
                 <Card.Text>{hiCard.orgDesc}</Card.Text>
                 <Button className="local-orgsite">
-                  <a href={hiCard.orgUrl}>Website</a>
+                  <a href={hiCard.orgUrl} target="_blank">Website</a>
                 </Button>
               </Card.Body>
             </Card>
@@ -82,7 +82,7 @@ export default function LocalSupport({ contacts = [] }) {
                 <Card.Title>{hiCard.contact_org_name}</Card.Title>
                 <Card.Text>{hiCard.orgDesc}</Card.Text>
                 <Button className="local-orgsite">
-                  <a href={hiCard.orgUrl}>Website</a>
+                  <a href={hiCard.orgUrl} target="_blank">Website</a>
                 </Button>
               </Card.Body>
             </Card>

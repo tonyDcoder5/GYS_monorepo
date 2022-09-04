@@ -1,11 +1,12 @@
 {
-  "name": "homepage-monorepo",
+  "name": "GYS-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./front-end\" "
+    "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./front-end\" ",
+    "build": "npm -prefix front-end run build"
   },
   "repository": {
     "type": "git",

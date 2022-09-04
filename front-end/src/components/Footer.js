@@ -20,9 +20,8 @@ export default function Footer() {
         </div>
         <div className="footer-links">
           <a href="/events">Events</a>
-
+          <a href="/shop">Shop</a>
           <a href="/contact">Contact</a>
-          <a href="/users">Admin</a>
         </div>
       </div>
       <div className="footer-text">
@@ -35,7 +34,7 @@ export default function Footer() {
       <div className="footer-socials">
         {/* TODO: CREATE CUSTOM FACEBOOK URL */}
         <span>
-          <SocialIcon url="https://facebook.com/" />
+          <SocialIcon url="https://facebook.com/" target="_blank" /> 
         </span>
         <span>
           <SocialIcon
@@ -52,8 +51,9 @@ export default function Footer() {
       </div>
       <div className="footer-copy">
         <p>Designed by Straw Hat Media Agency</p>
-        <p>With collaborations from: TonyDCoder, NR-Papaya</p>
+        <p>With collaborations from: <a href="https://tonydcoder5.github.io/react-portfolio/" target="_blank">TonyDCoder</a>, <a href="https://github.com/NR-Papaya" target="_blank">NR-Papaya</a></p>
         <p>Built using ReactJS, Bootstrap, & CSS</p>
+        <a href="/users" target="_blank" >Admin</a>
       </div>
     </div>
   );

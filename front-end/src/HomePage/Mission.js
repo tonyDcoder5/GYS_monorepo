@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import StarBanner from "../components/StarBanner";
+import ShopHeader from "../Shop/ShopHeader";
 
 export default function Mission({ prompts }) {
   const flag = require("../assets/img/flag-gif.gif");
@@ -21,16 +22,18 @@ export default function Mission({ prompts }) {
     <div className="mission-sect" name="mission-sect">
       <div className="intro-animation">
         <img
-          src={flag}
+          src={require("../assets/img/intro-media.png")}
           alt="Waving flag gif"
           name="flag animation"
           id="intro-animation"
         />
         <section className="intro-subhead">
-          <h3>{missionContent?.section_title}</h3>
+          <h3>Golf Yankee Six - Got Your Back</h3>
           <p>{missionContent?.section_text || null}</p>
         </section>
       </div>
+      <ShopHeader />
+
       <div className="mission-stats">
           <StarBanner />
           <Row className="mt-2 g-4">

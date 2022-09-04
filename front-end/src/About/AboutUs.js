@@ -70,7 +70,7 @@ export default function AboutUs({prompts = [] }) {
         <h2>{prompts[0]?.section_title || i.section_title}</h2>
         <StarBanner />
         <div className="why-row">
-          <img src={require("../assets/img/GYS_logo.jpg")} width='40%' alt="media/logo" />
+          <img src={require("../assets/img/GYS_logo.jpg")} alt="media/logo" />
           <section className="why-text">
             <h4>{prompts[0]?.section_subtitle}</h4>
             <p>{prompts[0]?.section_text}</p>

@@ -3,6 +3,7 @@ import React from "react";
 import Mission from "./Mission";
 import Roadmap from "./Roadmap";
 import Events from "../FAQLayout/Events"
+import ShopHeader from "../Shop/ShopHeader";
 
 export default function HomeLayout({prompts = []}) {
 
@@ -14,6 +15,7 @@ export default function HomeLayout({prompts = []}) {
         <div className="home">
             <div className="home-layout">
             <Mission prompts={missionPrompts} />
+
             <Roadmap prompts={roadmapPrompts} />
             <Events />
             </div>

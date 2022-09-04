@@ -81,6 +81,9 @@ box-shadow: 0 0 1em #071013;
 
 /* GENERAL PAGE STYLES */
 
+html{
+  zoom: 50%;
+}
 
 h1, h2, h3{
   font-weight: 800;
@@ -298,6 +301,8 @@ nav.navbar.scrolled .nav-links {
 }
 
 .scroll-brand a {
+  margin-top: .5em;
+  font-size: 2vmax;
   text-decoration: none;
   color: #036;
 }
@@ -308,8 +313,8 @@ nav.navbar.scrolled .nav-links {
 }
 
 .header-nav img {
-  width: 5em;
-  border-radius: 4em;
+  width: 8vmax;
+  border-radius: 10em;
   box-shadow: 0 0.25em 1em #071013;
   margin-right: 0.5em;
 }
@@ -423,7 +428,7 @@ nav.navbar.scrolled .nav-links {
 .intro-animation img {
   border-radius: 0;
   width: 100%;
-  height: 35vmax; 
+  height: 60vmax; 
   margin: 1em;
   padding-bottom: 2em;
 }
@@ -640,6 +645,7 @@ nav.navbar.scrolled .nav-links {
   box-shadow: 0 0 0.2em #071013;
   margin: 1em;
   border-radius: 20em;
+  width: 40vmax;
 }
 
 .why-row * {
@@ -2251,4 +2257,14 @@ nav.navbar.scrolled .nav-links {
   margin: 1em 2em 1em 2em;
   font-size: 0.75em;
   color: rgba(82, 82, 82, 0.563);
+}
+
+.footer-copy a {
+  text-decoration: none;
+  color: #cecece;
+}
+
+.footer-copy a:hover {
+  text-decoration: none;
+  color: #f1edee;
 }

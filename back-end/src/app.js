@@ -7,7 +7,7 @@ const cors = require("cors");
 
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
-//import routers TO DO****************
+
 
 const resourcesRouter = require("./Resources/resources.router");
 const contactsRouter = require("./Contacts/contacts.router");
@@ -32,5 +32,6 @@ app.use("/contacts", contactsRouter);
 
 app.use(notFound);
 app.use(errorHandler);
+
 
 module.exports = app;

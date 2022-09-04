@@ -75,7 +75,7 @@ export default function FAQs({ data = [] }) {
               </Accordion.Item>
             ))}
           </Accordion>
-          <a href={`faqs/list`}>
+          <a href={`faqs/list`} >
             <button className="btn-all">All</button>
           </a>
         </div>
