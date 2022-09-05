@@ -1,70 +1,16 @@
 [
     {
         "user_id": 1,
-        "post_title": "test post 1",
-        "post_subtitle": "test subtitle",
-        "post_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed. Dictumst quisque sagittis purus sit. Cum sociis natoque penatibus et magnis dis. Sem et tortor consequat id porta nibh venenatis. Diam in arcu cursus euismod quis viverra. Feugiat nibh sed pulvinar proin gravida hendrerit. A iaculis at erat pellentesque adipiscing commodo. Nunc faucibus a pellentesque sit amet porttitor eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Suspendisse in est ante in nibh mauris cursus mattis molestie.",
-        "post_author": "Test author",
-        "post_subtext": "test subtext",
+        "title": "test post 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed. Dictumst quisque sagittis purus sit. Cum sociis natoque penatibus et magnis dis. Sem et tortor consequat id porta nibh venenatis. Diam in arcu cursus euismod quis viverra. Feugiat nibh sed pulvinar proin gravida hendrerit. A iaculis at erat pellentesque adipiscing commodo. Nunc faucibus a pellentesque sit amet porttitor eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Suspendisse in est ante in nibh mauris cursus mattis molestie.",
         "post_date": "2022-08-11",
-        "post_image": "https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
+        "image_url": "https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
     },
     {
         "user_id": 2,
-        "post_title": "test post 2",
-        "post_subtitle": "test subtitle",
-        "post_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed. Dictumst quisque sagittis purus sit. Cum sociis natoque penatibus et magnis dis. Sem et tortor consequat id porta nibh venenatis. Diam in arcu cursus euismod quis viverra. Feugiat nibh sed pulvinar proin gravida hendrerit. A iaculis at erat pellentesque adipiscing commodo. Nunc faucibus a pellentesque sit amet porttitor eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Suspendisse in est ante in nibh mauris cursus mattis molestie.",
-        "post_author": "Test author",
-        "post_subtext": "test subtext",
-        "post_date": "2022-08-11",
-        "post_video": "https://youtu.be/WKHvreQf-D0"
-    },
-    {
-        "post_title": "FAQ Sample - 1",
-        "post_author": "FAQ sample author - 1",
-        "post_subtitle": "FAQ sample subtitle -1",
-        "post_text": "FAQ text sample - 1",
-        "post_subtext": "FAQ subtext sample - 1",
-        "post_date": "2022-08-28",
-        "post_url": "#",
-        "post_image": "../assets/img/GYS_logo.jpg",
-        "post_video": "",
-        "top": "true"
-    },
-    {
-        "post_title": "FAQ Sample - 2",
-        "post_author": "FAQ sample author - 2",
-        "post_subtitle": "FAQ sample subtitle -2",
-        "post_text": "FAQ text sample - 2",
-        "post_subtext": "FAQ subtext sample - 2",
-        "post_date": "2022-08-28",
-        "post_url": "#",
-        "post_image": "../assets/img/GYS_logo.jpg",
-        "post_video": "",
-        "top": "false"
-    },
-    {
-        "post_title": "FAQ Sample - 3",
-        "post_author": "FAQ sample author - 3",
-        "post_subtitle": "FAQ sample subtitle -3",
-        "post_text": "FAQ text sample - 3",
-        "post_subtext": "FAQ subtext sample - 3",
-        "post_date": "2022-08-28",
-        "post_url": "#",
-        "post_image": "../assets/img/GYS_logo.jpg",
-        "post_video": "",
-        "top": "false"
-    },
-    {
-        "post_title": "FAQ Sample - 4",
-        "post_author": "FAQ sample author - 4",
-        "post_subtitle": "FAQ sample subtitle -4",
-        "post_text": "FAQ text sample - 4",
-        "post_subtext": "FAQ subtext sample - 4",
-        "post_date": "2022-08-28",
-        "post_url": "#",
-        "post_image": "../assets/img/GYS_logo.jpg",
-        "post_video": "",
-        "top": "true"
+        "title": "test post 2",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed. Dictumst quisque sagittis purus sit. Cum sociis natoque penatibus et magnis dis. Sem et tortor consequat id porta nibh venenatis. Diam in arcu cursus euismod quis viverra. Feugiat nibh sed pulvinar proin gravida hendrerit. A iaculis at erat pellentesque adipiscing commodo. Nunc faucibus a pellentesque sit amet porttitor eget. Viverra aliquet eget sit amet tellus cras adipiscing enim. Suspendisse in est ante in nibh mauris cursus mattis molestie.",
+        "post_date": "2022-08-12",
+        "video_url": "https://youtu.be/WKHvreQf-D0"
     }
 ]
