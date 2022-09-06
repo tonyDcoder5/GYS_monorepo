@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "npx concurrently \"npm run start:dev --prefix ./back-end\" \"npm start --prefix ./front-end\" ",
-    "build": "npm -prefix front-end run build"
+    "build": "npm -prefix front-end run build",
+    "install": "npx concurrently \"npm install --prefix ./back-end\" \"npm install --prefix ./front-end\" "
   },
   "repository": {
     "type": "git",
